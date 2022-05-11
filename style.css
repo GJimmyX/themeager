@@ -1,0 +1,907 @@
+@charset "UTF-8";
+/*
+ *  Theme name: Thème Site AGER
+    URI: http://themeager
+    Description: Thème pour le support du site: AGER Systèmes.
+    Version: 1.0
+    Author: Jimmy GILBERT 
+*/
+/* Import du CSS pour 'header.php' */
+/* CSS du header */
+body {
+  background-color: #E8E8E8;
+  margin: 0;
+}
+
+body header {
+  background-color: #F5F4EF;
+  padding: 1% 0%;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-box-shadow: 0px 3px 5px #000;
+          box-shadow: 0px 3px 5px #000;
+  /* Disposition du header */
+}
+
+body header .nav-container {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Ajustement de la barre de navigation */
+  /* Ajustmement au niveau du bouton de recherche */
+  /* Recherche mobile */
+  /* Recherche bureau */
+  /* Ajustement au niveau du N° de Téléphone */
+  /* Ajustement au niveau des liens de réseaux sociaux */
+}
+
+@media (min-width: 992px) and (max-width: 1365.98px) {
+  body header .nav-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1365.98px) {
+  body header .nav-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2% 0;
+  }
+}
+
+body header .nav-container h1 {
+  margin: 0;
+  width: 15%;
+}
+
+@media (min-width: 375px) and (max-width: 1365.98px) {
+  body header .nav-container h1 {
+    width: 30%;
+  }
+}
+
+body header .nav-container h1 a img {
+  width: 100%;
+  height: auto;
+}
+
+body header .nav-container .menu {
+  width: 65%;
+}
+
+@media (max-width: 991.98px) {
+  body header .nav-container .menu {
+    display: none;
+  }
+}
+
+body header .nav-container .menu .primary-nav {
+  width: 90%;
+  margin: auto;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .nav-container .menu .primary-nav .item {
+  list-style: none;
+  width: 18%;
+  text-align: center;
+}
+
+body header .nav-container .menu .primary-nav .item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 75px;
+  margin: auto;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  color: #525251;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+@media (max-width: 1365.98px) {
+  body header .nav-container .menu .primary-nav .item a {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+body header .nav-container .menu .primary-nav .item a:hover {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  background-color: #015F8F;
+  color: white;
+  border-radius: 30px;
+}
+
+@media (max-width: 1365.98px) {
+  body header .nav-container .menu .primary-nav .item a:hover {
+    -webkit-transition: none;
+    transition: none;
+    background-color: transparent;
+    color: #525251;
+  }
+}
+
+body header .nav-container .menu .primary-nav .current_page_item a {
+  background-color: #C13030;
+  color: white;
+  border-radius: 30px;
+}
+
+body header .nav-container .menu .primary-nav .current_page_item a:hover {
+  background-color: #015F8F;
+}
+
+body header .nav-container .nav-search-mobile {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin: 2% 0;
+}
+
+@media (min-width: 1366px) {
+  body header .nav-container .nav-search-mobile {
+    display: none;
+  }
+}
+
+body header .nav-container .nav-search-mobile .search-mobile #search-btn-mobile {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  color: #525251;
+  font-size: 1.25em;
+}
+
+body header .nav-container .nav-search-mobile .search-mobile .search {
+  display: none;
+}
+
+body header .nav-container .nav-search-mobile .search-mobile .search-form {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+body header .nav-container .nav-search-mobile .search-mobile .search-form .toggle-search {
+  position: relative;
+  display: block;
+  z-index: 999;
+  outline: none;
+  padding-left: 10px;
+  border: 1px solid #525251;
+  border-radius: 20px;
+}
+
+@media (min-width: 375px) and (max-width: 767.98px) {
+  body header .nav-container .nav-search-mobile .search-mobile .search-form .toggle-search {
+    top: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1365.98px) {
+  body header .nav-container .nav-search-mobile .search-mobile .search-form .toggle-search {
+    top: 25px;
+  }
+}
+
+body header .nav-container .nav-search-desktop {
+  text-align: center;
+  position: relative;
+  width: 4%;
+}
+
+@media (max-width: 1365.98px) {
+  body header .nav-container .nav-search-desktop {
+    display: none;
+  }
+}
+
+body header .nav-container .nav-search-desktop .search-desktop #search-btn-desktop {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  color: #525251;
+  font-size: 1.25em;
+}
+
+body header .nav-container .nav-search-desktop .search-desktop #search-btn-desktop:hover {
+  color: #C13030;
+}
+
+@media (max-width: 1365.98px) {
+  body header .nav-container .nav-search-desktop .search-desktop #search-btn-desktop:hover {
+    color: #525251;
+  }
+}
+
+body header .nav-container .nav-search-desktop .search-desktop .search {
+  display: none;
+}
+
+body header .nav-container .nav-search-desktop .search-desktop .search-form {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+body header .nav-container .nav-search-desktop .search-desktop .search-form .toggle-search {
+  position: relative;
+  display: block;
+  top: 40px;
+  z-index: 999;
+  outline: none;
+  padding-left: 10px;
+  border: 1px solid #525251;
+  border-radius: 20px;
+}
+
+body header .nav-container .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  width: 16%;
+  text-align: center;
+  text-decoration: none;
+  color: #525251;
+  font-weight: 600;
+  font-size: 1em;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+@media (max-width: 1365.98px) {
+  body header .nav-container .phone {
+    width: 100%;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+body header .nav-container .phone:hover {
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  color: #015F8F;
+}
+
+@media (max-width: 1365.98px) {
+  body header .nav-container .phone:hover {
+    -webkit-transition: none;
+    transition: none;
+    color: #525251;
+  }
+}
+
+body header .nav-container .phone .fa-phone {
+  color: #C13030;
+}
+
+body header .nav-container .rs {
+  width: 4%;
+  text-align: center;
+  text-decoration: none;
+  color: #C13030;
+  font-size: 1.5em;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+@media (max-width: 1365.98px) {
+  body header .nav-container .rs {
+    width: 100%;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+body header .nav-container .rs:hover {
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  color: #015F8F;
+}
+
+@media (max-width: 1365.98px) {
+  body header .nav-container .rs:hover {
+    -webkit-transition: none;
+    transition: none;
+    color: #C13030;
+  }
+}
+
+/* Import du CSS pour 'single-activites.php' */
+/* CSS de single-activites */
+.single-activite h2 {
+  text-align: center;
+}
+
+.single-activite a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* Import du CSS pour 'footer.php' */
+/* CSS du footer */
+footer {
+  background-color: #F5F4EF;
+  width: 100%;
+}
+
+footer .align-pdp {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .align-pdp p {
+  width: 33.3%;
+  margin: 0;
+  padding: 1% 0%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1em;
+  color: #525251;
+}
+
+footer .align-pdp p a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1em;
+  color: #525251;
+}
+
+/* CSS de 'index.php' */
+.accueil {
+  margin-bottom: 2%;
+  font-family: 'Open Sans', sans-serif;
+  /* Disposition de l'image principale de la page d'accueil */
+  /* Disposition des activités de AGER */
+  /* Disposition de la section 'Plus d'infos' */
+  /* Disposition de la section 'Contact' */
+}
+
+.accueil .accueil-img {
+  position: relative;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.accueil .accueil-img img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.accueil .accueil-img .hover {
+  position: absolute;
+  top: 0;
+  width: 35%;
+  height: 100%;
+  background-color: rgba(1, 95, 143, 0.6);
+}
+
+.accueil .accueil-img .hover .hover-content {
+  padding: 5%;
+}
+
+.accueil .accueil-img .hover .hover-content .hover-title, .accueil .accueil-img .hover .hover-content .hover-text {
+  font-size: 3em;
+  color: white;
+}
+
+.accueil .accueil-img .hover .hover-content .hover-title {
+  font-weight: 400;
+  cursor: context-menu;
+}
+
+.accueil .accueil-img .hover .hover-content .hover-line {
+  border-top: 4px solid #ffffff;
+  width: 15%;
+}
+
+.accueil .accueil-img .hover .hover-content .hover-text {
+  font-weight: 300;
+  cursor: context-menu;
+}
+
+.accueil .accueil-img .hover .hover-content .hover-button {
+  font-family: 'Open Sans', sans-serif;
+  width: 40%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1% 0;
+  border: 1px solid black;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5em;
+  background-color: whitesmoke;
+  color: black;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.accueil .accueil-img .hover .hover-content .hover-button:hover {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: #C13030;
+  color: white;
+}
+
+.accueil .activites-ager {
+  padding: 0 10%;
+}
+
+.accueil .activites-ager .activites-title {
+  text-align: center;
+}
+
+.accueil .activites-ager .activites-title h3 {
+  margin: 0;
+  padding: 2% 0;
+  color: #525251;
+  font-weight: 500;
+  font-size: 2em;
+  cursor: context-menu;
+}
+
+.accueil .activites-ager .activites-title .activites-line {
+  border-top: 4px solid #C13030;
+  width: 15%;
+  margin: auto;
+}
+
+.accueil .activites-ager .activites-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5% 0;
+}
+
+.accueil .activites-ager .activites-content .activites {
+  background-color: #015F8F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 250px;
+  height: 250px;
+  padding: 2%;
+  border-radius: 50px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.accueil .activites-ager .activites-content .activites:hover {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-box-shadow: 0px 0px 10px 10px #ccc;
+          box-shadow: 0px 0px 10px 10px #ccc;
+}
+
+.accueil .activites-ager .activites-content .activites .activites-lien {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 1.4em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.accueil .plus-d-infos-ager {
+  padding: 0 10%;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-title {
+  text-align: center;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-title h3 {
+  margin: 0%;
+  padding: 2% 0;
+  color: #C13030;
+  font-weight: 500;
+  font-size: 2em;
+  cursor: context-menu;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-title .plus-d-infos-line {
+  border-top: 4px solid #C13030;
+  width: 15%;
+  margin: auto;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5% 0;
+}
+
+@media (max-width: 1365.98px) {
+  .accueil .plus-d-infos-ager .plus-d-infos-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F5F4EF;
+  cursor: context-menu;
+}
+
+@media (max-width: 1365.98px) {
+  .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .infos-title {
+  width: 100%;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .infos-title .title-infos-avantages h2 {
+  font-weight: 700;
+  font-size: 2em;
+  color: black;
+  text-align: center;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .infos-title .infos-avantages-line {
+  border-top: 4px solid #C13030;
+  width: 70%;
+  margin: auto;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .infos-title p {
+  font-weight: 500;
+  font-size: 2em;
+  color: #525251;
+  text-align: center;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 991.98px) {
+  .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage01, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage02, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage03 {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage01 .avantages-form, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage02 .avantages-form, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage03 .avantages-form {
+  background-color: #015F8F;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage01 .avantages-form i, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage02 .avantages-form i, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage03 .avantages-form i {
+  color: white;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage01 p, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage02 p, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage03 p {
+  width: 100%;
+  font-size: 0.9em;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-content .infos-slider {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1365.98px) {
+  .accueil .plus-d-infos-ager .plus-d-infos-content .infos-slider {
+    width: 100%;
+    margin-top: 2%;
+  }
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-content .infos-slider img {
+  width: 100%;
+  height: auto;
+}
+
+.accueil .section-articles-contact {
+  padding: 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.accueil .section-articles-contact .articles-ager {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accueil .section-articles-contact .articles-ager p {
+  text-align: center;
+  cursor: context-menu;
+  margin: 2% 0;
+}
+
+.accueil .section-articles-contact .articles-ager .articles {
+  background-color: #F5F4EF;
+  margin: 5% 0;
+  padding: 2.5%;
+  text-decoration: none;
+  border: 1px solid #F5F4EF;
+  border-radius: 20px;
+  font-size: 1.5em;
+  color: #525251;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.accueil .section-articles-contact .articles-ager .articles:hover {
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  background-color: #015F8F;
+  color: white;
+}
+
+.accueil .section-articles-contact .contact-ager {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accueil .section-articles-contact .contact-ager p {
+  text-align: center;
+  cursor: context-menu;
+  margin: 2% 0;
+}
+
+.accueil .section-articles-contact .contact-ager .contact {
+  background-color: #F5F4EF;
+  margin: 5% 0;
+  padding: 2.5%;
+  text-decoration: none;
+  border: 1px solid #F5F4EF;
+  border-radius: 20px;
+  font-size: 1.5em;
+  color: #525251;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.accueil .section-articles-contact .contact-ager .contact:hover {
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  background-color: #015F8F;
+  color: white;
+}
+
+.accueil #btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 0 3%;
+}
+
+.accueil #btn #topBtn {
+  width: 70px;
+  height: 70px;
+  padding: 0%;
+  border-radius: 35px;
+  color: #525251;
+  background-color: #F5F4EF;
+  border: 3px solid #525251;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.accueil #btn #topBtn:hover {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+/*# sourceMappingURL=style.css.map */

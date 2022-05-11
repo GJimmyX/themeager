@@ -1,0 +1,347 @@
+/*
+ *  Theme name: Thème Site AGER
+    URI: http://themeager
+    Description: Thème pour le support du site: AGER Systèmes.
+    Version: 1.0
+    Author: Jimmy GILBERT 
+*/
+
+/* Import du CSS pour 'header.php' */
+
+@import 'scss/header';
+
+/* Import du CSS pour 'single-activites.php' */
+
+@import 'scss/single-activites';
+
+/* Import du CSS pour 'footer.php' */
+
+@import 'scss/footer';
+
+/* CSS de 'index.php' */
+
+.accueil{
+    margin-bottom: 2%;
+    font-family: 'Open Sans', sans-serif;
+
+    /* Disposition de l'image principale de la page d'accueil */
+
+    .accueil-img{
+        position: relative;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        img{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hover{
+            position: absolute;
+            top: 0;
+            width: 35%;
+            height: 100%;
+            background-color: rgba($color: #015F8F, $alpha: 0.6);
+            .hover-content{
+                padding: 5%;
+                .hover-title, .hover-text{
+                    font-size: 3em;
+                    color: white;
+                }
+                .hover-title{
+                    font-weight: 400;
+                    cursor: context-menu;
+                }
+                .hover-line{
+                    border-top: 4px solid #ffffff;
+                    width: 15%;
+                }
+                .hover-text{
+                    font-weight: 300;
+                    cursor: context-menu;
+                }
+                .hover-button{
+                    font-family: 'Open Sans', sans-serif;
+                    width: 40%;
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+                    padding: 1% 0;
+                    border: 1px solid black;
+                    border-radius: 25px;
+                    text-decoration: none;
+                    font-weight: 700;
+                    font-size: 1.5em;
+                    background-color: whitesmoke;
+                    color: black;
+                    cursor: pointer;
+                    transition: 0.5s ease;
+                    &:hover{
+                        transition: 0.5s ease;
+                        background-color: #C13030;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Disposition des activités de AGER */
+
+    .activites-ager{
+        padding: 0 10%;
+        .activites-title{
+            text-align: center;
+            h3{
+                margin: 0;
+                padding: 2% 0;
+                color: #525251;
+                font-weight: 500;
+                font-size: 2em;
+                cursor: context-menu;
+            }
+            .activites-line{
+                border-top: 4px solid #C13030;
+                width: 15%;
+                margin: auto;
+            }
+        }
+        .activites-content{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            padding: 5% 0;
+            .activites{
+                background-color: #015F8F;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                justify-content: space-between;
+                width: 250px;
+                height: 250px;
+                padding: 2%;
+                border-radius: 50px;
+                transition: 0.5s ease;
+                &:hover{
+                    transition: 0.5s ease;
+                    box-shadow: 0px 0px 10px 10px #ccc;
+                }
+                .activites-lien{
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 400;
+                    font-size: 1.4em;
+                    text-align: center;
+                    text-transform: uppercase;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    /* Disposition de la section 'Plus d'infos' */
+
+    .plus-d-infos-ager{
+        padding: 0 10%;
+        .plus-d-infos-title{
+            text-align: center;
+            h3{
+                margin: 0%;
+                padding: 2% 0;
+                color: #C13030;
+                font-weight: 500;
+                font-size: 2em;
+                cursor: context-menu;
+            }
+            .plus-d-infos-line{
+                border-top: 4px solid #C13030;
+                width: 15%;
+                margin: auto;
+            }
+        }
+        .plus-d-infos-content{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            padding: 5% 0;
+            @media (max-width: 1365.98px){
+                flex-direction: column;
+            }
+            .infos-avantages{
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #F5F4EF;
+                cursor: context-menu;
+                @media (max-width: 1365.98px){
+                    width: 100%;
+                    margin-bottom: 2%;
+                }
+                .infos-title{
+                    width: 100%;
+                    .title-infos-avantages{
+                        h2{
+                            font-weight: 700;
+                            font-size: 2em;
+                            color: black;
+                            text-align: center;
+                        }
+                    }
+                    .infos-avantages-line{
+                        border-top: 4px solid #C13030;
+                        width: 70%;
+                        margin: auto;
+                    }
+                    p{
+                        font-weight: 500;
+                        font-size: 2em;
+                        color: #525251;
+                        text-align: center;
+                    }
+                }
+                .avantages{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    @media (max-width: 991.98px){
+                        flex-direction: column;
+                    }
+                    #avantage01, #avantage02, #avantage03{
+                        width: 25%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .avantages-form{
+                            background-color: #015F8F;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 5px 0;
+                            i{
+                                color: white;
+                            }
+                        }
+                        p{
+                            width: 100%;
+                            font-size: 0.9em;
+                            color: black;
+                            text-align: center;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .infos-slider{
+                width: 45%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media (max-width: 1365.98px){
+                    width: 100%;
+                    margin-top: 2%;
+                }
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    /* Disposition de la section 'Contact' */
+
+    .section-articles-contact{
+        padding: 0 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        .articles-ager{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                text-align: center;
+                cursor: context-menu;
+                margin: 2% 0;
+            }
+            .articles{
+                background-color: #F5F4EF;
+                margin: 5% 0;
+                padding: 2.5%;
+                text-decoration: none;
+                border: 1px solid #F5F4EF;
+                border-radius: 20px;
+                font-size: 1.5em;
+                color: #525251;
+                transition: 0.8s ease;
+                &:hover{
+                    transition: 0.8s ease;
+                    background-color: #015F8F;
+                    color: white;
+                }
+            }
+        }
+        .contact-ager{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                text-align: center;
+                cursor: context-menu;
+                margin: 2% 0;
+            }
+            .contact{
+                background-color: #F5F4EF;
+                margin: 5% 0;
+                padding: 2.5%;
+                text-decoration: none;
+                border: 1px solid #F5F4EF;
+                border-radius: 20px;
+                font-size: 1.5em;
+                color: #525251;
+                transition: 0.8s ease;
+                &:hover{
+                    transition: 0.8s ease;
+                    background-color: #015F8F;
+                    color: white;
+                }
+            }
+        }
+    }
+    #btn{
+        display: flex;
+        justify-content: end;
+        padding: 0 3%;
+        #topBtn{
+            width: 70px;
+            height: 70px;
+            padding: 0%;
+            border-radius: 35px;
+            color: #525251;
+            background-color: #F5F4EF;
+            border: 3px solid #525251;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(0px);
+            transition: .5s ease;
+            &:hover{
+                transform: translateY(20px);
+                transition: .5s ease;
+            }
+        }
+    }
+}

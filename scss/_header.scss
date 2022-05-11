@@ -1,0 +1,249 @@
+/* CSS du header */
+
+body{
+    background-color: #E8E8E8;
+    margin: 0;
+    header{
+        background-color: #F5F4EF;
+        padding: 1% 0%;
+        font-family: 'Open Sans', sans-serif;
+        box-shadow: 0px 3px 5px #000;
+
+        /* Disposition du header */
+        
+        .nav-container{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (min-width: 992px) AND (max-width: 1365.98px){
+                width: 100%;
+            }
+            @media (max-width: 1365.98px){
+                flex-direction: column;
+                align-items: center;
+                padding: 2% 0;
+            }
+            h1{
+                margin: 0;
+                width: 15%;
+                @media (min-width: 375px) AND (max-width: 1365.98px){
+                    width: 30%;
+                }
+                a{
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            /* Ajustement de la barre de navigation */
+
+            .menu{
+                width: 65%;
+                @media (max-width: 991.98px){
+                    display: none;
+                }
+                .primary-nav{
+                    width: 90%;
+                    margin: auto;
+                    padding: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    .item{
+                        list-style: none;
+                        width: 18%;
+                        text-align: center;
+                        a{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 75px;
+                            margin: auto;
+                            text-decoration: none;
+                            font-weight: 600;
+                            font-size: 1em;
+                            color: #525251;
+                            transition: .3s ease;
+                            @media (max-width: 1365.98px){
+                                transition: none;
+                            }
+                            &:hover{
+                                transition: .3s ease;
+                                background-color: #015F8F;
+                                color: white;
+                                border-radius: 30px;
+                                @media (max-width: 1365.98px){
+                                    transition: none;
+                                    background-color: transparent;
+                                    color: #525251;
+                                }
+                            }
+                        }
+                    }
+                    .current_page_item{
+                        a{
+                            background-color: #C13030;
+                            color: white;
+                            border-radius: 30px;
+                            &:hover{
+                                background-color: #015F8F;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* Ajustmement au niveau du bouton de recherche */
+
+            /* Recherche mobile */
+
+            .nav-search-mobile{
+                text-align: center;
+                position: relative;
+                width: 100%;
+                margin: 2% 0;
+                @media (min-width: 1366px){
+                    display: none;
+                }
+                .search-mobile{
+                    #search-btn-mobile{
+                        width: 100%;
+                        background: transparent;
+                        border: 0;
+                        color: #525251;
+                        font-size: 1.25em;
+                    }
+                    .search{
+                        display: none;
+                    }
+                    .search-form{
+                        position: absolute;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        .toggle-search{
+                            position: relative;
+                            display: block;
+                            z-index: 999;
+                            outline: none;
+                            padding-left: 10px;
+                            border: 1px solid #525251;
+                            border-radius: 20px;
+                            @media (min-width: 375px) AND (max-width: 767.98px){
+                                top: 10px;
+                            }
+                            @media (min-width: 768px) AND (max-width: 1365.98px){
+                                top: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* Recherche bureau */
+
+            .nav-search-desktop{
+                text-align: center;
+                position: relative;
+                width: 4%;
+                @media (max-width: 1365.98px){
+                    display: none;
+                }
+                .search-desktop{
+                    #search-btn-desktop{
+                        width: 100%;
+                        background: transparent;
+                        border: 0;
+                        color: #525251;
+                        font-size: 1.25em;
+                        &:hover{
+                            color: #C13030;
+                            @media (max-width: 1365.98px){
+                                color: #525251;
+                            }
+                        }
+                    }
+                    .search{
+                        display: none;
+                    }
+                    .search-form{
+                        position: absolute;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        .toggle-search{
+                            position: relative;
+                            display: block;
+                            top: 40px;
+                            z-index: 999;
+                            outline: none;
+                            padding-left: 10px;
+                            border: 1px solid #525251;
+                            border-radius: 20px;
+                        }
+                    }
+                }
+            }
+
+            /* Ajustement au niveau du N° de Téléphone */
+
+            .phone{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                width: 16%;
+                text-align: center;
+                text-decoration: none;
+                color: #525251;
+                font-weight: 600;
+                font-size: 1em;
+                transition: 0.8s ease;
+                @media (max-width: 1365.98px){
+                    width: 100%;
+                    transition: none;
+                }
+                &:hover{
+                    transition: 0.8s ease;
+                    color: #015F8F;
+                    @media (max-width: 1365.98px){
+                        transition: none;
+                        color: #525251;
+                    }
+                }
+                .fa-phone{
+                    color: #C13030;
+                }
+            }
+
+            /* Ajustement au niveau des liens de réseaux sociaux */
+
+            .rs{
+                width: 4%;
+                text-align: center;
+                text-decoration: none;
+                color: #C13030;
+                font-size: 1.5em;
+                transition: 0.8s ease;
+                @media (max-width: 1365.98px){
+                    width: 100%;
+                    transition: none;
+                }
+                &:hover{
+                    transition: 0.8s ease;
+                    color: #015F8F;
+                    @media (max-width: 1365.98px){
+                        transition: none;
+                        color: #C13030;
+                    }
+                }
+            }
+        }
+    }
+}
