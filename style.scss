@@ -32,6 +32,9 @@
         display: flex;
         flex-wrap: wrap;
         box-sizing: border-box;
+        @media (min-width: 768px) AND (max-width: 1365.98px){
+            height: 400px;
+        }
         img{
             display: flex;
             width: 100%;
@@ -44,44 +47,83 @@
             width: 35%;
             height: 100%;
             background-color: rgba($color: #015F8F, $alpha: 0.6);
-            .hover-content{
+            @media (max-width: 767.98px){
+                width: 100%;
+            }
+            .hover-content{                
                 padding: 5%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                box-sizing: border-box;
                 .hover-title, .hover-text{
-                    font-size: 3em;
+                    margin: 1rem 0;
+                    width: 100%;
                     color: white;
+                    cursor: context-menu;
                 }
                 .hover-title{
                     font-weight: 400;
-                    cursor: context-menu;
+                    font-size: 3em;
+                    @media (max-width: 767.98px){
+                        font-size: 1.5em;
+                    }
+                    @media (min-width: 768px) AND (max-width: 991.98px){
+                        font-size: 1.5em;
+                    }
+                    @media (min-width: 992px) AND (max-width: 1365.98px){
+                        font-size: 1.75em;
+                    }
                 }
                 .hover-line{
+                    margin: 1rem 0;
                     border-top: 4px solid #ffffff;
                     width: 15%;
+                    @media (max-width: 767.98px){
+                        width: 100%;
+                    }
                 }
                 .hover-text{
                     font-weight: 300;
-                    cursor: context-menu;
+                    font-size: 2em;
+                    @media (max-width: 767.98px){
+                        font-size: 0.95em;
+                    }
+                    @media (min-width: 768px) AND (max-width: 991.98px){
+                        font-size: 1em;
+                    }
+                    @media (min-width: 992px) AND (max-width: 1365.98px){
+                        font-size: 1.5em;
+                    }
                 }
                 .hover-button{
                     font-family: 'Open Sans', sans-serif;
-                    width: 40%;
-                    margin: auto;
+                    margin: 4rem auto;
                     display: flex;
                     justify-content: center;
-                    padding: 1% 0;
+                    padding: 2%;
                     border: 1px solid black;
-                    border-radius: 25px;
+                    border-radius: 30px;
                     text-decoration: none;
                     font-weight: 700;
                     font-size: 1.5em;
+                    text-align: center;
                     background-color: whitesmoke;
                     color: black;
                     cursor: pointer;
                     transition: 0.5s ease;
+                    @media (max-width: 1365.98px){
+                        transition: none;
+                    }
                     &:hover{
                         transition: 0.5s ease;
                         background-color: #C13030;
                         color: white;
+                        @media (max-width: 1365.98px){
+                            transition: none;
+                            background-color: whitesmoke;
+                            color: black;
+                        }
                     }
                 }
             }
@@ -125,9 +167,16 @@
                 padding: 2%;
                 border-radius: 50px;
                 transition: 0.5s ease;
+                @media (max-width: 1365.98px){
+                    transition: none;   
+                }
                 &:hover{
                     transition: 0.5s ease;
                     box-shadow: 0px 0px 10px 10px #ccc;
+                    @media (max-width: 1365.98px){
+                        transition: none;
+                        box-shadow: none;
+                    }
                 }
                 .activites-lien{
                     text-decoration: none;
@@ -137,6 +186,18 @@
                     text-align: center;
                     text-transform: uppercase;
                     width: 100%;
+                    transition: 0.5s ease;
+                    @media (max-width: 1365.98px){
+                        transition: none;
+                    }
+                    &:hover{
+                        transition: 0.5s ease;
+                        text-shadow: 1px 0px 10px #ccc;
+                        @media (max-width: 1365.98px){
+                            transition: none;
+                            text-shadow: none;
+                        }
+                    }
                 }
             }
         }
@@ -185,12 +246,17 @@
                 }
                 .infos-title{
                     width: 100%;
+                    padding: 0 10%;
                     .title-infos-avantages{
                         h2{
                             font-weight: 700;
                             font-size: 2em;
+                            line-height: 1.5;
                             color: black;
                             text-align: center;
+                            @media (max-width: 767.98px){
+                                font-size: 1.5em;
+                            }
                         }
                     }
                     .infos-avantages-line{
@@ -229,6 +295,7 @@
                             align-items: center;
                             margin: 5px 0;
                             i{
+                                font-size: 1.5em;
                                 color: white;
                             }
                         }
@@ -237,7 +304,7 @@
                             font-size: 0.9em;
                             color: black;
                             text-align: center;
-                            margin: 0;
+                            margin: 5px 0;
                         }
                     }
                 }
@@ -275,6 +342,8 @@
                 text-align: center;
                 cursor: context-menu;
                 margin: 2% 0;
+                font-size: 2em;
+                color: #C13030;
             }
             .articles{
                 background-color: #F5F4EF;
@@ -286,10 +355,18 @@
                 font-size: 1.5em;
                 color: #525251;
                 transition: 0.8s ease;
+                @media (max-width: 1365.98px){
+                    transition: none;
+                }
                 &:hover{
                     transition: 0.8s ease;
                     background-color: #015F8F;
                     color: white;
+                    @media (max-width: 1365.98px){
+                        transition: none;
+                        background-color: #F5F4EF;
+                        color: #525251;
+                    }
                 }
             }
         }
@@ -302,6 +379,8 @@
                 text-align: center;
                 cursor: context-menu;
                 margin: 2% 0;
+                font-size: 2em;
+                color: #C13030;
             }
             .contact{
                 background-color: #F5F4EF;
@@ -313,10 +392,18 @@
                 font-size: 1.5em;
                 color: #525251;
                 transition: 0.8s ease;
+                @media (max-width: 1365.98px){
+                    transition: none;
+                }
                 &:hover{
                     transition: 0.8s ease;
                     background-color: #015F8F;
                     color: white;
+                    @media (max-width: 1365.98px){
+                        transition: none;
+                        background-color: #F5F4EF;
+                        color: #525251;
+                    }
                 }
             }
         }
@@ -338,9 +425,17 @@
             align-items: center;
             transform: translateY(0px);
             transition: .5s ease;
+            @media (max-width: 1365.98px){
+                transition: none;
+                transform: none;
+            }
             &:hover{
                 transform: translateY(20px);
                 transition: .5s ease;
+                @media (max-width: 1365.98px){
+                    transition: none;
+                    transform: none;
+                }
             }
         }
     }

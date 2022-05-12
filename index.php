@@ -88,13 +88,13 @@
             <div class="infos-slider">
                 <div id="slider">
                     <div class="slider-elements">
-                        <img src="<?php echo get_template_directory_uri() . '/img/img_infos.jpg' ?>" alt="Image section Infos">
+                        <img src="<?php echo get_template_directory_uri() . '/img/img_slider01.jpg' ?>" alt="Image section Infos">
                     </div>
                     <div class="slider-elements">
-                        <img src="<?php echo get_template_directory_uri() . '/img/background_image.jpg' ?>" alt="Image section Infos">
+                        <img src="<?php echo get_template_directory_uri() . '/img/img_slider02.jpg' ?>" alt="Image section Infos">
                     </div>
                     <div class="slider-elements">
-                        <img src="<?php echo get_template_directory_uri() . '/img/modal01.jpg' ?>" alt="Image section Infos">
+                        <img src="<?php echo get_template_directory_uri() . '/img/img_slider03.jpg' ?>" alt="Image section Infos">
                     </div>
                 </div>
             </div>
