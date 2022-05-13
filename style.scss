@@ -32,7 +32,7 @@
         display: flex;
         flex-wrap: wrap;
         box-sizing: border-box;
-        @media (min-width: 768px) AND (max-width: 1365.98px){
+        @media (max-width: 1365.98px){
             height: 400px;
         }
         img{
@@ -65,14 +65,11 @@
                 .hover-title{
                     font-weight: 400;
                     font-size: 3em;
-                    @media (max-width: 767.98px){
-                        font-size: 1.5em;
-                    }
-                    @media (min-width: 768px) AND (max-width: 991.98px){
-                        font-size: 1.5em;
+                    @media (max-width: 991.98px){
+                        font-size: 1.75em;
                     }
                     @media (min-width: 992px) AND (max-width: 1365.98px){
-                        font-size: 1.75em;
+                        font-size: 2.25em;
                     }
                 }
                 .hover-line{
@@ -82,14 +79,14 @@
                     @media (max-width: 767.98px){
                         width: 100%;
                     }
+                    @media (min-width: 768px) AND (max-width: 1365.98px){
+                        width: 57.5%
+                    }
                 }
                 .hover-text{
                     font-weight: 300;
                     font-size: 2em;
-                    @media (max-width: 767.98px){
-                        font-size: 0.95em;
-                    }
-                    @media (min-width: 768px) AND (max-width: 991.98px){
+                    @media (max-width: 991.98px){
                         font-size: 1em;
                     }
                     @media (min-width: 992px) AND (max-width: 1365.98px){
@@ -113,6 +110,7 @@
                     cursor: pointer;
                     transition: 0.5s ease;
                     @media (max-width: 1365.98px){
+                        margin: 2rem auto;
                         transition: none;
                     }
                     &:hover{
@@ -148,6 +146,9 @@
                 border-top: 4px solid #C13030;
                 width: 15%;
                 margin: auto;
+                @media (max-width: 1365.98px){
+                    width: 70%;
+                }
             }
         }
         .activites-content{
@@ -156,6 +157,10 @@
             flex-wrap: wrap;
             box-sizing: border-box;
             padding: 5% 0;
+            @media (max-width: 991.98px){
+                flex-direction: column;
+                align-items: center;
+            }
             .activites{
                 background-color: #015F8F;
                 display: flex;
@@ -167,6 +172,9 @@
                 padding: 2%;
                 border-radius: 50px;
                 transition: 0.5s ease;
+                @media (max-width: 991.98px){
+                    margin: 1% 0;
+                }
                 @media (max-width: 1365.98px){
                     transition: none;   
                 }
@@ -221,6 +229,9 @@
                 border-top: 4px solid #C13030;
                 width: 15%;
                 margin: auto;
+                @media (max-width: 1365.98px){
+                    width: 70%;
+                }
             }
         }
         .plus-d-infos-content{
@@ -305,6 +316,9 @@
                             color: black;
                             text-align: center;
                             margin: 5px 0;
+                            @media (max-width: 575.98px){
+                                font-size: 0.8em;
+                            }
                         }
                     }
                 }
@@ -333,17 +347,33 @@
         display: flex;
         justify-content: space-between;
         align-items: end;
+        @media (max-width: 767.98px){
+            flex-direction: column;
+            align-items: center;
+        }
         .articles-ager{
             width: 45%;
             display: flex;
             flex-direction: column;
             align-items: center;
+            @media (max-width: 767.98px){
+                width: 100%;
+            }
             p{
                 text-align: center;
                 cursor: context-menu;
                 margin: 2% 0;
                 font-size: 2em;
                 color: #C13030;
+                @media (max-width: 767.98px){
+                    font-size: 1.25em;
+                }
+                @media (min-width: 768px) AND (max-width: 991.98px){
+                    font-size: 1.09em;
+                }
+                @media (min-width: 992px) AND (max-width: 1365.98px){
+                    font-size: 1.18em;
+                }
             }
             .articles{
                 background-color: #F5F4EF;
@@ -357,6 +387,7 @@
                 transition: 0.8s ease;
                 @media (max-width: 1365.98px){
                     transition: none;
+                    text-align: center;
                 }
                 &:hover{
                     transition: 0.8s ease;
@@ -375,12 +406,24 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            @media (max-width: 767.98px){
+                width: 100%;
+            }
             p{
                 text-align: center;
                 cursor: context-menu;
                 margin: 2% 0;
                 font-size: 2em;
                 color: #C13030;
+                @media (max-width: 767.98px){
+                    font-size: 1.25em;
+                }
+                @media (min-width: 768px) AND (max-width: 991.98px){
+                    font-size: 1.09em;
+                }
+                @media (min-width: 992px) AND (max-width: 1365.98px){
+                    font-size: 1.18em;
+                }
             }
             .contact{
                 background-color: #F5F4EF;
@@ -394,6 +437,7 @@
                 transition: 0.8s ease;
                 @media (max-width: 1365.98px){
                     transition: none;
+                    text-align: center;
                 }
                 &:hover{
                     transition: 0.8s ease;

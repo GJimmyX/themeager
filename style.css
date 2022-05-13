@@ -270,6 +270,8 @@ body header .nav-container .menu #navbar .primary-nav .item a:hover {
   background-color: #015F8F;
   color: white;
   border-radius: 30px;
+  -webkit-box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 1365.98px) {
@@ -278,6 +280,8 @@ body header .nav-container .menu #navbar .primary-nav .item a:hover {
     transition: none;
     background-color: transparent;
     color: #525251;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
@@ -289,7 +293,7 @@ body header .nav-container .menu #navbar .primary-nav .item .sub-menu {
 @media (min-width: 1366px) {
   body header .nav-container .menu #navbar .primary-nav .item .sub-menu {
     display: none;
-    width: 7.527%;
+    width: 7.2%;
     position: absolute;
     z-index: 999;
   }
@@ -363,6 +367,8 @@ body header .nav-container .menu #navbar .primary-nav .item .sub-menu .sous-menu
     background-color: #C13030;
     color: white;
     border-radius: 30px;
+    -webkit-box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
   }
   body header .nav-container .menu #navbar .primary-nav .current_page_item a:hover {
     background-color: #015F8F;
@@ -393,6 +399,12 @@ body header .nav-container .menu #links {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1365.98px) {
+  body header .nav-container .menu #links {
+    margin: 1rem 0;
+  }
+}
+
 @media (max-width: 1365.98px) {
   body header .nav-container .menu #links {
     width: 75%;
@@ -402,12 +414,12 @@ body header .nav-container .menu #links {
 body header .nav-container .menu #links .nav-search-mobile {
   text-align: center;
   position: relative;
-  margin: 1em 0;
 }
 
 @media (max-width: 767.98px) {
   body header .nav-container .menu #links .nav-search-mobile {
     width: 100%;
+    margin: 1em 0;
   }
 }
 
@@ -460,6 +472,12 @@ body header .nav-container .menu #links .nav-search-mobile .search-mobile .searc
   /* CSS pour mobile */
   /* CSS pour petite tablette */
   /* CSS pour notebook */
+}
+
+@media (max-width: 374.98px) {
+  body header .nav-container .menu #links .nav-search-mobile .search-mobile .search-form .toggle-search {
+    top: 5px;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 767.98px) {
@@ -631,6 +649,7 @@ body header .nav-container .menu #links .rs {
 @media (max-width: 767.98px) {
   body header .nav-container .menu #links .rs {
     width: 100%;
+    margin: 1em 0;
   }
 }
 
@@ -653,7 +672,6 @@ body header .nav-container .menu #links .rs .rs-link {
     width: 100%;
     -webkit-transition: none;
     transition: none;
-    margin: 1em 0;
   }
 }
 
@@ -763,7 +781,7 @@ footer .align-pdp p a {
           box-sizing: border-box;
 }
 
-@media (min-width: 768px) and (max-width: 1365.98px) {
+@media (max-width: 1365.98px) {
   .accueil .accueil-img {
     height: 400px;
   }
@@ -820,21 +838,15 @@ footer .align-pdp p a {
   font-size: 3em;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .accueil .accueil-img .hover .hover-content .hover-title {
-    font-size: 1.5em;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .accueil .accueil-img .hover .hover-content .hover-title {
-    font-size: 1.5em;
+    font-size: 1.75em;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1365.98px) {
   .accueil .accueil-img .hover .hover-content .hover-title {
-    font-size: 1.75em;
+    font-size: 2.25em;
   }
 }
 
@@ -850,18 +862,18 @@ footer .align-pdp p a {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1365.98px) {
+  .accueil .accueil-img .hover .hover-content .hover-line {
+    width: 57.5%;
+  }
+}
+
 .accueil .accueil-img .hover .hover-content .hover-text {
   font-weight: 300;
   font-size: 2em;
 }
 
-@media (max-width: 767.98px) {
-  .accueil .accueil-img .hover .hover-content .hover-text {
-    font-size: 0.95em;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (max-width: 991.98px) {
   .accueil .accueil-img .hover .hover-content .hover-text {
     font-size: 1em;
   }
@@ -898,6 +910,7 @@ footer .align-pdp p a {
 
 @media (max-width: 1365.98px) {
   .accueil .accueil-img .hover .hover-content .hover-button {
+    margin: 2rem auto;
     -webkit-transition: none;
     transition: none;
   }
@@ -942,6 +955,12 @@ footer .align-pdp p a {
   margin: auto;
 }
 
+@media (max-width: 1365.98px) {
+  .accueil .activites-ager .activites-title .activites-line {
+    width: 70%;
+  }
+}
+
 .accueil .activites-ager .activites-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -954,6 +973,18 @@ footer .align-pdp p a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 5% 0;
+}
+
+@media (max-width: 991.98px) {
+  .accueil .activites-ager .activites-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .accueil .activites-ager .activites-content .activites {
@@ -977,6 +1008,12 @@ footer .align-pdp p a {
   border-radius: 50px;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+}
+
+@media (max-width: 991.98px) {
+  .accueil .activites-ager .activites-content .activites {
+    margin: 1% 0;
+  }
 }
 
 @media (max-width: 1365.98px) {
@@ -1056,6 +1093,12 @@ footer .align-pdp p a {
   border-top: 4px solid #C13030;
   width: 15%;
   margin: auto;
+}
+
+@media (max-width: 1365.98px) {
+  .accueil .plus-d-infos-ager .plus-d-infos-title .plus-d-infos-line {
+    width: 70%;
+  }
 }
 
 .accueil .plus-d-infos-ager .plus-d-infos-content {
@@ -1206,6 +1249,12 @@ footer .align-pdp p a {
   margin: 5px 0;
 }
 
+@media (max-width: 575.98px) {
+  .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage01 p, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage02 p, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage03 p {
+    font-size: 0.8em;
+  }
+}
+
 .accueil .plus-d-infos-ager .plus-d-infos-content .infos-slider {
   width: 45%;
   display: -webkit-box;
@@ -1244,6 +1293,18 @@ footer .align-pdp p a {
           align-items: end;
 }
 
+@media (max-width: 767.98px) {
+  .accueil .section-articles-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .accueil .section-articles-contact .articles-ager {
   width: 45%;
   display: -webkit-box;
@@ -1258,12 +1319,36 @@ footer .align-pdp p a {
           align-items: center;
 }
 
+@media (max-width: 767.98px) {
+  .accueil .section-articles-contact .articles-ager {
+    width: 100%;
+  }
+}
+
 .accueil .section-articles-contact .articles-ager p {
   text-align: center;
   cursor: context-menu;
   margin: 2% 0;
   font-size: 2em;
   color: #C13030;
+}
+
+@media (max-width: 767.98px) {
+  .accueil .section-articles-contact .articles-ager p {
+    font-size: 1.25em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .accueil .section-articles-contact .articles-ager p {
+    font-size: 1.09em;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1365.98px) {
+  .accueil .section-articles-contact .articles-ager p {
+    font-size: 1.18em;
+  }
 }
 
 .accueil .section-articles-contact .articles-ager .articles {
@@ -1283,6 +1368,7 @@ footer .align-pdp p a {
   .accueil .section-articles-contact .articles-ager .articles {
     -webkit-transition: none;
     transition: none;
+    text-align: center;
   }
 }
 
@@ -1316,12 +1402,36 @@ footer .align-pdp p a {
           align-items: center;
 }
 
+@media (max-width: 767.98px) {
+  .accueil .section-articles-contact .contact-ager {
+    width: 100%;
+  }
+}
+
 .accueil .section-articles-contact .contact-ager p {
   text-align: center;
   cursor: context-menu;
   margin: 2% 0;
   font-size: 2em;
   color: #C13030;
+}
+
+@media (max-width: 767.98px) {
+  .accueil .section-articles-contact .contact-ager p {
+    font-size: 1.25em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .accueil .section-articles-contact .contact-ager p {
+    font-size: 1.09em;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1365.98px) {
+  .accueil .section-articles-contact .contact-ager p {
+    font-size: 1.18em;
+  }
 }
 
 .accueil .section-articles-contact .contact-ager .contact {
@@ -1341,6 +1451,7 @@ footer .align-pdp p a {
   .accueil .section-articles-contact .contact-ager .contact {
     -webkit-transition: none;
     transition: none;
+    text-align: center;
   }
 }
 

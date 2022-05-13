@@ -105,7 +105,7 @@
 
     <div class="section-articles-contact">
         <div class="articles-ager">
-            <p>(Titre de l'Article)</p>
+            <p><?php the_title(); ?></p>
             <a href="#" class="articles">Plus d'articles...</a>
         </div>
         <div class="contact-ager">
