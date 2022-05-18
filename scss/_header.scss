@@ -76,7 +76,7 @@ body{
                         display: none;
                     }
                     label{
-                        color: #015F8F;
+                        color: #0C5A94;
                         @media (max-width: 1365.98px){
                             display: flex;
                             align-items: center;
@@ -135,7 +135,7 @@ body{
                                 }
                                 &:hover{
                                     transition: .3s ease;
-                                    background-color: #015F8F;
+                                    background-color: #0C5A94;
                                     color: white;
                                     border-radius: 30px;
                                     box-shadow: 0px 10px 7px rgba($color: #000000, $alpha: 0.5);
@@ -204,7 +204,7 @@ body{
                                     border-radius: 30px;
                                     box-shadow: 0px 10px 7px rgba($color: #000000, $alpha: 0.5);
                                     &:hover{
-                                        background-color: #015F8F;
+                                        background-color: #0C5A94;
                                     }
                                 }
                             }
@@ -279,13 +279,13 @@ body{
                                     /* CSS pour petite tablette */
 
                                     @media (min-width: 768px) AND (max-width: 991.98px){
-                                        top: 20px;
+                                        top: 12.5px;
                                     }
 
                                     /* CSS pour notebook */
 
                                     @media (min-width: 992px) AND (max-width: 1365.98px){
-                                        top: 25px;
+                                        top: 17.5px;
                                     }
                                 }
                             }
@@ -374,7 +374,7 @@ body{
                             }
                             &:hover{
                                 transition: 0.8s ease;
-                                color: #015F8F;
+                                color: #0C5A94;
                                 @media (max-width: 1365.98px){
                                     transition: none;
                                     color: #525251;
@@ -404,12 +404,11 @@ body{
                             font-size: 1.5em;
                             transition: 0.8s ease;
                             @media (max-width: 1365.98px){
-                                width: 100%;
                                 transition: none;
                             }
                             &:hover{
                                 transition: 0.8s ease;
-                                color: #015F8F;
+                                color: #0C5A94;
                                 @media (max-width: 1365.98px){
                                     transition: none;
                                     color: #C13030;
