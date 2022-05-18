@@ -1,0 +1,43 @@
+/* CSS de la page '404' */
+
+#primary{
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    /* CSS pour le contenu texte et image*/
+
+    #content{
+        .page-header{
+            h1{
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                font-size: 5em;
+                text-align: center;
+                margin-bottom: 0;
+            }
+        }
+        .page-wrapper{
+            .page-content{
+                p{
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 300;
+                    font-size: 2em;
+                    text-align: center;
+                    margin: 0;
+                }
+                img{
+                    display: flex;
+                    margin: auto;
+                    animation: img ease .5s infinite alternate;
+                }
+                @keyframes img{
+                    from{
+                        transform: translateX(0px);
+                    } to{
+                        transform: translateX(15px);
+                    }
+                }
+            }
+        }
+    }
+}

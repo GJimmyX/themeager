@@ -1,0 +1,280 @@
+/* CSS de la page 'Contact' */
+
+.contact{
+    margin: 1% 0;
+    padding: 0 10%;
+    .section_titre{
+        .img-hover-contact{
+            width: 100%;
+            height: 300px;
+            background-image: linear-gradient(rgba(1, 95, 143, 0.8)), url(img/img_contact.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            .texte-hover{
+                width: 90%;
+                margin: auto;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: white;
+                cursor: context-menu;
+                h2{
+                    font-size: 2em;
+                    font-weight: 400;
+                }
+                p{
+                    width: 40%;
+                    font-size: 1.5em;
+                    font-weight: 300;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+    .formulaire{
+        width: 50%;
+        margin: 1% auto 0;
+        form{
+            display: flex;
+            flex-direction: column;
+            .infos-contact{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .coordonnees{
+                    .champ-nom, .champ-prenom, .champ-email, .champ-tel, .champ-objet{
+                        padding: 2% 0;
+                        label{
+                            color: black;
+                            font-weight: 700;
+                            font-size: 1em;
+                            width: 75%;
+                            margin: auto;
+                            display: flex;
+                            justify-content: center;
+                            margin-bottom: 1%;
+                            i{
+                                font-style: normal;
+                                margin: 0 1%;
+                                color: #C13030;
+                                font-size: 1em;
+                            }
+                        }
+                        span{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            input{
+                                background-color: rgba($color: #e9e8e9, $alpha: 0.6);
+                                border: 1px solid #020722;
+                                font-size: 1.5em;
+                                border-radius: 20px;
+                                width: 90%;
+                                cursor: default;
+                            }
+                            input:focus{
+                                outline: none;
+                            }
+                            select{
+                                background-color: rgba($color: #e9e8e9, $alpha: 0.6);
+                                border: 1px solid #020722;
+                                font-size: 1.5em;
+                                border-radius: 20px;
+                                width: 90%;
+                            }
+                            select:focus{
+                                outline: none;
+                            }
+                            .wpcf7-not-valid-tip{
+                                font-size: 1em;
+                                font-weight: 700;
+                                color: #C13030;
+                                margin-top: 1%;
+                            }
+                        }
+                    }
+                }
+    
+                /* Des balises sont intégrés sur le formulaire */
+
+                .message-document{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    /* Champ société */
+
+                    .champ-societe{
+                        padding: 2% 0;
+                        label{
+                            color: black;
+                            font-weight: 700;
+                            font-size: 1em;
+                            width: 75%;
+                            margin: auto;
+                            display: flex;
+                            justify-content: center;
+                            margin-bottom: 1%;
+                        }
+                        span{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            select{
+                                background-color: rgba($color: #e9e8e9, $alpha: 0.6);
+                                border: 1px solid #020722;
+                                font-size: 1.5em;
+                                border-radius: 20px;
+                                width: 90%;
+                            }
+                            select:focus{
+                                outline: none;
+                            }
+                            .wpcf7-not-valid-tip{
+                                font-size: 1em;
+                                font-weight: 700;
+                                color: #C13030;
+                                margin-top: 1%;
+                            }
+                        }
+                    }
+
+                    /* Champ message */
+
+                    .champ-message{
+                        label{
+                            color: black;
+                            font-weight: 700;
+                            font-size: 1em;
+                            width: 75%;
+                            margin: auto;
+                            display: flex;
+                            justify-content: center;
+                            margin-bottom: 1%;
+                            i{
+                                font-style: normal;
+                                margin: 0 1%;
+                                color: #C13030;
+                                font-size: 1em;
+                            }
+                        }
+                        textarea{
+                            background-color: rgba($color: #e9e8e9, $alpha: 0.6);
+                            border: 1px solid #020722;
+                            font-size: 1.5em;
+                            border-radius: 20px;
+                            width: 90%;
+                            cursor: default;
+                            resize: none;
+                        }
+                        textarea::-webkit-scrollbar{
+                            background-color: #212021;
+                            border-top-right-radius: 20px;
+                            border-bottom-right-radius: 20px;
+                            border-top: 1px solid #020722;
+                            border-bottom: 1px solid #020722;
+                            @media (max-width: 1365.98px){
+                                display: none;
+                            }
+                        }
+                        textarea::-webkit-scrollbar-thumb{
+                            background-color: white;
+                            border: 1px solid #020722;
+                        }
+                        textarea::-webkit-scrollbar-button:single-button:vertical:increment{
+                            width: 7.5px;
+                            height: 20px;
+                            border-bottom-right-radius: 20px;
+                            border: 1px solid #020722;
+                            background-color: white;
+                        }
+                        textarea::-webkit-scrollbar-button:single-button:vertical:decrement{
+                            width: 7.5px;
+                            height: 20px;
+                            border-top-right-radius: 20px;
+                            border: 1px solid #020722;
+                            background-color: white;
+                        }
+                        textarea::-webkit-resizer{
+                            display: none;
+                        }
+                        textarea:focus{
+                            outline: none;
+                        }
+                        span{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            .wpcf7-not-valid-tip{
+                                font-size: 1em;
+                                font-weight: 700;
+                                color: #C13030;
+                                margin-top: 1%;
+                            }
+                        }
+                    }
+
+                    /* Champ envoi pièce jointe facultative */
+
+                    .champ-document{
+                        margin-top: 5%;
+                        label{
+                            color: black;
+                            font-weight: 700;
+                            font-size: 1em;
+                            width: 100%;
+                            margin: auto;
+                            display: flex;
+                            justify-content: center;
+                            margin-bottom: 1%;
+                            i{
+                                font-style: normal;
+                                margin: 0 1%;
+                                color: #C13030;
+                                font-size: 1em;
+                            }
+                        }
+                        span{
+                            input{
+                                background-color: rgba($color: #e9e8e9, $alpha: 0.6);
+                                border: 1px solid #020722;
+                                font-size: 1.25em;
+                                width: 90%;
+                                cursor: default;
+                            }
+                            .wpcf7-not-valid-tip{
+                                font-size: 1em;
+                                font-weight: 700;
+                                color: #C13030;
+                                margin-top: 1%;
+                            }
+                        }
+                        p{
+                            margin: 0;
+                            padding-top: 1%;
+                            font-weight: 700;
+                            font-size: 1em;
+                            color: black;
+                            cursor: context-menu;
+                        }
+                    }
+                }
+            }
+            .bouton{
+                width: 100%;
+                input{
+                    display: flex;
+                    margin: auto;
+                }
+            }
+            .obligatoire{
+                width: 100%;
+                label{
+                    display: flex;
+                }
+            }
+        }
+    }
+}
