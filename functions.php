@@ -59,8 +59,8 @@ function enqueue_style() {
     wp_enqueue_script( 'searchbarjs', get_template_directory_uri() . '/js/search-bar.js', false, '', true);
     if (is_page('accueil')) :
       wp_enqueue_script( 'sliderjs', get_template_directory_uri() . '/js/slider.js', false, '', true);
+      wp_enqueue_script( 'topbtnjs', get_template_directory_uri() . '/js/topBtn.js', false, '', true);
     endif;
-    wp_enqueue_script( 'topbtnjs', get_template_directory_uri() . '/js/topBtn.js', false, '', true);
 }
 
 add_action( 'wp_enqueue_scripts', 'enqueue_style' );

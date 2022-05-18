@@ -153,7 +153,7 @@ body header .nav-container .menu #navbar label, body header .nav-container .menu
 }
 
 body header .nav-container .menu #navbar label {
-  color: #015F8F;
+  color: #0C5A94;
 }
 
 @media (max-width: 1365.98px) {
@@ -267,7 +267,7 @@ body header .nav-container .menu #navbar .primary-nav .item a {
 body header .nav-container .menu #navbar .primary-nav .item a:hover {
   -webkit-transition: .3s ease;
   transition: .3s ease;
-  background-color: #015F8F;
+  background-color: #0C5A94;
   color: white;
   border-radius: 30px;
   -webkit-box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
@@ -371,7 +371,7 @@ body header .nav-container .menu #navbar .primary-nav .item .sub-menu .sous-menu
             box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
   }
   body header .nav-container .menu #navbar .primary-nav .current_page_item a:hover {
-    background-color: #015F8F;
+    background-color: #0C5A94;
   }
 }
 
@@ -488,13 +488,13 @@ body header .nav-container .menu #links .nav-search-mobile .search-mobile .searc
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   body header .nav-container .menu #links .nav-search-mobile .search-mobile .search-form .toggle-search {
-    top: 20px;
+    top: 12.5px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1365.98px) {
   body header .nav-container .menu #links .nav-search-mobile .search-mobile .search-form .toggle-search {
-    top: 25px;
+    top: 17.5px;
   }
 }
 
@@ -621,7 +621,7 @@ body header .nav-container .menu #links .phone .phone-number {
 body header .nav-container .menu #links .phone .phone-number:hover {
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
-  color: #015F8F;
+  color: #0C5A94;
 }
 
 @media (max-width: 1365.98px) {
@@ -669,7 +669,6 @@ body header .nav-container .menu #links .rs .rs-link {
 
 @media (max-width: 1365.98px) {
   body header .nav-container .menu #links .rs .rs-link {
-    width: 100%;
     -webkit-transition: none;
     transition: none;
   }
@@ -678,7 +677,7 @@ body header .nav-container .menu #links .rs .rs-link {
 body header .nav-container .menu #links .rs .rs-link:hover {
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
-  color: #015F8F;
+  color: #0C5A94;
 }
 
 @media (max-width: 1365.98px) {
@@ -702,6 +701,1026 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/* Import des différentes pages du site */
+/* CSS de la page 'Agriculture' */
+.agriculture {
+  padding: 0 10%;
+}
+
+.agriculture .section_titre {
+  margin-top: 1%;
+}
+
+.agriculture .section_titre .img-hover-agriculture {
+  width: 100%;
+  height: 300px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 95, 143, 0.8))), url(img/img_agriculture.jpg);
+  background-image: linear-gradient(rgba(1, 95, 143, 0.8)), url(img/img_agriculture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.agriculture .section_titre .img-hover-agriculture .texte-hover {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  cursor: context-menu;
+}
+
+.agriculture .section_titre .img-hover-agriculture .texte-hover h2 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.agriculture .section_titre .img-hover-agriculture .texte-hover p {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.agriculture .section_description {
+  margin-bottom: 2%;
+}
+
+.agriculture .section_description .part01, .agriculture .section_description .part02 {
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.agriculture .section_description .part01 .texte_description, .agriculture .section_description .part02 .texte_description {
+  width: 45%;
+  margin: 0;
+  font-size: 1.5em;
+  text-align: justify;
+  color: #525251;
+  cursor: context-menu;
+}
+
+.agriculture .section_description .part01 .modal-grande, .agriculture .section_description .part02 .modal-grande {
+  width: 45%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.agriculture .section_description .part01 .modal-petite, .agriculture .section_description .part02 .modal-petite {
+  width: 22.5%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+@media (min-width: 1366px) {
+  .agriculture .section_description .part01 .modal-grande, .agriculture .section_description .part01 .modal-petite, .agriculture .section_description .part02 .modal-grande, .agriculture .section_description .part02 .modal-petite {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+  }
+  .agriculture .section_description .part01 .modal-grande:hover, .agriculture .section_description .part01 .modal-petite:hover, .agriculture .section_description .part02 .modal-grande:hover, .agriculture .section_description .part02 .modal-petite:hover {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+    -webkit-filter: brightness(0.5);
+            filter: brightness(0.5);
+  }
+}
+
+.agriculture .section_description .part01 .modal, .agriculture .section_description .part02 .modal {
+  z-index: 3;
+  display: none;
+  padding: 1%;
+  position: fixed;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-animation: fade 0.8s;
+          animation: fade 0.8s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.agriculture .section_description .part01 .modal .modal-button, .agriculture .section_description .part02 .modal .modal-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2em;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: context-menu;
+}
+
+@media (max-width: 1365.98px) {
+  .agriculture .section_description .part01 .modal .modal-button, .agriculture .section_description .part02 .modal .modal-button {
+    background-color: red;
+    color: white;
+  }
+}
+
+@media (min-width: 1366px) {
+  .agriculture .section_description .part01 .modal .modal-button, .agriculture .section_description .part02 .modal .modal-button {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+  }
+}
+
+@media (min-width: 1366px) {
+  .agriculture .section_description .part01 .modal .modal-button:hover, .agriculture .section_description .part02 .modal .modal-button:hover {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+    background-color: red;
+    color: white;
+  }
+}
+
+.agriculture .section_description .part01 .modal .modal-content, .agriculture .section_description .part02 .modal .modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+.agriculture .section_description .part01 .modal .modal-content img, .agriculture .section_description .part02 .modal .modal-content img {
+  width: 60%;
+}
+
+.agriculture .section_description .part01 .modal .modal-content h3, .agriculture .section_description .part02 .modal .modal-content h3 {
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+  margin: 1% 0;
+}
+
+/* CSS de la page 'Collectivités Locales' */
+.collectivites {
+  padding: 0 10%;
+}
+
+.collectivites .section_titre {
+  margin-top: 1%;
+}
+
+.collectivites .section_titre .img-hover-collectivites {
+  width: 100%;
+  height: 300px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 95, 143, 0.8))), url(img/img_collectivites.jpg);
+  background-image: linear-gradient(rgba(1, 95, 143, 0.8)), url(img/img_collectivites.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.collectivites .section_titre .img-hover-collectivites .texte-hover {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  cursor: context-menu;
+}
+
+.collectivites .section_titre .img-hover-collectivites .texte-hover h2 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.collectivites .section_titre .img-hover-collectivites .texte-hover p {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.collectivites .section_description {
+  margin-bottom: 2%;
+}
+
+.collectivites .section_description .part01, .collectivites .section_description .part02 {
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.collectivites .section_description .part01 .texte_description, .collectivites .section_description .part02 .texte_description {
+  width: 45%;
+  margin: 0;
+  font-size: 1.5em;
+  text-align: justify;
+  color: #525251;
+  cursor: context-menu;
+}
+
+.collectivites .section_description .part01 .modal-grande, .collectivites .section_description .part02 .modal-grande {
+  width: 45%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.collectivites .section_description .part01 .modal-petite, .collectivites .section_description .part02 .modal-petite {
+  width: 22.5%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+@media (min-width: 1366px) {
+  .collectivites .section_description .part01 .modal-grande, .collectivites .section_description .part01 .modal-petite, .collectivites .section_description .part02 .modal-grande, .collectivites .section_description .part02 .modal-petite {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+  }
+  .collectivites .section_description .part01 .modal-grande:hover, .collectivites .section_description .part01 .modal-petite:hover, .collectivites .section_description .part02 .modal-grande:hover, .collectivites .section_description .part02 .modal-petite:hover {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+    -webkit-filter: brightness(0.5);
+            filter: brightness(0.5);
+  }
+}
+
+.collectivites .section_description .part01 .modal, .collectivites .section_description .part02 .modal {
+  z-index: 3;
+  display: none;
+  padding: 1%;
+  position: fixed;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-animation: fade 0.8s;
+          animation: fade 0.8s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.collectivites .section_description .part01 .modal .modal-button, .collectivites .section_description .part02 .modal .modal-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2em;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: context-menu;
+}
+
+@media (max-width: 1365.98px) {
+  .collectivites .section_description .part01 .modal .modal-button, .collectivites .section_description .part02 .modal .modal-button {
+    background-color: red;
+    color: white;
+  }
+}
+
+@media (min-width: 1366px) {
+  .collectivites .section_description .part01 .modal .modal-button, .collectivites .section_description .part02 .modal .modal-button {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+  }
+}
+
+@media (min-width: 1366px) {
+  .collectivites .section_description .part01 .modal .modal-button:hover, .collectivites .section_description .part02 .modal .modal-button:hover {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+    background-color: red;
+    color: white;
+  }
+}
+
+.collectivites .section_description .part01 .modal .modal-content, .collectivites .section_description .part02 .modal .modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+.collectivites .section_description .part01 .modal .modal-content img, .collectivites .section_description .part02 .modal .modal-content img {
+  width: 60%;
+}
+
+.collectivites .section_description .part01 .modal .modal-content h3, .collectivites .section_description .part02 .modal .modal-content h3 {
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+  margin: 1% 0;
+}
+
+/* CSS de la page 'Entreprises' */
+.entreprises {
+  padding: 0 10%;
+}
+
+.entreprises .section_titre {
+  margin-top: 1%;
+}
+
+.entreprises .section_titre .img-hover-entreprises {
+  width: 100%;
+  height: 300px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 95, 143, 0.8))), url(img/img_entreprises.jpg);
+  background-image: linear-gradient(rgba(1, 95, 143, 0.8)), url(img/img_entreprises.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.entreprises .section_titre .img-hover-entreprises .texte-hover {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  cursor: context-menu;
+}
+
+.entreprises .section_titre .img-hover-entreprises .texte-hover h2 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.entreprises .section_titre .img-hover-entreprises .texte-hover p {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.entreprises .section_description {
+  margin-bottom: 2%;
+}
+
+.entreprises .section_description .part01 {
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.entreprises .section_description .part01 .texte_description {
+  width: 45%;
+  margin: 0;
+  font-size: 1.5em;
+  text-align: justify;
+  color: #525251;
+  cursor: context-menu;
+}
+
+.entreprises .section_description .part01 .modal-grande {
+  width: 45%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+@media (min-width: 1366px) {
+  .entreprises .section_description .part01 .modal-grande {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+  }
+  .entreprises .section_description .part01 .modal-grande:hover {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+    -webkit-filter: brightness(0.5);
+            filter: brightness(0.5);
+  }
+}
+
+.entreprises .section_description .part01 .modal {
+  z-index: 3;
+  display: none;
+  padding: 1%;
+  position: fixed;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-animation: fade 0.8s;
+          animation: fade 0.8s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.entreprises .section_description .part01 .modal .modal-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2em;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: context-menu;
+}
+
+@media (max-width: 1365.98px) {
+  .entreprises .section_description .part01 .modal .modal-button {
+    background-color: red;
+    color: white;
+  }
+}
+
+@media (min-width: 1366px) {
+  .entreprises .section_description .part01 .modal .modal-button {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+  }
+}
+
+@media (min-width: 1366px) {
+  .entreprises .section_description .part01 .modal .modal-button:hover {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+    background-color: red;
+    color: white;
+  }
+}
+
+.entreprises .section_description .part01 .modal .modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+.entreprises .section_description .part01 .modal .modal-content img {
+  width: 60%;
+}
+
+.entreprises .section_description .part01 .modal .modal-content h3 {
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+  margin: 1% 0;
+}
+
+/* CSS de la page 'Contact' */
+.contact {
+  margin: 1% 0;
+  padding: 0 10%;
+}
+
+.contact .section_titre .img-hover-contact {
+  width: 100%;
+  height: 300px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 95, 143, 0.8))), url(img/img_contact.jpg);
+  background-image: linear-gradient(rgba(1, 95, 143, 0.8)), url(img/img_contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact .section_titre .img-hover-contact .texte-hover {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  cursor: context-menu;
+}
+
+.contact .section_titre .img-hover-contact .texte-hover h2 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.contact .section_titre .img-hover-contact .texte-hover p {
+  width: 40%;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.contact .formulaire {
+  width: 50%;
+  margin: 1% auto 0;
+}
+
+.contact .formulaire form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .formulaire form .infos-contact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Des balises sont intégrés sur le formulaire */
+}
+
+.contact .formulaire form .infos-contact .coordonnees .champ-nom, .contact .formulaire form .infos-contact .coordonnees .champ-prenom, .contact .formulaire form .infos-contact .coordonnees .champ-email, .contact .formulaire form .infos-contact .coordonnees .champ-tel, .contact .formulaire form .infos-contact .coordonnees .champ-objet {
+  padding: 2% 0;
+}
+
+.contact .formulaire form .infos-contact .coordonnees .champ-nom label, .contact .formulaire form .infos-contact .coordonnees .champ-prenom label, .contact .formulaire form .infos-contact .coordonnees .champ-email label, .contact .formulaire form .infos-contact .coordonnees .champ-tel label, .contact .formulaire form .infos-contact .coordonnees .champ-objet label {
+  color: black;
+  font-weight: 700;
+  font-size: 1em;
+  width: 75%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1%;
+}
+
+.contact .formulaire form .infos-contact .coordonnees .champ-nom label i, .contact .formulaire form .infos-contact .coordonnees .champ-prenom label i, .contact .formulaire form .infos-contact .coordonnees .champ-email label i, .contact .formulaire form .infos-contact .coordonnees .champ-tel label i, .contact .formulaire form .infos-contact .coordonnees .champ-objet label i {
+  font-style: normal;
+  margin: 0 1%;
+  color: #C13030;
+  font-size: 1em;
+}
+
+.contact .formulaire form .infos-contact .coordonnees .champ-nom span, .contact .formulaire form .infos-contact .coordonnees .champ-prenom span, .contact .formulaire form .infos-contact .coordonnees .champ-email span, .contact .formulaire form .infos-contact .coordonnees .champ-tel span, .contact .formulaire form .infos-contact .coordonnees .champ-objet span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .formulaire form .infos-contact .coordonnees .champ-nom span input, .contact .formulaire form .infos-contact .coordonnees .champ-prenom span input, .contact .formulaire form .infos-contact .coordonnees .champ-email span input, .contact .formulaire form .infos-contact .coordonnees .champ-tel span input, .contact .formulaire form .infos-contact .coordonnees .champ-objet span input {
+  background-color: rgba(233, 232, 233, 0.6);
+  border: 1px solid #020722;
+  font-size: 1.5em;
+  border-radius: 20px;
+  width: 90%;
+  cursor: default;
+}
+
+.contact .formulaire form .infos-contact .coordonnees .champ-nom span input:focus, .contact .formulaire form .infos-contact .coordonnees .champ-prenom span input:focus, .contact .formulaire form .infos-contact .coordonnees .champ-email span input:focus, .contact .formulaire form .infos-contact .coordonnees .champ-tel span input:focus, .contact .formulaire form .infos-contact .coordonnees .champ-objet span input:focus {
+  outline: none;
+}
+
+.contact .formulaire form .infos-contact .coordonnees .champ-nom span select, .contact .formulaire form .infos-contact .coordonnees .champ-prenom span select, .contact .formulaire form .infos-contact .coordonnees .champ-email span select, .contact .formulaire form .infos-contact .coordonnees .champ-tel span select, .contact .formulaire form .infos-contact .coordonnees .champ-objet span select {
+  background-color: rgba(233, 232, 233, 0.6);
+  border: 1px solid #020722;
+  font-size: 1.5em;
+  border-radius: 20px;
+  width: 90%;
+}
+
+.contact .formulaire form .infos-contact .coordonnees .champ-nom span select:focus, .contact .formulaire form .infos-contact .coordonnees .champ-prenom span select:focus, .contact .formulaire form .infos-contact .coordonnees .champ-email span select:focus, .contact .formulaire form .infos-contact .coordonnees .champ-tel span select:focus, .contact .formulaire form .infos-contact .coordonnees .champ-objet span select:focus {
+  outline: none;
+}
+
+.contact .formulaire form .infos-contact .coordonnees .champ-nom span .wpcf7-not-valid-tip, .contact .formulaire form .infos-contact .coordonnees .champ-prenom span .wpcf7-not-valid-tip, .contact .formulaire form .infos-contact .coordonnees .champ-email span .wpcf7-not-valid-tip, .contact .formulaire form .infos-contact .coordonnees .champ-tel span .wpcf7-not-valid-tip, .contact .formulaire form .infos-contact .coordonnees .champ-objet span .wpcf7-not-valid-tip {
+  font-size: 1em;
+  font-weight: 700;
+  color: #C13030;
+  margin-top: 1%;
+}
+
+.contact .formulaire form .infos-contact .message-document {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Champ société */
+  /* Champ message */
+  /* Champ envoi pièce jointe facultative */
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-societe {
+  padding: 2% 0;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-societe label {
+  color: black;
+  font-weight: 700;
+  font-size: 1em;
+  width: 75%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1%;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-societe span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-societe span select {
+  background-color: rgba(233, 232, 233, 0.6);
+  border: 1px solid #020722;
+  font-size: 1.5em;
+  border-radius: 20px;
+  width: 90%;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-societe span select:focus {
+  outline: none;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-societe span .wpcf7-not-valid-tip {
+  font-size: 1em;
+  font-weight: 700;
+  color: #C13030;
+  margin-top: 1%;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-message label {
+  color: black;
+  font-weight: 700;
+  font-size: 1em;
+  width: 75%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1%;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-message label i {
+  font-style: normal;
+  margin: 0 1%;
+  color: #C13030;
+  font-size: 1em;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-message textarea {
+  background-color: rgba(233, 232, 233, 0.6);
+  border: 1px solid #020722;
+  font-size: 1.5em;
+  border-radius: 20px;
+  width: 90%;
+  cursor: default;
+  resize: none;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar {
+  background-color: #212021;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top: 1px solid #020722;
+  border-bottom: 1px solid #020722;
+}
+
+@media (max-width: 1365.98px) {
+  .contact .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-thumb {
+  background-color: white;
+  border: 1px solid #020722;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-button:single-button:vertical:increment {
+  width: 7.5px;
+  height: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid #020722;
+  background-color: white;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-button:single-button:vertical:decrement {
+  width: 7.5px;
+  height: 20px;
+  border-top-right-radius: 20px;
+  border: 1px solid #020722;
+  background-color: white;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-resizer {
+  display: none;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-message textarea:focus {
+  outline: none;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-message span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-message span .wpcf7-not-valid-tip {
+  font-size: 1em;
+  font-weight: 700;
+  color: #C13030;
+  margin-top: 1%;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-document {
+  margin-top: 5%;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-document label {
+  color: black;
+  font-weight: 700;
+  font-size: 1em;
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1%;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-document label i {
+  font-style: normal;
+  margin: 0 1%;
+  color: #C13030;
+  font-size: 1em;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-document span input {
+  background-color: rgba(233, 232, 233, 0.6);
+  border: 1px solid #020722;
+  font-size: 1.25em;
+  width: 90%;
+  cursor: default;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-document span .wpcf7-not-valid-tip {
+  font-size: 1em;
+  font-weight: 700;
+  color: #C13030;
+  margin-top: 1%;
+}
+
+.contact .formulaire form .infos-contact .message-document .champ-document p {
+  margin: 0;
+  padding-top: 1%;
+  font-weight: 700;
+  font-size: 1em;
+  color: black;
+  cursor: context-menu;
+}
+
+.contact .formulaire form .bouton {
+  width: 100%;
+}
+
+.contact .formulaire form .bouton input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.contact .formulaire form .obligatoire {
+  width: 100%;
+}
+
+.contact .formulaire form .obligatoire label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* CSS de la page '404' */
+#primary {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  /* CSS pour le contenu texte et image*/
+}
+
+#primary #content .page-header h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 5em;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#primary #content .page-wrapper .page-content p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+}
+
+#primary #content .page-wrapper .page-content img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-animation: img ease .5s infinite alternate;
+          animation: img ease .5s infinite alternate;
+}
+
+@-webkit-keyframes img {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+}
+
+@keyframes img {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
 }
 
 /* Import du CSS pour 'footer.php' */
@@ -895,14 +1914,14 @@ footer .align-pdp p a {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 2%;
-  border: 1px solid black;
+  border: 1px solid #525251;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 700;
   font-size: 1.5em;
   text-align: center;
   background-color: whitesmoke;
-  color: black;
+  color: #525251;
   cursor: pointer;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -928,7 +1947,7 @@ footer .align-pdp p a {
     -webkit-transition: none;
     transition: none;
     background-color: whitesmoke;
-    color: black;
+    color: #525251;
   }
 }
 
@@ -988,7 +2007,7 @@ footer .align-pdp p a {
 }
 
 .accueil .activites-ager .activites-content .activites {
-  background-color: #015F8F;
+  background-color: #0C5A94;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1145,6 +2164,7 @@ footer .align-pdp p a {
 @media (max-width: 1365.98px) {
   .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages {
     width: 100%;
+    padding: 2% 0;
     margin-bottom: 2%;
   }
 }
@@ -1219,8 +2239,14 @@ footer .align-pdp p a {
           align-items: center;
 }
 
+@media (max-width: 991.98px) {
+  .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage01, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage02, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage03 {
+    width: 50%;
+  }
+}
+
 .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage01 .avantages-form, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage02 .avantages-form, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage03 .avantages-form {
-  background-color: #015F8F;
+  background-color: #0C5A94;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -1247,12 +2273,6 @@ footer .align-pdp p a {
   color: black;
   text-align: center;
   margin: 5px 0;
-}
-
-@media (max-width: 575.98px) {
-  .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage01 p, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage02 p, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage03 p {
-    font-size: 0.8em;
-  }
 }
 
 .accueil .plus-d-infos-ager .plus-d-infos-content .infos-slider {
@@ -1375,7 +2395,7 @@ footer .align-pdp p a {
 .accueil .section-articles-contact .articles-ager .articles:hover {
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
-  background-color: #015F8F;
+  background-color: #0C5A94;
   color: white;
 }
 
@@ -1458,7 +2478,7 @@ footer .align-pdp p a {
 .accueil .section-articles-contact .contact-ager .contact:hover {
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
-  background-color: #015F8F;
+  background-color: #0C5A94;
   color: white;
 }
 
