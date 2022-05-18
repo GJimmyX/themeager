@@ -1,0 +1,435 @@
+@charset "UTF-8";
+/*
+ *  Theme name: Thème Site AGER
+    URI: http://themeager
+    Description: Thème pour le support du site: AGER Systèmes.
+    Version: 1.0
+    Author: Jimmy GILBERT 
+*/
+/* Import du CSS pour 'header.php' */
+/* CSS du header */
+body {
+  margin: 0;
+}
+
+body header {
+  background-color: #F5F4EF;
+  padding: 0.5% 5%;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-box-shadow: 0px 3px 5px #000;
+          box-shadow: 0px 3px 5px #000;
+  /* Disposition du header */
+}
+
+body header .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Ajustement de la barre de navigation */
+  /* Ajustmement au niveau du bouton de recherche */
+  /* Ajustement au niveau du N° de Téléphone */
+  /* Ajustement au niveau des liens de réseaux sociaux */
+}
+
+body header .nav-container h1 {
+  margin: 0;
+  width: 10%;
+}
+
+body header .nav-container h1 a img {
+  width: 100%;
+  height: auto;
+}
+
+body header .nav-container .menu {
+  width: 48%;
+}
+
+@media (max-width: 991.98px) {
+  body header .nav-container .menu {
+    display: none;
+  }
+}
+
+body header .nav-container .menu .primary-nav {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .nav-container .menu .primary-nav .item {
+  list-style: none;
+  width: 20%;
+  text-align: center;
+}
+
+body header .nav-container .menu .primary-nav .item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1em;
+  color: #A4A4A1;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  border-radius: 25px;
+}
+
+body header .nav-container .menu .primary-nav .item a:hover {
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  background-color: #015F8F;
+  color: white;
+}
+
+body header .nav-container .nav-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .nav-container .nav-search .search #search-btn {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  color: #A4A4A1;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+body header .nav-container .nav-search .search #search-btn:hover {
+  color: #C13030;
+}
+
+body header .nav-container .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  width: 20%;
+  text-align: center;
+  text-decoration: none;
+  color: #A4A4A1;
+  font-weight: 500;
+  font-size: 1.25em;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+body header .nav-container .phone:hover {
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  color: #015F8F;
+}
+
+body header .nav-container .phone .fa-phone {
+  color: #C13030;
+}
+
+body header .nav-container .rs {
+  width: 10%;
+  text-align: center;
+  text-decoration: none;
+  color: #C13030;
+  font-size: 2em;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+body header .nav-container .rs:hover {
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  color: #015F8F;
+}
+
+/* Import du CSS pour 'single-activites.php' */
+/* CSS de single-activites */
+.single-activite h2 {
+  text-align: center;
+}
+
+.single-activite a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* CSS de 'index.php' */
+.accueil {
+  font-family: 'Open Sans', sans-serif;
+  /* Disposition de l'image principale de la page d'accueil */
+  /* Disposition des activités de AGER */
+  /* Disposition de la section 'Plus d'infos' */
+  /* Disposition de la section 'Contact' */
+}
+
+.accueil .accueil-img {
+  position: relative;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.accueil .accueil-img img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.accueil .accueil-img .hover {
+  position: absolute;
+  top: 0;
+  width: 35%;
+  height: 100%;
+  background-color: rgba(1, 95, 143, 0.6);
+}
+
+.accueil .accueil-img .hover .hover-content {
+  padding: 5%;
+}
+
+.accueil .accueil-img .hover .hover-content .hover-title, .accueil .accueil-img .hover .hover-content .hover-text {
+  font-size: 3em;
+  color: white;
+}
+
+.accueil .accueil-img .hover .hover-content .hover-title {
+  font-weight: 400;
+}
+
+.accueil .accueil-img .hover .hover-content .hover-line {
+  border-top: 4px solid #ffffff;
+  width: 15%;
+}
+
+.accueil .accueil-img .hover .hover-content .hover-text {
+  font-weight: 300;
+}
+
+.accueil .accueil-img .hover .hover-content .hover-button {
+  font-family: 'Open Sans', sans-serif;
+  width: 40%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1% 0;
+  border: 1px solid black;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1.5em;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.accueil .accueil-img .hover .hover-content .hover-button:hover {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: #C13030;
+  color: white;
+}
+
+.accueil .activites-ager {
+  padding: 0 10%;
+}
+
+.accueil .activites-ager .activites-title {
+  text-align: center;
+}
+
+.accueil .activites-ager .activites-title h3 {
+  margin: 0;
+  padding: 2% 0;
+  color: #A4A4A1;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.accueil .activites-ager .activites-title .activites-line {
+  border-top: 4px solid #C13030;
+  width: 15%;
+  margin: auto;
+}
+
+.accueil .activites-ager .activites-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5% 0;
+}
+
+.accueil .activites-ager .activites-content .activites {
+  background-color: #015F8F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 250px;
+  height: 250px;
+  padding: 2%;
+  border-radius: 50px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.accueil .activites-ager .activites-content .activites:hover {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-box-shadow: 0px 0px 10px 10px #ccc;
+          box-shadow: 0px 0px 10px 10px #ccc;
+}
+
+.accueil .activites-ager .activites-content .activites .activites-lien {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 1.4em;
+  text-align: center;
+  width: 100%;
+}
+
+.accueil .plus-d-infos-ager {
+  padding: 0 10%;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-title {
+  text-align: center;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-title h3 {
+  margin: 0%;
+  padding: 2% 0;
+  color: #C13030;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-title .plus-d-infos-line {
+  border-top: 4px solid #C13030;
+  width: 15%;
+  margin: auto;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5% 0;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F5F4EF;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-content .infos-slider {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accueil .plus-d-infos-ager .plus-d-infos-content .infos-slider img {
+  width: 100%;
+  height: auto;
+}
+
+.accueil .contact-ager {
+  padding: 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
