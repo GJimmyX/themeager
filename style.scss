@@ -14,6 +14,14 @@
 
 @import 'scss/single-activites';
 
+/* Import des différentes pages du site */
+
+@import 'scss/agriculture';
+@import 'scss/collectivites';
+@import 'scss/entreprises';
+@import 'scss/contact';
+@import 'scss/404';
+
 /* Import du CSS pour 'footer.php' */
 
 @import 'scss/footer';
@@ -99,14 +107,14 @@
                     display: flex;
                     justify-content: center;
                     padding: 2%;
-                    border: 1px solid black;
+                    border: 1px solid #525251;
                     border-radius: 30px;
                     text-decoration: none;
                     font-weight: 700;
                     font-size: 1.5em;
                     text-align: center;
                     background-color: whitesmoke;
-                    color: black;
+                    color: #525251;
                     cursor: pointer;
                     transition: 0.5s ease;
                     @media (max-width: 1365.98px){
@@ -120,7 +128,7 @@
                         @media (max-width: 1365.98px){
                             transition: none;
                             background-color: whitesmoke;
-                            color: black;
+                            color: #525251;
                         }
                     }
                 }
@@ -162,7 +170,7 @@
                 align-items: center;
             }
             .activites{
-                background-color: #015F8F;
+                background-color: #0C5A94;
                 display: flex;
                 flex-direction: column;
                 align-items: end;
@@ -253,6 +261,7 @@
                 cursor: context-menu;
                 @media (max-width: 1365.98px){
                     width: 100%;
+                    padding: 2% 0;
                     margin-bottom: 2%;
                 }
                 .infos-title{
@@ -296,8 +305,11 @@
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+                        @media (max-width: 991.98px){
+                            width: 50%;
+                        }
                         .avantages-form{
-                            background-color: #015F8F;
+                            background-color: #0C5A94;
                             width: 100px;
                             height: 100px;
                             border-radius: 50%;
@@ -316,9 +328,6 @@
                             color: black;
                             text-align: center;
                             margin: 5px 0;
-                            @media (max-width: 575.98px){
-                                font-size: 0.8em;
-                            }
                         }
                     }
                 }
@@ -391,7 +400,7 @@
                 }
                 &:hover{
                     transition: 0.8s ease;
-                    background-color: #015F8F;
+                    background-color: #0C5A94;
                     color: white;
                     @media (max-width: 1365.98px){
                         transition: none;
@@ -441,7 +450,7 @@
                 }
                 &:hover{
                     transition: 0.8s ease;
-                    background-color: #015F8F;
+                    background-color: #0C5A94;
                     color: white;
                     @media (max-width: 1365.98px){
                         transition: none;
