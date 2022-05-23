@@ -13,6 +13,10 @@ body {
   margin: 0;
 }
 
+body #wpadminbar {
+  z-index: 0;
+}
+
 body header {
   background-color: #F5F4EF;
   padding: 1% 0%;
@@ -694,20 +698,296 @@ body header .nav-container .menu #links .rs .rs-link:hover {
 /* Import du CSS pour 'single-activites.php' */
 /* CSS de single-activites */
 .single-activite {
+  padding: 2% 10%;
+  font-family: 'Open Sans', sans-serif;
+  /* Retour sur la page d'accueil */
+  /* Intro du domaine d'activité */
+  /* Contenu du domaine d'activité */
+}
+
+.single-activite .single-link {
+  margin: 2% 0;
+  /* Lien de retour */
+}
+
+.single-activite .single-link a {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #525251;
+  text-decoration: none;
+}
+
+@media (min-width: 1366px) {
+  .single-activite .single-link a {
+    -webkit-transition: .8s ease;
+    transition: .8s ease;
+  }
+}
+
+@media (min-width: 1366px) {
+  .single-activite .single-link a:hover {
+    -webkit-transition: .8s ease;
+    transition: .8s ease;
+    color: #C13030;
+  }
+}
+
+.single-activite .single-intro {
+  cursor: context-menu;
+}
+
+.single-activite .single-intro h3 {
+  font-size: 2em;
+  font-weight: 500;
+  color: black;
+}
+
+.single-activite .single-content {
+  margin: 2% 0;
   /* Titre du domaine d'activité */
+  /* Description du domaine d'activité */
 }
 
-.single-activite h2 {
-  text-align: center;
+.single-activite .single-content .section_titre .img-hover-agriculture {
+  width: 100%;
+  height: 300px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 95, 143, 0.8))), url(img/img_agriculture.jpg);
+  background-image: linear-gradient(rgba(1, 95, 143, 0.8)), url(img/img_agriculture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.single-activite a {
+.single-activite .single-content .section_titre .img-hover-collectivites {
+  width: 100%;
+  height: 300px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 95, 143, 0.8))), url(img/img_collectivites.jpg);
+  background-image: linear-gradient(rgba(1, 95, 143, 0.8)), url(img/img_collectivites.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.single-activite .single-content .section_titre .img-hover-entreprises {
+  width: 100%;
+  height: 300px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 95, 143, 0.8))), url(img/img_entreprises.jpg);
+  background-image: linear-gradient(rgba(1, 95, 143, 0.8)), url(img/img_entreprises.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.single-activite .single-content .section_titre .img-hover-agriculture .texte-hover, .single-activite .single-content .section_titre .img-hover-collectivites .texte-hover, .single-activite .single-content .section_titre .img-hover-entreprises .texte-hover {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  cursor: context-menu;
+}
+
+@media (max-width: 767.98px) {
+  .single-activite .single-content .section_titre .img-hover-agriculture .texte-hover, .single-activite .single-content .section_titre .img-hover-collectivites .texte-hover, .single-activite .single-content .section_titre .img-hover-entreprises .texte-hover {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.single-activite .single-content .section_titre .img-hover-agriculture .texte-hover h2, .single-activite .single-content .section_titre .img-hover-collectivites .texte-hover h2, .single-activite .single-content .section_titre .img-hover-entreprises .texte-hover h2 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.single-activite .single-content .section_titre .img-hover-agriculture .texte-hover p, .single-activite .single-content .section_titre .img-hover-collectivites .texte-hover p, .single-activite .single-content .section_titre .img-hover-entreprises .texte-hover p {
+  margin: 0;
+  width: 40%;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: justify;
+}
+
+@media (max-width: 767.98px) {
+  .single-activite .single-content .section_titre .img-hover-agriculture .texte-hover p, .single-activite .single-content .section_titre .img-hover-collectivites .texte-hover p, .single-activite .single-content .section_titre .img-hover-entreprises .texte-hover p {
+    width: 80%;
+    font-size: 1em;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1365.98px) {
+  .single-activite .single-content .section_titre .img-hover-agriculture .texte-hover p, .single-activite .single-content .section_titre .img-hover-collectivites .texte-hover p, .single-activite .single-content .section_titre .img-hover-entreprises .texte-hover p {
+    width: 60%;
+  }
+}
+
+.single-activite .single-content .section_description .part01, .single-activite .single-content .section_description .part02 {
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Format du container de l'image */
+  /* Agrandissement du container */
+}
+
+.single-activite .single-content .section_description .part01 .texte_description, .single-activite .single-content .section_description .part02 .texte_description {
+  width: 45%;
+  margin: 0;
+  font-size: 1.5em;
+  text-align: justify;
+  color: #525251;
+  cursor: context-menu;
+}
+
+.single-activite .single-content .section_description .part01 .modal-grande, .single-activite .single-content .section_description .part02 .modal-grande {
+  width: 45%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.single-activite .single-content .section_description .part01 .modal-petite, .single-activite .single-content .section_description .part02 .modal-petite {
+  width: 22.5%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+@media (min-width: 1366px) {
+  .single-activite .single-content .section_description .part01 .modal-grande, .single-activite .single-content .section_description .part01 .modal-petite, .single-activite .single-content .section_description .part02 .modal-grande, .single-activite .single-content .section_description .part02 .modal-petite {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+  }
+  .single-activite .single-content .section_description .part01 .modal-grande:hover, .single-activite .single-content .section_description .part01 .modal-petite:hover, .single-activite .single-content .section_description .part02 .modal-grande:hover, .single-activite .single-content .section_description .part02 .modal-petite:hover {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+    -webkit-filter: brightness(0.5);
+            filter: brightness(0.5);
+  }
+}
+
+.single-activite .single-content .section_description .part01 .modal, .single-activite .single-content .section_description .part02 .modal {
+  z-index: 3;
+  display: none;
+  padding: 1%;
+  position: fixed;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-animation: fade 0.8s;
+          animation: fade 0.8s;
+  /* Fermeture de l'agrandissement */
+  /* Contenu de l'agrandissement (Image affichée en plus grand) */
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.single-activite .single-content .section_description .part01 .modal .modal-button, .single-activite .single-content .section_description .part02 .modal .modal-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2em;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: context-menu;
+}
+
+@media (max-width: 1365.98px) {
+  .single-activite .single-content .section_description .part01 .modal .modal-button, .single-activite .single-content .section_description .part02 .modal .modal-button {
+    background-color: red;
+    color: white;
+  }
+}
+
+@media (min-width: 1366px) {
+  .single-activite .single-content .section_description .part01 .modal .modal-button, .single-activite .single-content .section_description .part02 .modal .modal-button {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+  }
+}
+
+@media (min-width: 1366px) {
+  .single-activite .single-content .section_description .part01 .modal .modal-button:hover, .single-activite .single-content .section_description .part02 .modal .modal-button:hover {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+    background-color: red;
+    color: white;
+  }
+}
+
+.single-activite .single-content .section_description .part01 .modal .modal-content, .single-activite .single-content .section_description .part02 .modal .modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+.single-activite .single-content .section_description .part01 .modal .modal-content img, .single-activite .single-content .section_description .part02 .modal .modal-content img {
+  width: 60%;
+}
+
+.single-activite .single-content .section_description .part01 .modal .modal-content h3, .single-activite .single-content .section_description .part02 .modal .modal-content h3 {
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+  margin: 1% 0;
 }
 
 /* Import des différentes pages du site */
@@ -860,15 +1140,6 @@ body header .nav-container .menu #links .rs .rs-link:hover {
           animation: fade 0.8s;
   /* Fermeture de l'agrandissement */
   /* Contenu de l'agrandissement (Image affichée en plus grand) */
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 @keyframes fade {
@@ -1578,7 +1849,7 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 5px;
+  gap: 10px;
   text-align: center;
   cursor: context-menu;
 }
@@ -1612,6 +1883,7 @@ body header .nav-container .menu #links .rs .rs-link:hover {
           flex-direction: column;
   /* Bouton d'envoi du formulaire */
   /* RGPD et indicatif des champs qui sont obligatoire */
+  /* Réponse obtenue lors de l'envoi d'un formulaire */
 }
 
 .contact .adresse-formulaire .formulaire form .infos-contact {
@@ -1917,16 +2189,25 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   margin: auto;
   font-weight: 700;
   font-size: 1em;
-  border: 1px solid black;
+  border: 1px solid #020722;
   border-radius: 20px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.contact .adresse-formulaire .formulaire form .bouton input:hover {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-box-shadow: 0px 2px 3px 2px #525251;
+          box-shadow: 0px 2px 3px 2px #525251;
+}
+
+.contact .adresse-formulaire .formulaire form .bouton input:focus {
+  outline: none;
 }
 
 .contact .adresse-formulaire .formulaire form .bouton .wpcf7-spinner {
   display: none;
-}
-
-.contact .adresse-formulaire .formulaire form .obligatoire {
-  width: 100%;
 }
 
 .contact .adresse-formulaire .formulaire form .obligatoire label {
@@ -1938,6 +2219,18 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   gap: 5px;
 }
 
+@media (max-width: 767.98px) {
+  .contact .adresse-formulaire .formulaire form .obligatoire label {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1947,8 +2240,96 @@ body header .nav-container .menu #links .rs .rs-link:hover {
           align-items: start;
 }
 
-.contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span {
-  margin: 0;
+@media (max-width: 767.98px) {
+  .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1366px) {
+  .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span {
+    margin: 0;
+  }
+  .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    height: 15px;
+    width: 15px;
+    margin: 3px 3px 3px 4px;
+    background: rgba(233, 232, 233, 0.6);
+    border: 1px solid black;
+    cursor: default;
+  }
+  .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span input:hover {
+    background: rgba(233, 232, 233, 0.6);
+    position: relative;
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1365.98px) {
+  .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span input:hover {
+    display: none;
+  }
+}
+
+@media (min-width: 1366px) {
+  .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span input:hover:before {
+    font-family: 'FontAwesome';
+    content: '\f0a6';
+    display: block;
+    color: #000000;
+    font-size: 15px;
+    position: absolute;
+    left: -0.5px;
+    bottom: -6px;
+  }
+  .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span input:checked {
+    background: rgba(233, 232, 233, 0.6);
+    position: relative;
+  }
+  .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span input:checked:before {
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    display: block;
+    color: #000000;
+    font-size: 15px;
+    position: absolute;
+    left: 0.5px;
+    bottom: -7px;
+  }
+  .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span input:checked:hover {
+    background: rgba(233, 232, 233, 0.6);
+    position: relative;
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1365.98px) {
+  .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span input:checked:hover {
+    display: none;
+  }
+}
+
+@media (min-width: 1366px) {
+  .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span input:checked:hover:before {
+    font-family: 'FontAwesome';
+    content: '\f00d';
+    display: block;
+    color: #000000;
+    font-size: 20px;
+    position: absolute;
+    left: 0.5px;
+    bottom: -9px;
+  }
+}
+
+.contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-not-valid-tip {
+  font-weight: 700;
+  font-size: 1em;
+  color: #C13030;
+  text-align: center;
 }
 
 .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox i {
@@ -1986,6 +2367,96 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   font-size: 1em;
 }
 
+.contact .adresse-formulaire .formulaire form .wpcf7-response-output {
+  border-color: transparent;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+/* Import du CSS de la page 'mentions-legales.php'  */
+.mentions-legales {
+  margin: 2% 0;
+  padding: 0 5%;
+  font-family: 'Open Sans', sans-serif;
+  cursor: context-menu;
+}
+
+.mentions-legales .infos-generales #mentions-legales-title {
+  font-size: 1.5em;
+}
+
+.mentions-legales .infos-generales #mentions-legales-title h2 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #525251;
+}
+
+.mentions-legales .infos-generales .mentions-legales-content {
+  margin-left: 2.5%;
+}
+
+.mentions-legales .infos-generales .mentions-legales-content .section-site h3, .mentions-legales .infos-generales .mentions-legales-content .section-editeur h3, .mentions-legales .infos-generales .mentions-legales-content .section-hebergeur h3, .mentions-legales .infos-generales .mentions-legales-content .section-concepteur h3, .mentions-legales .infos-generales .mentions-legales-content .section-credits-photos h3 {
+  margin: 1% 0;
+  color: #0C5A94;
+}
+
+.mentions-legales .infos-generales .mentions-legales-content .section-site p, .mentions-legales .infos-generales .mentions-legales-content .section-editeur p, .mentions-legales .infos-generales .mentions-legales-content .section-hebergeur p, .mentions-legales .infos-generales .mentions-legales-content .section-concepteur p, .mentions-legales .infos-generales .mentions-legales-content .section-credits-photos p {
+  margin: 0;
+  font-weight: 500;
+  color: black;
+  text-align: justify;
+}
+
+.mentions-legales .infos-generales .mentions-legales-content .section-site p a, .mentions-legales .infos-generales .mentions-legales-content .section-editeur p a, .mentions-legales .infos-generales .mentions-legales-content .section-hebergeur p a, .mentions-legales .infos-generales .mentions-legales-content .section-concepteur p a, .mentions-legales .infos-generales .mentions-legales-content .section-credits-photos p a {
+  font-weight: 700;
+  color: black;
+}
+
+.mentions-legales .acces-site .article-title, .mentions-legales .contenu-site .article-title, .mentions-legales .gestion-site .article-title, .mentions-legales .responsabilites .article-title, .mentions-legales .liens-hypertextes .article-title, .mentions-legales .collect-protect-donnees .article-title, .mentions-legales .droits-d-acces .article-title, .mentions-legales .utilisation-donnees .article-title, .mentions-legales .politique-donnees .article-title, .mentions-legales .partage-donnees .article-title, .mentions-legales .offres-commerciales .article-title, .mentions-legales .cookies .article-title, .mentions-legales .photographies .article-title, .mentions-legales .loi .article-title, .mentions-legales .contact-us .article-title {
+  font-size: 1.5em;
+}
+
+.mentions-legales .acces-site .article-title h2, .mentions-legales .contenu-site .article-title h2, .mentions-legales .gestion-site .article-title h2, .mentions-legales .responsabilites .article-title h2, .mentions-legales .liens-hypertextes .article-title h2, .mentions-legales .collect-protect-donnees .article-title h2, .mentions-legales .droits-d-acces .article-title h2, .mentions-legales .utilisation-donnees .article-title h2, .mentions-legales .politique-donnees .article-title h2, .mentions-legales .partage-donnees .article-title h2, .mentions-legales .offres-commerciales .article-title h2, .mentions-legales .cookies .article-title h2, .mentions-legales .photographies .article-title h2, .mentions-legales .loi .article-title h2, .mentions-legales .contact-us .article-title h2 {
+  margin: 0;
+  padding: 1% 0;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #525251;
+}
+
+.mentions-legales .acces-site .article-content, .mentions-legales .contenu-site .article-content, .mentions-legales .gestion-site .article-content, .mentions-legales .responsabilites .article-content, .mentions-legales .liens-hypertextes .article-content, .mentions-legales .collect-protect-donnees .article-content, .mentions-legales .droits-d-acces .article-content, .mentions-legales .utilisation-donnees .article-content, .mentions-legales .politique-donnees .article-content, .mentions-legales .partage-donnees .article-content, .mentions-legales .offres-commerciales .article-content, .mentions-legales .cookies .article-content, .mentions-legales .photographies .article-content, .mentions-legales .loi .article-content, .mentions-legales .contact-us .article-content {
+  margin-left: 2.5%;
+}
+
+.mentions-legales .acces-site .article-content p, .mentions-legales .contenu-site .article-content p, .mentions-legales .gestion-site .article-content p, .mentions-legales .responsabilites .article-content p, .mentions-legales .liens-hypertextes .article-content p, .mentions-legales .collect-protect-donnees .article-content p, .mentions-legales .droits-d-acces .article-content p, .mentions-legales .utilisation-donnees .article-content p, .mentions-legales .politique-donnees .article-content p, .mentions-legales .partage-donnees .article-content p, .mentions-legales .offres-commerciales .article-content p, .mentions-legales .cookies .article-content p, .mentions-legales .photographies .article-content p, .mentions-legales .loi .article-content p, .mentions-legales .contact-us .article-content p {
+  margin: 0;
+  font-weight: 500;
+  color: black;
+  text-align: justify;
+}
+
+.mentions-legales .acces-site .article-content p a, .mentions-legales .contenu-site .article-content p a, .mentions-legales .gestion-site .article-content p a, .mentions-legales .responsabilites .article-content p a, .mentions-legales .liens-hypertextes .article-content p a, .mentions-legales .collect-protect-donnees .article-content p a, .mentions-legales .droits-d-acces .article-content p a, .mentions-legales .utilisation-donnees .article-content p a, .mentions-legales .politique-donnees .article-content p a, .mentions-legales .partage-donnees .article-content p a, .mentions-legales .offres-commerciales .article-content p a, .mentions-legales .cookies .article-content p a, .mentions-legales .photographies .article-content p a, .mentions-legales .loi .article-content p a, .mentions-legales .contact-us .article-content p a {
+  font-weight: 700;
+  color: black;
+}
+
+.mentions-legales .acces-site .article-content a, .mentions-legales .contenu-site .article-content a, .mentions-legales .gestion-site .article-content a, .mentions-legales .responsabilites .article-content a, .mentions-legales .liens-hypertextes .article-content a, .mentions-legales .collect-protect-donnees .article-content a, .mentions-legales .droits-d-acces .article-content a, .mentions-legales .utilisation-donnees .article-content a, .mentions-legales .politique-donnees .article-content a, .mentions-legales .partage-donnees .article-content a, .mentions-legales .offres-commerciales .article-content a, .mentions-legales .cookies .article-content a, .mentions-legales .photographies .article-content a, .mentions-legales .loi .article-content a, .mentions-legales .contact-us .article-content a {
+  font-weight: 700;
+  color: black;
+}
+
+.mentions-legales .acces-site .article-content ul, .mentions-legales .contenu-site .article-content ul, .mentions-legales .gestion-site .article-content ul, .mentions-legales .responsabilites .article-content ul, .mentions-legales .liens-hypertextes .article-content ul, .mentions-legales .collect-protect-donnees .article-content ul, .mentions-legales .droits-d-acces .article-content ul, .mentions-legales .utilisation-donnees .article-content ul, .mentions-legales .politique-donnees .article-content ul, .mentions-legales .partage-donnees .article-content ul, .mentions-legales .offres-commerciales .article-content ul, .mentions-legales .cookies .article-content ul, .mentions-legales .photographies .article-content ul, .mentions-legales .loi .article-content ul, .mentions-legales .contact-us .article-content ul {
+  padding: 0;
+}
+
+.mentions-legales .acces-site .article-content ul li, .mentions-legales .contenu-site .article-content ul li, .mentions-legales .gestion-site .article-content ul li, .mentions-legales .responsabilites .article-content ul li, .mentions-legales .liens-hypertextes .article-content ul li, .mentions-legales .collect-protect-donnees .article-content ul li, .mentions-legales .droits-d-acces .article-content ul li, .mentions-legales .utilisation-donnees .article-content ul li, .mentions-legales .politique-donnees .article-content ul li, .mentions-legales .partage-donnees .article-content ul li, .mentions-legales .offres-commerciales .article-content ul li, .mentions-legales .cookies .article-content ul li, .mentions-legales .photographies .article-content ul li, .mentions-legales .loi .article-content ul li, .mentions-legales .contact-us .article-content ul li {
+  list-style: none;
+  font-weight: 500;
+  color: black;
+}
+
+/* Import du CSS de la page d'erreur du site */
 /* CSS de la page '404' */
 #primary {
   margin-top: 2%;
@@ -2090,10 +2561,8 @@ footer .align-pdp p {
 }
 
 footer .align-pdp p a {
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 1em;
   color: #525251;
+  text-decoration: none;
 }
 
 /* CSS de 'index.php' */

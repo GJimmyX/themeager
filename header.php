@@ -36,8 +36,8 @@
                         <div class="nav-search-desktop">
                             <div class="search-desktop">
                                 <button id="search-btn-desktop" class="fas"></button>
-                                <form action="/recherche.php" method="post" class="search-form">
-                                    <input type="text" id="search-bar-desktop" class="search" placeholder="Recherche...">
+                                <form action="/recherche" method="post" class="search-form">
+                                    <input type="text" id="search-bar-desktop" class="search" name="Recherche" placeholder="Recherche...">
                                 </form>
                             </div>
                         </div>
@@ -51,8 +51,8 @@
                         <div class="nav-search-mobile">
                             <div class="search-mobile">
                                 <button id="search-btn-mobile" class="fas"></button>
-                                <form action="/recherche.php" method="post" class="search-form">
-                                    <input type="text" id="search-bar-mobile" class="search" placeholder="Recherche...">
+                                <form action="/recherche" method="post" class="search-form">
+                                    <input type="text" id="search-bar-mobile" class="search" name="Recherche" placeholder="Recherche...">
                                 </form>
                             </div>
                         </div>
