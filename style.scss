@@ -159,6 +159,9 @@
                 }
             }
         }
+
+        /* Domaines d'activités où AGER peut intervenir */
+
         .activites-content{
             display: flex;
             justify-content: space-between;
@@ -242,6 +245,9 @@
                 }
             }
         }
+
+        /* Section Avantages du Photovoltaïque */
+
         .plus-d-infos-content{
             display: flex;
             justify-content: space-between;
@@ -332,6 +338,9 @@
                     }
                 }
             }
+
+            /* Slider montrant divers installations photovoltaïques */
+
             .infos-slider{
                 width: 45%;
                 display: flex;
@@ -360,6 +369,9 @@
             flex-direction: column;
             align-items: center;
         }
+
+        /* Affichage du dernier article publié */
+
         .articles-ager{
             width: 45%;
             display: flex;
@@ -410,6 +422,9 @@
                 }
             }
         }
+
+        /* Bouton de renvoi vers la page Contact */
+
         .contact-ager{
             width: 45%;
             display: flex;
@@ -461,6 +476,9 @@
             }
         }
     }
+
+    /* CSS pour le bouton de remontée de la page d'accueil */
+
     #btn{
         display: flex;
         justify-content: end;
