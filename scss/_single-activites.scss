@@ -1,14 +1,222 @@
 /* CSS de single-activites */
 
 .single-activite{
+    padding: 2% 10%;
+    font-family: 'Open Sans', sans-serif;
 
-    /* Titre du domaine d'activité */
+    /* Retour sur la page d'accueil */
 
-    h2{
-        text-align: center;
+    .single-link{
+        margin: 2% 0;
+
+        /* Lien de retour */
+
+        a{
+            font-size: 1.5em;
+            font-weight: 500;
+            color: #525251;
+            text-decoration: none;
+            @media (min-width: 1366px){
+                transition: .8s ease;
+            }
+            &:hover{
+                @media (min-width: 1366px){
+                    transition: .8s ease;
+                    color: #C13030;
+                }
+            }
+        }
     }
-    a{
-        display: flex;
-        justify-content: center;
+
+    /* Intro du domaine d'activité */
+    
+    .single-intro{
+        cursor: context-menu;
+        h3{
+            font-size: 2em;
+            font-weight: 500;
+            color: black;
+        }
+    }
+
+    /* Contenu du domaine d'activité */
+
+    .single-content{
+        margin: 2% 0;
+
+        /* Titre du domaine d'activité */
+
+        .section_titre{
+            .img-hover-agriculture{
+                width: 100%;
+                height: 300px;
+                background-image: linear-gradient(rgba(1, 95, 143, 0.8)), url(img/img_agriculture.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .img-hover-collectivites{
+                width: 100%;
+                height: 300px;
+                background-image: linear-gradient(rgba(1, 95, 143, 0.8)), url(img/img_collectivites.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .img-hover-entreprises{
+                width: 100%;
+                height: 300px;
+                background-image: linear-gradient(rgba(1, 95, 143, 0.8)), url(img/img_entreprises.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .img-hover-agriculture, .img-hover-collectivites, .img-hover-entreprises{
+                .texte-hover{
+                    width: 90%;
+                    margin: auto;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: white;
+                    cursor: context-menu;
+                    @media (max-width: 767.98px){
+                        flex-direction: column;
+                        justify-content: space-around;
+                    }
+                    h2{
+                        margin: 0;
+                        font-size: 2em;
+                        font-weight: 400;
+                    }
+                    p{
+                        margin: 0;
+                        width: 40%;
+                        font-size: 1.5em;
+                        font-weight: 300;
+                        text-align: justify;
+                        @media (max-width: 767.98px){
+                            width: 80%;
+                            font-size: 1em;
+                            font-weight: 400;
+                        }
+                        @media (min-width: 768px) AND (max-width: 1365.98px){
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Description du domaine d'activité */
+
+        .section_description{
+            .part01, .part02{
+                margin-top: 2%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .texte_description{
+                    width: 45%;
+                    margin: 0;
+                    font-size: 1.5em;
+                    text-align: justify;
+                    color: #525251;
+                    cursor: context-menu;
+                }
+
+                /* Format du container de l'image */
+
+                .modal-grande{
+                    width: 45%;
+                    cursor: zoom-in;
+                }
+                .modal-petite{
+                    width: 22.5%;
+                    cursor: zoom-in;
+                }
+                .modal-grande, .modal-petite{
+                    @media (min-width: 1366px){
+                        transition: 0.8s ease;
+                        &:hover{
+                            transition: 0.8s ease;
+                            filter: brightness(0.5);
+                        }
+                    }
+                }
+
+                /* Agrandissement du container */
+
+                .modal{
+                    z-index: 3;
+                    display: none;
+                    padding: 1%;
+                    position: fixed;
+                    box-sizing: border-box;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    cursor: zoom-out;
+                    overflow: auto;
+                    background-color: rgba(0,0,0,0.8);
+                    animation: fade 0.8s;
+                    @keyframes fade{
+                        from{
+                            opacity: 0.4;
+                        }to{
+                            opacity: 1;
+                        }
+                    }
+
+                    /* Fermeture de l'agrandissement */
+
+                    .modal-button{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 2em;
+                        background-color: white;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 10px;
+                        cursor: context-menu;
+                        @media (max-width: 1365.98px){
+                            background-color: red;
+                            color: white;
+                        }
+                        @media (min-width: 1366px){
+                            transition: 0.8s ease;
+                        }
+                        &:hover{
+                            @media (min-width: 1366px){
+                                transition: 0.8s ease;
+                                background-color: red;
+                                color: white;
+                            }
+                        }
+                    }
+
+                    /* Contenu de l'agrandissement (Image affichée en plus grand) */
+
+                    .modal-content{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: transparent;
+                        border: none;
+                        border-radius: 0;
+                        img{
+                            width: 60%;
+                        }
+                        h3{
+                            font-size: 2em;
+                            font-weight: 300;
+                            color: white;
+                            margin: 1% 0;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

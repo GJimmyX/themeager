@@ -104,7 +104,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 5px;
+                gap: 10px;
                 text-align: center;
                 cursor: context-menu;
                 span{
@@ -366,8 +366,16 @@
                         margin: auto;
                         font-weight: 700;
                         font-size: 1em;
-                        border: 1px solid black;
+                        border: 1px solid #020722;
                         border-radius: 20px;
+                        transition: .5s ease;
+                        &:hover{
+                            transition: .5s ease;
+                            box-shadow: 0px 2px 3px 2px #525251;
+                        }
+                        &:focus{
+                            outline: none;
+                        }
                     }
                     .wpcf7-spinner{
                         display: none;
@@ -377,20 +385,95 @@
                 /* RGPD et indicatif des champs qui sont obligatoire */
 
                 .obligatoire{
-                    width: 100%;
                     label{
                         width: 90%;
                         margin: auto;
                         display: flex;
                         gap: 5px;
+                        @media (max-width: 767.98px){
+                            flex-direction: column;
+                            align-items: center;
+                        }
                         #rgpd-checkbox{
                             display: flex;
                             align-items: start;
+                            @media (max-width: 767.98px){
+                                align-items: center;
+                            }
                             .rgpd{
                                 .wpcf7-checkbox{
                                     span{
-                                        margin: 0;
+                                        @media (min-width: 1366px){
+                                            margin: 0;
+                                            input{
+                                                -webkit-appearance: none;
+                                                -moz-appearance: none;
+                                                -ms-appearance: none;
+                                                height: 15px;
+                                                width: 15px;
+                                                margin: 3px 3px 3px 4px;
+                                                background: rgba($color: #e9e8e9, $alpha: 0.6);
+                                                border: 1px solid black;
+                                                cursor: default;
+                                                &:hover{
+                                                    background: rgba($color: #e9e8e9, $alpha: 0.6);
+                                                    position: relative;
+                                                    @media (max-width: 1365.98px){
+                                                        display: none;
+                                                    }
+                                                    &:before{
+                                                        font-family: 'FontAwesome';
+                                                        content: '\f0a6';
+                                                        display: block;
+                                                        color: #000000;
+                                                        font-size: 15px;
+                                                        position: absolute;
+                                                        left: -0.5px;
+                                                        bottom: -6px;
+                                                    }
+                                                }
+                                                &:checked{
+                                                    background: rgba($color: #e9e8e9, $alpha: 0.6);
+                                                    position: relative;
+                                                    &:before {
+                                                        font-family: 'FontAwesome';
+                                                        content: '\f00c';
+                                                        display: block;
+                                                        color: #000000;
+                                                        font-size: 15px;
+                                                        position: absolute;
+                                                        left: 0.5px;
+                                                        bottom: -7px;
+                                                    }
+                                                }
+                                                &:checked{
+                                                    &:hover{
+                                                        background: rgba($color: #e9e8e9, $alpha: 0.6);
+                                                        position: relative;
+                                                        @media (max-width: 1365.98px){
+                                                            display: none;
+                                                        }
+                                                        &:before{
+                                                            font-family: 'FontAwesome';
+                                                            content: '\f00d';
+                                                            display: block;
+                                                            color: #000000;
+                                                            font-size: 20px;
+                                                            position: absolute;
+                                                            left: 0.5px;
+                                                            bottom: -9px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
+                                }
+                                .wpcf7-not-valid-tip{
+                                    font-weight: 700;
+                                    font-size: 1em;
+                                    color: #C13030;
+                                    text-align: center;
                                 }
                             }
                             i{
@@ -425,6 +508,14 @@
                             font-size: 1em;
                         }
                     }
+                }
+
+                /* Réponse obtenue lors de l'envoi d'un formulaire */
+
+                .wpcf7-response-output{
+                    border-color: transparent;
+                    font-size: 1em;
+                    font-weight: 700;
                 }
             }
         }
