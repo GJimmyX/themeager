@@ -108,7 +108,7 @@ function custom_post_activites() {
         'public' => true,
         'show_in_rest' => true,
         'has_archive' => true,
-        'supports' => array( 'title', 'editor', 'thumbnail' ),
+        'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
         'menu_position' => 10,
         'menu_icon' => 'dashicons-visibility',
     );
