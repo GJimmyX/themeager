@@ -4,28 +4,34 @@
 
 <?php get_header(); ?>
 
+<!-- Contenu de la page Collectivités Locales -->
+
 <main class="collectivites">
+
+    <!-- Bannière de la page -->
+
     <div class="section_titre">
         <div class="img-hover-collectivites">
             <div class="texte-hover">
                 <h2>Collectivités Locales</h2>
                 <p>
                     Lorem Lorem Lorem Lorem Lorem
-                    <br/>
                     Lorem Lorem Lorem Lorem Lorem
-                    <br/>
                     Lorem Lorem Lorem Lorem Lorem
-                    <br/>
                     Lorem Lorem Lorem Lorem Lorem
-                    <br/>
                     Lorem Lorem Lorem Lorem Lorem
-                    <br/>
                     Lorem Lorem Lorem Lorem Lorem
                 </p>
             </div>
         </div>
     </div>
+
+    <!-- Présentation de une ou plusieurs réalisation(s) -->
+
     <div class="section_description">
+
+        <!-- Réalisation 1 -->
+
         <div class="part01">
             <p class="texte_description">
                 Ci-contre, quelques photos de nos réalisations de chantiers concernant des bâtiments monopente.
@@ -39,6 +45,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- Réalisations 2 et 3 -->
+
         <div class="part02">
             <img src="<?php echo get_template_directory_uri() . '/img/modal05.jpg' ?>" alt="Modal section Agriculture" class="modal-petite" onclick="document.getElementById('modal02').style.display='block'">
             <div id="modal02" class="modal" onclick="this.style.display='none'">

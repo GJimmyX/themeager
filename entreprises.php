@@ -4,28 +4,34 @@
 
 <?php get_header(); ?>
 
+<!-- Contenu de la page Entreprises -->
+
 <main class="entreprises">
+
+    <!-- Bannière de la page -->
+
     <div class="section_titre">
         <div class="img-hover-entreprises">
             <div class="texte-hover">
                 <h2>Entreprises</h2>
                 <p>
                     Lorem Lorem Lorem Lorem Lorem
-                    <br/>
                     Lorem Lorem Lorem Lorem Lorem
-                    <br/>
                     Lorem Lorem Lorem Lorem Lorem
-                    <br/>
                     Lorem Lorem Lorem Lorem Lorem
-                    <br/>
                     Lorem Lorem Lorem Lorem Lorem
-                    <br/>
                     Lorem Lorem Lorem Lorem Lorem
                 </p>
             </div>
         </div>
     </div>
+
+    <!-- Présentation de une ou plusieurs réalisation(s) -->
+
     <div class="section_description">
+
+        <!-- Réalisation 1 -->
+
         <div class="part01">
             <p class="texte_description">
                 Nous vous proposons de découvrir en sous-rubriques quelques photos d'installations de panneaux photovoltaïques que nous avons réalisés pour des particuliers sur :<br />

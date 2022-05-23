@@ -83,6 +83,7 @@ body header .nav-container .menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Liens du site AGER */
 }
 
 @media (max-width: 767.98px) {
@@ -118,6 +119,7 @@ body header .nav-container .menu #navbar {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /* Menu principal du site */
 }
 
 @media (max-width: 767.98px) {
@@ -227,6 +229,7 @@ body header .nav-container .menu #navbar .primary-nav .item {
   width: 20%;
   margin: 0 2%;
   text-align: center;
+  /* Onglets du menu principal */
 }
 
 @media (min-width: 992px) and (max-width: 1365.98px) {
@@ -690,6 +693,10 @@ body header .nav-container .menu #links .rs .rs-link:hover {
 
 /* Import du CSS pour 'single-activites.php' */
 /* CSS de single-activites */
+.single-activite {
+  /* Titre du domaine d'activité */
+}
+
 .single-activite h2 {
   text-align: center;
 }
@@ -707,6 +714,9 @@ body header .nav-container .menu #links .rs .rs-link:hover {
 /* CSS de la page 'Agriculture' */
 .agriculture {
   padding: 0 10%;
+  font-family: 'Open Sans', sans-serif;
+  /* Bannière de la page Agriculture */
+  /* Présentation de une ou plusieurs réalisation(s) */
 }
 
 .agriculture .section_titre {
@@ -739,14 +749,43 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   cursor: context-menu;
 }
 
+@media (max-width: 767.98px) {
+  .agriculture .section_titre .img-hover-agriculture .texte-hover {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .agriculture .section_titre .img-hover-agriculture .texte-hover h2 {
+  margin: 0;
   font-size: 2em;
   font-weight: 400;
 }
 
 .agriculture .section_titre .img-hover-agriculture .texte-hover p {
+  margin: 0;
+  width: 40%;
   font-size: 1.5em;
   font-weight: 300;
+  text-align: justify;
+}
+
+@media (max-width: 767.98px) {
+  .agriculture .section_titre .img-hover-agriculture .texte-hover p {
+    width: 80%;
+    font-size: 1em;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1365.98px) {
+  .agriculture .section_titre .img-hover-agriculture .texte-hover p {
+    width: 60%;
+  }
 }
 
 .agriculture .section_description {
@@ -764,6 +803,8 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Format du container de l'image */
+  /* Agrandissement du container */
 }
 
 .agriculture .section_description .part01 .texte_description, .agriculture .section_description .part02 .texte_description {
@@ -817,6 +858,8 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-animation: fade 0.8s;
           animation: fade 0.8s;
+  /* Fermeture de l'agrandissement */
+  /* Contenu de l'agrandissement (Image affichée en plus grand) */
 }
 
 @-webkit-keyframes fade {
@@ -911,6 +954,9 @@ body header .nav-container .menu #links .rs .rs-link:hover {
 /* CSS de la page 'Collectivités Locales' */
 .collectivites {
   padding: 0 10%;
+  font-family: 'Open Sans', sans-serif;
+  /* Bannière de la page Collectivités */
+  /* Présentation de une ou plusieurs réalisation(s) */
 }
 
 .collectivites .section_titre {
@@ -943,14 +989,43 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   cursor: context-menu;
 }
 
+@media (max-width: 767.98px) {
+  .collectivites .section_titre .img-hover-collectivites .texte-hover {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .collectivites .section_titre .img-hover-collectivites .texte-hover h2 {
+  margin: 0;
   font-size: 2em;
   font-weight: 400;
 }
 
 .collectivites .section_titre .img-hover-collectivites .texte-hover p {
+  margin: 0;
+  width: 40%;
   font-size: 1.5em;
   font-weight: 300;
+  text-align: justify;
+}
+
+@media (max-width: 767.98px) {
+  .collectivites .section_titre .img-hover-collectivites .texte-hover p {
+    width: 80%;
+    font-size: 1em;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1365.98px) {
+  .collectivites .section_titre .img-hover-collectivites .texte-hover p {
+    width: 60%;
+  }
 }
 
 .collectivites .section_description {
@@ -968,6 +1043,8 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Format du container de l'image */
+  /* Agrandissment du container */
 }
 
 .collectivites .section_description .part01 .texte_description, .collectivites .section_description .part02 .texte_description {
@@ -1021,6 +1098,8 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-animation: fade 0.8s;
           animation: fade 0.8s;
+  /* Fermeture de l'agrandissement */
+  /* Contenu de l'agrandissement (Image affichée en plus grand) */
 }
 
 @keyframes fade {
@@ -1106,6 +1185,9 @@ body header .nav-container .menu #links .rs .rs-link:hover {
 /* CSS de la page 'Entreprises' */
 .entreprises {
   padding: 0 10%;
+  font-family: 'Open Sans', sans-serif;
+  /* Bannière de la page Entreprises */
+  /* Présentation de une ou plusieurs réalisation(s) */
 }
 
 .entreprises .section_titre {
@@ -1138,14 +1220,43 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   cursor: context-menu;
 }
 
+@media (max-width: 767.98px) {
+  .entreprises .section_titre .img-hover-entreprises .texte-hover {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .entreprises .section_titre .img-hover-entreprises .texte-hover h2 {
+  margin: 0;
   font-size: 2em;
   font-weight: 400;
 }
 
 .entreprises .section_titre .img-hover-entreprises .texte-hover p {
+  margin: 0;
+  width: 40%;
   font-size: 1.5em;
   font-weight: 300;
+  text-align: justify;
+}
+
+@media (max-width: 767.98px) {
+  .entreprises .section_titre .img-hover-entreprises .texte-hover p {
+    width: 80%;
+    font-size: 1em;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1365.98px) {
+  .entreprises .section_titre .img-hover-entreprises .texte-hover p {
+    width: 60%;
+  }
 }
 
 .entreprises .section_description {
@@ -1163,6 +1274,8 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Format du container de l'image */
+  /* Agrandissment du container */
 }
 
 .entreprises .section_description .part01 .texte_description {
@@ -1210,6 +1323,8 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-animation: fade 0.8s;
           animation: fade 0.8s;
+  /* Fermeture de l'agrandissement */
+  /* Contenu de l'agrandissement (Image affichée en plus grand) */
 }
 
 @keyframes fade {
@@ -1296,6 +1411,15 @@ body header .nav-container .menu #links .rs .rs-link:hover {
 .contact {
   margin: 1% 0;
   padding: 0 10%;
+  font-family: 'Open Sans', sans-serif;
+  /* Bannière de la page Contact */
+  /* Section Adresse et Formulaire */
+}
+
+@media (max-width: 575.98px) {
+  .contact {
+    padding: 0;
+  }
 }
 
 .contact .section_titre .img-hover-contact {
@@ -1324,24 +1448,72 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   cursor: context-menu;
 }
 
+@media (max-width: 767.98px) {
+  .contact .section_titre .img-hover-contact .texte-hover {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .contact .section_titre .img-hover-contact .texte-hover h2 {
+  margin: 0;
   font-size: 2em;
   font-weight: 400;
 }
 
 .contact .section_titre .img-hover-contact .texte-hover p {
+  margin: 0;
   width: 40%;
   font-size: 1.5em;
   font-weight: 300;
   text-align: justify;
 }
 
-.contact .formulaire {
-  width: 50%;
-  margin: 1% auto 0;
+@media (max-width: 767.98px) {
+  .contact .section_titre .img-hover-contact .texte-hover p {
+    width: 80%;
+    font-size: 1em;
+    font-weight: 400;
+  }
 }
 
-.contact .formulaire form {
+@media (min-width: 768px) and (max-width: 1365.98px) {
+  .contact .section_titre .img-hover-contact .texte-hover p {
+    width: 60%;
+  }
+}
+
+.contact .adresse-formulaire {
+  margin: 1% auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Adresse AGER Systèmes */
+  /* Formulaire de Contact pour le site AGER Systèmes */
+}
+
+@media (max-width: 1365.98px) {
+  .contact .adresse-formulaire {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 25px;
+  }
+}
+
+.contact .adresse-formulaire .adresse-agence {
+  width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1349,9 +1521,100 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
 }
 
-.contact .formulaire form .infos-contact {
+@media (max-width: 1365.98px) {
+  .contact .adresse-formulaire .adresse-agence {
+    width: 100%;
+  }
+}
+
+.contact .adresse-formulaire .adresse-agence h2 {
+  margin: 0;
+  text-align: center;
+  cursor: context-menu;
+}
+
+.contact .adresse-formulaire .adresse-agence .adresse {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  text-decoration: none;
+}
+
+.contact .adresse-formulaire .adresse-agence .adresse p {
+  margin: 0;
+  color: black;
+  text-align: center;
+}
+
+.contact .adresse-formulaire .adresse-agence .adresse img {
+  width: 100%;
+  height: 100%;
+}
+
+.contact .adresse-formulaire .adresse-agence .adresse-contact {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  text-align: center;
+  cursor: context-menu;
+}
+
+.contact .adresse-formulaire .adresse-agence .adresse-contact span {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.contact .adresse-formulaire .adresse-agence .adresse-contact span a {
+  color: black;
+}
+
+.contact .adresse-formulaire .formulaire {
+  width: 50%;
+}
+
+@media (max-width: 1365.98px) {
+  .contact .adresse-formulaire .formulaire {
+    width: 100%;
+  }
+}
+
+.contact .adresse-formulaire .formulaire form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* Bouton d'envoi du formulaire */
+  /* RGPD et indicatif des champs qui sont obligatoire */
+}
+
+.contact .adresse-formulaire .formulaire form .infos-contact {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1362,36 +1625,40 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Champs de renseignements de coordonnées */
   /* Des balises sont intégrés sur le formulaire */
 }
 
-.contact .formulaire form .infos-contact .coordonnees .champ-nom, .contact .formulaire form .infos-contact .coordonnees .champ-prenom, .contact .formulaire form .infos-contact .coordonnees .champ-email, .contact .formulaire form .infos-contact .coordonnees .champ-tel, .contact .formulaire form .infos-contact .coordonnees .champ-objet {
+@media (max-width: 767.98px) {
+  .contact .adresse-formulaire .formulaire form .infos-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-nom, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-prenom, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-email, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-tel, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-objet {
   padding: 2% 0;
 }
 
-.contact .formulaire form .infos-contact .coordonnees .champ-nom label, .contact .formulaire form .infos-contact .coordonnees .champ-prenom label, .contact .formulaire form .infos-contact .coordonnees .champ-email label, .contact .formulaire form .infos-contact .coordonnees .champ-tel label, .contact .formulaire form .infos-contact .coordonnees .champ-objet label {
+.contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-nom label, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-prenom label, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-email label, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-tel label, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-objet label {
   color: black;
   font-weight: 700;
   font-size: 1em;
-  width: 75%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+  width: 100%;
   margin-bottom: 1%;
 }
 
-.contact .formulaire form .infos-contact .coordonnees .champ-nom label i, .contact .formulaire form .infos-contact .coordonnees .champ-prenom label i, .contact .formulaire form .infos-contact .coordonnees .champ-email label i, .contact .formulaire form .infos-contact .coordonnees .champ-tel label i, .contact .formulaire form .infos-contact .coordonnees .champ-objet label i {
+.contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-nom label i, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-prenom label i, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-email label i, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-tel label i, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-objet label i {
   font-style: normal;
   margin: 0 1%;
   color: #C13030;
   font-size: 1em;
 }
 
-.contact .formulaire form .infos-contact .coordonnees .champ-nom span, .contact .formulaire form .infos-contact .coordonnees .champ-prenom span, .contact .formulaire form .infos-contact .coordonnees .champ-email span, .contact .formulaire form .infos-contact .coordonnees .champ-tel span, .contact .formulaire form .infos-contact .coordonnees .champ-objet span {
+.contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-nom span, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-prenom span, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-email span, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-tel span, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-objet span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1404,39 +1671,39 @@ body header .nav-container .menu #links .rs .rs-link:hover {
           align-items: center;
 }
 
-.contact .formulaire form .infos-contact .coordonnees .champ-nom span input, .contact .formulaire form .infos-contact .coordonnees .champ-prenom span input, .contact .formulaire form .infos-contact .coordonnees .champ-email span input, .contact .formulaire form .infos-contact .coordonnees .champ-tel span input, .contact .formulaire form .infos-contact .coordonnees .champ-objet span input {
+.contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-nom span input, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-prenom span input, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-email span input, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-tel span input, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-objet span input {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
   font-size: 1.5em;
-  border-radius: 20px;
+  border-radius: 15px;
   width: 90%;
   cursor: default;
 }
 
-.contact .formulaire form .infos-contact .coordonnees .champ-nom span input:focus, .contact .formulaire form .infos-contact .coordonnees .champ-prenom span input:focus, .contact .formulaire form .infos-contact .coordonnees .champ-email span input:focus, .contact .formulaire form .infos-contact .coordonnees .champ-tel span input:focus, .contact .formulaire form .infos-contact .coordonnees .champ-objet span input:focus {
+.contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-nom span input:focus, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-prenom span input:focus, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-email span input:focus, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-tel span input:focus, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-objet span input:focus {
   outline: none;
 }
 
-.contact .formulaire form .infos-contact .coordonnees .champ-nom span select, .contact .formulaire form .infos-contact .coordonnees .champ-prenom span select, .contact .formulaire form .infos-contact .coordonnees .champ-email span select, .contact .formulaire form .infos-contact .coordonnees .champ-tel span select, .contact .formulaire form .infos-contact .coordonnees .champ-objet span select {
+.contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-nom span select, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-prenom span select, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-email span select, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-tel span select, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-objet span select {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
   font-size: 1.5em;
-  border-radius: 20px;
+  border-radius: 15px;
   width: 90%;
 }
 
-.contact .formulaire form .infos-contact .coordonnees .champ-nom span select:focus, .contact .formulaire form .infos-contact .coordonnees .champ-prenom span select:focus, .contact .formulaire form .infos-contact .coordonnees .champ-email span select:focus, .contact .formulaire form .infos-contact .coordonnees .champ-tel span select:focus, .contact .formulaire form .infos-contact .coordonnees .champ-objet span select:focus {
+.contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-nom span select:focus, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-prenom span select:focus, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-email span select:focus, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-tel span select:focus, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-objet span select:focus {
   outline: none;
 }
 
-.contact .formulaire form .infos-contact .coordonnees .champ-nom span .wpcf7-not-valid-tip, .contact .formulaire form .infos-contact .coordonnees .champ-prenom span .wpcf7-not-valid-tip, .contact .formulaire form .infos-contact .coordonnees .champ-email span .wpcf7-not-valid-tip, .contact .formulaire form .infos-contact .coordonnees .champ-tel span .wpcf7-not-valid-tip, .contact .formulaire form .infos-contact .coordonnees .champ-objet span .wpcf7-not-valid-tip {
+.contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-nom span .wpcf7-not-valid-tip, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-prenom span .wpcf7-not-valid-tip, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-email span .wpcf7-not-valid-tip, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-tel span .wpcf7-not-valid-tip, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-objet span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
   color: #C13030;
   margin-top: 1%;
 }
 
-.contact .formulaire form .infos-contact .message-document {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1452,26 +1719,20 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   /* Champ envoi pièce jointe facultative */
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-societe {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-societe {
   padding: 2% 0;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-societe label {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-societe label {
   color: black;
   font-weight: 700;
   font-size: 1em;
-  width: 75%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+  width: 100%;
   margin-bottom: 1%;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-societe span {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-societe span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1484,58 +1745,54 @@ body header .nav-container .menu #links .rs .rs-link:hover {
           align-items: center;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-societe span select {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-societe span input {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
   font-size: 1.5em;
-  border-radius: 20px;
+  border-radius: 15px;
+  padding-left: 5%;
   width: 90%;
+  cursor: context-menu;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-societe span select:focus {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-societe span input:focus {
   outline: none;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-societe span .wpcf7-not-valid-tip {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-societe span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
   color: #C13030;
   margin-top: 1%;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-message label {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message label {
   color: black;
   font-weight: 700;
   font-size: 1em;
-  width: 75%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+  width: 100%;
   margin-bottom: 1%;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-message label i {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message label i {
   font-style: normal;
   margin: 0 1%;
   color: #C13030;
   font-size: 1em;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-message textarea {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message textarea {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
   font-size: 1.5em;
-  border-radius: 20px;
+  border-radius: 15px;
   width: 90%;
   cursor: default;
   resize: none;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar {
   background-color: #212021;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1544,17 +1801,17 @@ body header .nav-container .menu #links .rs .rs-link:hover {
 }
 
 @media (max-width: 1365.98px) {
-  .contact .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar {
+  .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar {
     display: none;
   }
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-thumb {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-thumb {
   background-color: white;
   border: 1px solid #020722;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-button:single-button:vertical:increment {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-button:single-button:vertical:increment {
   width: 7.5px;
   height: 20px;
   border-bottom-right-radius: 20px;
@@ -1562,7 +1819,7 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   background-color: white;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-button:single-button:vertical:decrement {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-button:single-button:vertical:decrement {
   width: 7.5px;
   height: 20px;
   border-top-right-radius: 20px;
@@ -1570,15 +1827,15 @@ body header .nav-container .menu #links .rs .rs-link:hover {
   background-color: white;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-resizer {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-resizer {
   display: none;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-message textarea:focus {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message textarea:focus {
   outline: none;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-message span {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1591,82 +1848,142 @@ body header .nav-container .menu #links .rs .rs-link:hover {
           align-items: center;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-message span .wpcf7-not-valid-tip {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
   color: #C13030;
   margin-top: 1%;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-document {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-document {
   margin-top: 5%;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-document label {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-document label {
   color: black;
   font-weight: 700;
   font-size: 1em;
+  text-align: center;
   width: 100%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 1%;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-document label i {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-document label i {
   font-style: normal;
   margin: 0 1%;
   color: #C13030;
   font-size: 1em;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-document span input {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-document span input {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
   font-size: 1.25em;
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
   cursor: default;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-document span .wpcf7-not-valid-tip {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-document span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
   color: #C13030;
   margin-top: 1%;
 }
 
-.contact .formulaire form .infos-contact .message-document .champ-document p {
+.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-document .document-accepte {
   margin: 0;
   padding-top: 1%;
   font-weight: 700;
   font-size: 1em;
+  text-align: center;
   color: black;
   cursor: context-menu;
 }
 
-.contact .formulaire form .bouton {
+.contact .adresse-formulaire .formulaire form .bouton {
   width: 100%;
-}
-
-.contact .formulaire form .bouton input {
+  padding: 5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.contact .adresse-formulaire .formulaire form .bouton input {
+  padding: 2% 5%;
   margin: auto;
+  font-weight: 700;
+  font-size: 1em;
+  border: 1px solid black;
+  border-radius: 20px;
 }
 
-.contact .formulaire form .obligatoire {
+.contact .adresse-formulaire .formulaire form .bouton .wpcf7-spinner {
+  display: none;
+}
+
+.contact .adresse-formulaire .formulaire form .obligatoire {
   width: 100%;
 }
 
-.contact .formulaire form .obligatoire label {
+.contact .adresse-formulaire .formulaire form .obligatoire label {
+  width: 90%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 5px;
+}
+
+.contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span {
+  margin: 0;
+}
+
+.contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox i {
+  font-style: normal;
+  margin: 0 1%;
+  color: #C13030;
+  font-size: 1em;
+}
+
+.contact .adresse-formulaire .formulaire form .obligatoire label .rgpd-accepte {
+  font-weight: 400;
+  font-size: 1em;
+  text-align: justify;
+  color: black;
+  cursor: context-menu;
+}
+
+.contact .adresse-formulaire .formulaire form .obligatoire label .rgpd-accepte a {
+  font-size: 1em;
+  font-weight: 700;
+  color: #C13030;
+  margin-top: 1%;
+}
+
+.contact .adresse-formulaire .formulaire form .obligatoire .champ-obligatoire {
+  margin: 0;
+  text-align: center;
+  cursor: context-menu;
+}
+
+.contact .adresse-formulaire .formulaire form .obligatoire .champ-obligatoire i {
+  font-style: normal;
+  margin: 0 1%;
+  color: #C13030;
+  font-size: 1em;
 }
 
 /* CSS de la page '404' */
@@ -1729,6 +2046,7 @@ footer {
   background-color: #F5F4EF;
   font-family: 'Open Sans', sans-serif;
   width: 100%;
+  /* Copyrights et mentions légales */
 }
 
 footer .align-pdp {
@@ -1786,6 +2104,7 @@ footer .align-pdp p a {
   /* Disposition des activités de AGER */
   /* Disposition de la section 'Plus d'infos' */
   /* Disposition de la section 'Contact' */
+  /* CSS pour le bouton de remontée de la page d'accueil */
 }
 
 .accueil .accueil-img {
@@ -1953,6 +2272,7 @@ footer .align-pdp p a {
 
 .accueil .activites-ager {
   padding: 0 10%;
+  /* Domaines d'activités où AGER peut intervenir */
 }
 
 .accueil .activites-ager .activites-title {
@@ -2093,6 +2413,7 @@ footer .align-pdp p a {
 
 .accueil .plus-d-infos-ager {
   padding: 0 10%;
+  /* Section Avantages du Photovoltaïque */
 }
 
 .accueil .plus-d-infos-ager .plus-d-infos-title {
@@ -2132,6 +2453,7 @@ footer .align-pdp p a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 5% 0;
+  /* Slider montrant divers installations photovoltaïques */
 }
 
 @media (max-width: 1365.98px) {
@@ -2311,6 +2633,8 @@ footer .align-pdp p a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  /* Affichage du dernier article publié */
+  /* Bouton de renvoi vers la page Contact */
 }
 
 @media (max-width: 767.98px) {
