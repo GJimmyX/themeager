@@ -1,0 +1,73 @@
+.mentions-legales{
+    margin: 2% 0;
+    padding: 0 5%;
+    font-family: 'Open Sans', sans-serif;
+    cursor: context-menu;
+    .infos-generales{
+        #mentions-legales-title{
+            font-size: 1.5em;
+            h2{
+                margin: 0;
+                font-size: 1.5em;
+                font-weight: 500;
+                color: #525251;
+            }
+        }
+        .mentions-legales-content{
+            margin-left: 2.5%;
+            .section-site, .section-editeur, .section-hebergeur, .section-concepteur, .section-credits-photos{
+                h3{
+                    margin: 1% 0;
+                    color: #0C5A94;
+                }
+                p{
+                    margin: 0;
+                    font-weight: 500;
+                    color: black;
+                    text-align: justify;
+                    a{
+                        font-weight: 700;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    .acces-site, .contenu-site, .gestion-site, .responsabilites, .liens-hypertextes, .collect-protect-donnees, .droits-d-acces, .utilisation-donnees, .politique-donnees, .partage-donnees, .offres-commerciales, .cookies, .photographies, .loi, .contact-us{
+        .article-title{
+            font-size: 1.5em;
+            h2{
+                margin: 0;
+                padding: 1% 0;
+                font-size: 1.5em;
+                font-weight: 500;
+                color: #525251;
+            }
+        }
+        .article-content{
+            margin-left: 2.5%;
+            p{
+                margin: 0;
+                font-weight: 500;
+                color: black;
+                text-align: justify;
+                a{
+                    font-weight: 700;
+                    color: black;
+                }
+            }
+            a{
+                font-weight: 700;
+                color: black;
+            }
+            ul{
+                padding: 0;
+                li{
+                    list-style: none;
+                    font-weight: 500;
+                    color: black;
+                }
+            }
+        }
+    }
+}

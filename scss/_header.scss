@@ -3,6 +3,9 @@
 body{
     background-color: #E8E8E8;
     margin: 0;
+    #wpadminbar{
+        z-index: 0;
+    }
     header{
         background-color: #F5F4EF;
         padding: 1% 0%;
