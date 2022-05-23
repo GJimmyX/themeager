@@ -2,6 +2,10 @@
 
 .entreprises{
     padding: 0 10%;
+    font-family: 'Open Sans', sans-serif;
+
+    /* Bannière de la page Entreprises */
+
     .section_titre{
         margin-top: 1%;
         .img-hover-entreprises{
@@ -19,17 +23,36 @@
                 align-items: center;
                 color: white;
                 cursor: context-menu;
+                @media (max-width: 767.98px){
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
                 h2{
+                    margin: 0;
                     font-size: 2em;
                     font-weight: 400;
                 }
                 p{
+                    margin: 0;
+                    width: 40%;
                     font-size: 1.5em;
                     font-weight: 300;
+                    text-align: justify;
+                    @media (max-width: 767.98px){
+                        width: 80%;
+                        font-size: 1em;
+                        font-weight: 400;
+                    }
+                    @media (min-width: 768px) AND (max-width: 1365.98px){
+                        width: 60%;
+                    }
                 }
             }
         }
     }
+
+    /* Présentation de une ou plusieurs réalisation(s) */
+
     .section_description{
         margin-bottom: 2%;
         .part01{
@@ -45,6 +68,9 @@
                 color: #525251;
                 cursor: context-menu;
             }
+
+            /* Format du container de l'image */
+
             .modal-grande{
                 width: 45%;
                 cursor: zoom-in;
@@ -56,6 +82,9 @@
                     }
                 }
             }
+
+            /* Agrandissment du container */
+
             .modal{
                 z-index: 3;
                 display: none;
@@ -77,6 +106,9 @@
                         opacity: 1;
                     }
                 }
+
+                /* Fermeture de l'agrandissement */
+
                 .modal-button{
                     display: flex;
                     justify-content: center;
@@ -102,6 +134,9 @@
                         }
                     }
                 }
+
+                /* Contenu de l'agrandissement (Image affichée en plus grand) */
+
                 .modal-content{
                     display: flex;
                     flex-direction: column;
