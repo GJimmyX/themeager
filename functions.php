@@ -16,6 +16,16 @@ add_theme_support( 'custom-background' );
 
 add_theme_support( 'post-thumbnails' );
 
+/* Ajouter différentes tailles d'image */
+
+function taille_media() {
+  add_image_size( 'taille_01', 250, 200, false );
+  add_image_size( 'taille_02', 500, 400, false );
+  add_image_size( 'taille_03', 750, 600, false );
+};
+
+add_action('after_setup_theme', 'taille_media');
+
 /* Supprimer différentes tailles d'image */
 
 function remove_default_img_sizes( $sizes ) {
@@ -32,23 +42,13 @@ function remove_default_img_sizes( $sizes ) {
   
 add_filter( 'intermediate_image_sizes', 'remove_default_img_sizes' );
 
-/* Ajouter différentes tailles d'image */
-
-function taille_media() {
-    add_image_size( 'taille_01', 250, 200, false );
-    add_image_size( 'taille_02', 500, 400, false );
-    add_image_size( 'taille_03', 750, 600, false );
-};
-  
-add_action('after_setup_theme', 'taille_media');
-
 /* Afficher la gestion de menus */
 
 register_nav_menu( 'Primary', __( 'Menu de Navigation' ));
 
 /* Ajouter le support du CSS, de la font d'écriture, de Font Awesome, des dashicons */
 
-function enqueue_style() {
+function enqueue_style_themeager() {
     wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' );
     wp_enqueue_style( 'style', get_stylesheet_uri() );
     wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
@@ -56,14 +56,16 @@ function enqueue_style() {
     wp_deregister_script('jquery');
     wp_register_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', false, '', true);
     wp_enqueue_script('jquery');
-    wp_enqueue_script( 'searchbarjs', get_template_directory_uri() . '/js/search-bar.js', false, '', true);
+    if (!is_page('recherche') ) :
+      wp_enqueue_script( 'searchbarjs', get_template_directory_uri() . '/js/search-bar.js', false, '', true);
+    endif;
     if (is_page('accueil')) :
       wp_enqueue_script( 'sliderjs', get_template_directory_uri() . '/js/slider.js', false, '', true);
       wp_enqueue_script( 'topbtnjs', get_template_directory_uri() . '/js/topBtn.js', false, '', true);
     endif;
 }
 
-add_action( 'wp_enqueue_scripts', 'enqueue_style' );
+add_action( 'wp_enqueue_scripts', 'enqueue_style_themeager' );
 
 /* Suppression du style in-wordpress */
 
@@ -73,16 +75,14 @@ function remove_duotone() {
   
 add_action( 'init', 'remove_duotone' );
 
-/* Ajout de classes dans le wp_nav_menu() */
+/* Ajouter le support Widget pour le header */
 
-function add_additional_class_on_li($classes, $item, $args) {
-    if(isset($args->ajout_class_li)) {
-        $classes[] = $args->ajout_class_li;
-    }
-    return $classes;
-}
-
-add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+register_sidebar( array(
+  'id' => 'header-sidebar',
+  'name' => 'Header',
+  'before_widget' => '',
+  'after_widget' => '',
+) );
 
 
 /* Customs posts pour le site AGER */

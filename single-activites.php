@@ -1,5 +1,5 @@
 <?php 
-    /* Template du header */
+    /* Appel du header */
     get_header();
 ?>
 
@@ -31,6 +31,6 @@
 <?php endif; ?>
 
 <?php
-    /* Template du footer */
+    /* Appel du footer */
     get_footer();
 ?>

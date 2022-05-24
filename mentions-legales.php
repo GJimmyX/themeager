@@ -2,7 +2,10 @@
     /* Template Name: Mentions légales */
 ?>
 
-<?php get_header(); ?>
+<?php
+    /* Appel du header */
+    get_header();
+?>
 
 <!-- Contenu de la page 'Mentions légales' -->
 
@@ -316,4 +319,7 @@
     </div>
 </main>
 
-<?php get_footer(); ?>
+<?php
+    /* Appel du footer */
+    get_footer();
+?>

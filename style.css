@@ -309,6 +309,7 @@ body header .nav-container .menu #navbar .primary-nav .item .sub-menu {
 body header .nav-container .menu #navbar .primary-nav .item .sub-menu .sous-menu {
   width: 100%;
   margin: 0;
+  list-style: none;
   position: relative;
   z-index: 999;
 }
@@ -382,7 +383,7 @@ body header .nav-container .menu #navbar .primary-nav .item .sub-menu .sous-menu
   }
 }
 
-body header .nav-container .menu #links {
+body header .nav-container .menu .links {
   width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,11 +395,10 @@ body header .nav-container .menu #links {
   /* Recherche mobile */
   /* Recherche bureau */
   /* Ajustement au niveau du N° de Téléphone */
-  /* Ajustement au niveau des liens de réseaux sociaux */
 }
 
 @media (max-width: 767.98px) {
-  body header .nav-container .menu #links {
+  body header .nav-container .menu .links {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -407,53 +407,53 @@ body header .nav-container .menu #links {
 }
 
 @media (min-width: 768px) and (max-width: 1365.98px) {
-  body header .nav-container .menu #links {
+  body header .nav-container .menu .links {
     margin: 1rem 0;
   }
 }
 
 @media (max-width: 1365.98px) {
-  body header .nav-container .menu #links {
+  body header .nav-container .menu .links {
     width: 75%;
   }
 }
 
-body header .nav-container .menu #links .nav-search-mobile {
+body header .nav-container .menu .links .nav-search-mobile {
   text-align: center;
   position: relative;
 }
 
 @media (max-width: 767.98px) {
-  body header .nav-container .menu #links .nav-search-mobile {
+  body header .nav-container .menu .links .nav-search-mobile {
     width: 100%;
     margin: 1em 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1365.98px) {
-  body header .nav-container .menu #links .nav-search-mobile {
+  body header .nav-container .menu .links .nav-search-mobile {
     width: 25%;
   }
 }
 
 @media (min-width: 1366px) {
-  body header .nav-container .menu #links .nav-search-mobile {
+  body header .nav-container .menu .links .nav-search-mobile {
     display: none;
   }
 }
 
-body header .nav-container .menu #links .nav-search-mobile .search-mobile #search-btn-mobile {
+body header .nav-container .menu .links .search-mobile #search-btn-mobile {
   background: transparent;
   border: 0;
   color: #525251;
   font-size: 1.25em;
 }
 
-body header .nav-container .menu #links .nav-search-mobile .search-mobile .search {
+body header .nav-container .menu .links .search-mobile .search {
   display: none;
 }
 
-body header .nav-container .menu #links .nav-search-mobile .search-mobile .search-form {
+body header .nav-container .menu .links .search-mobile .search-form {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,7 +468,7 @@ body header .nav-container .menu #links .nav-search-mobile .search-mobile .searc
   width: 100%;
 }
 
-body header .nav-container .menu #links .nav-search-mobile .search-mobile .search-form .toggle-search {
+body header .nav-container .menu .links .search-mobile .search-form .toggle-search {
   position: relative;
   display: block;
   z-index: 999;
@@ -482,63 +482,63 @@ body header .nav-container .menu #links .nav-search-mobile .search-mobile .searc
 }
 
 @media (max-width: 374.98px) {
-  body header .nav-container .menu #links .nav-search-mobile .search-mobile .search-form .toggle-search {
+  body header .nav-container .menu .links .search-mobile .search-form .toggle-search {
     top: 5px;
   }
 }
 
 @media (min-width: 375px) and (max-width: 767.98px) {
-  body header .nav-container .menu #links .nav-search-mobile .search-mobile .search-form .toggle-search {
+  body header .nav-container .menu .links .search-mobile .search-form .toggle-search {
     top: 10px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  body header .nav-container .menu #links .nav-search-mobile .search-mobile .search-form .toggle-search {
+  body header .nav-container .menu .links .search-mobile .search-form .toggle-search {
     top: 12.5px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1365.98px) {
-  body header .nav-container .menu #links .nav-search-mobile .search-mobile .search-form .toggle-search {
+  body header .nav-container .menu .links .search-mobile .search-form .toggle-search {
     top: 17.5px;
   }
 }
 
-body header .nav-container .menu #links .nav-search-desktop {
+body header .nav-container .menu .links .nav-search-desktop {
   text-align: center;
   position: relative;
   width: 16%;
 }
 
 @media (max-width: 1365.98px) {
-  body header .nav-container .menu #links .nav-search-desktop {
+  body header .nav-container .menu .links .nav-search-desktop {
     display: none;
   }
 }
 
-body header .nav-container .menu #links .nav-search-desktop .search-desktop #search-btn-desktop {
+body header .nav-container .menu .links .search-desktop #search-btn-desktop {
   background: transparent;
   border: 0;
   color: #525251;
   font-size: 1.25em;
 }
 
-body header .nav-container .menu #links .nav-search-desktop .search-desktop #search-btn-desktop:hover {
+body header .nav-container .menu .links .search-desktop #search-btn-desktop:hover {
   color: #C13030;
 }
 
 @media (max-width: 1365.98px) {
-  body header .nav-container .menu #links .nav-search-desktop .search-desktop #search-btn-desktop:hover {
+  body header .nav-container .menu .links .search-desktop #search-btn-desktop:hover {
     color: #525251;
   }
 }
 
-body header .nav-container .menu #links .nav-search-desktop .search-desktop .search {
+body header .nav-container .menu .links .search-desktop .search {
   display: none;
 }
 
-body header .nav-container .menu #links .nav-search-desktop .search-desktop .search-form {
+body header .nav-container .menu .links .search-desktop .search-form {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -553,7 +553,7 @@ body header .nav-container .menu #links .nav-search-desktop .search-desktop .sea
   width: 100%;
 }
 
-body header .nav-container .menu #links .nav-search-desktop .search-desktop .search-form .toggle-search {
+body header .nav-container .menu .links .search-desktop .search-form .toggle-search {
   position: relative;
   display: block;
   top: 45px;
@@ -565,18 +565,19 @@ body header .nav-container .menu #links .nav-search-desktop .search-desktop .sea
 }
 
 @media (min-width: 1366px) and (max-width: 1499.98px) {
-  body header .nav-container .menu #links .nav-search-desktop .search-desktop .search-form .toggle-search {
+  body header .nav-container .menu .links .search-desktop .search-form .toggle-search {
     top: 25px;
   }
 }
 
 @media (min-width: 1500px) and (max-width: 1635.98px) {
-  body header .nav-container .menu #links .nav-search-desktop .search-desktop .search-form .toggle-search {
+  body header .nav-container .menu .links .search-desktop .search-form .toggle-search {
     top: 30px;
   }
 }
 
-body header .nav-container .menu #links .phone {
+body header .nav-container .menu .links .sidebar-header {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -586,29 +587,51 @@ body header .nav-container .menu #links .phone {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0;
-  width: 72%;
   gap: 10px;
+  /* Ajustement au niveau des liens de réseaux sociaux */
 }
 
 @media (max-width: 767.98px) {
-  body header .nav-container .menu #links .phone {
+  body header .nav-container .menu .links .sidebar-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body header .nav-container .menu .links .sidebar-header .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 72%;
+  margin: 0;
+}
+
+@media (max-width: 767.98px) {
+  body header .nav-container .menu .links .sidebar-header .phone {
     width: 100%;
     margin: 1em 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1365.98px) {
-  body header .nav-container .menu #links .phone {
-    width: 50%;
+  body header .nav-container .menu .links .sidebar-header .phone {
+    width: 75%;
   }
 }
 
-body header .nav-container .menu #links .phone .fa-phone {
-  color: #C13030;
+body header .nav-container .menu .links .sidebar-header .phone p {
+  margin: 0;
 }
 
-body header .nav-container .menu #links .phone .phone-number {
+body header .nav-container .menu .links .sidebar-header .phone .phone-number {
   text-align: center;
   text-decoration: none;
   color: #525251;
@@ -619,27 +642,31 @@ body header .nav-container .menu #links .phone .phone-number {
 }
 
 @media (max-width: 1365.98px) {
-  body header .nav-container .menu #links .phone .phone-number {
+  body header .nav-container .menu .links .sidebar-header .phone .phone-number {
     -webkit-transition: none;
     transition: none;
   }
 }
 
-body header .nav-container .menu #links .phone .phone-number:hover {
+body header .nav-container .menu .links .sidebar-header .phone .phone-number:hover {
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
   color: #0C5A94;
 }
 
 @media (max-width: 1365.98px) {
-  body header .nav-container .menu #links .phone .phone-number:hover {
+  body header .nav-container .menu .links .sidebar-header .phone .phone-number:hover {
     -webkit-transition: none;
     transition: none;
     color: #525251;
   }
 }
 
-body header .nav-container .menu #links .rs {
+body header .nav-container .menu .links .sidebar-header .phone .phone-number .fa-phone {
+  color: #C13030;
+}
+
+body header .nav-container .menu .links .sidebar-header .rs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -650,53 +677,143 @@ body header .nav-container .menu #links .rs {
       -ms-flex-align: center;
           align-items: center;
   width: 12%;
-  text-align: center;
+  margin: 0;
 }
 
 @media (max-width: 767.98px) {
-  body header .nav-container .menu #links .rs {
+  body header .nav-container .menu .links .sidebar-header .rs {
     width: 100%;
     margin: 1em 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1365.98px) {
-  body header .nav-container .menu #links .rs {
+  body header .nav-container .menu .links .sidebar-header .rs {
     width: 25%;
   }
 }
 
-body header .nav-container .menu #links .rs .rs-link {
+body header .nav-container .menu .links .sidebar-header .rs p {
+  margin: 0;
+}
+
+body header .nav-container .menu .links .sidebar-header .rs .rs-link {
   text-decoration: none;
   color: #C13030;
   font-size: 1.5em;
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
+  text-align: center;
 }
 
 @media (max-width: 1365.98px) {
-  body header .nav-container .menu #links .rs .rs-link {
+  body header .nav-container .menu .links .sidebar-header .rs .rs-link {
     -webkit-transition: none;
     transition: none;
   }
 }
 
-body header .nav-container .menu #links .rs .rs-link:hover {
+body header .nav-container .menu .links .sidebar-header .rs .rs-link:hover {
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
   color: #0C5A94;
 }
 
 @media (max-width: 1365.98px) {
-  body header .nav-container .menu #links .rs .rs-link:hover {
+  body header .nav-container .menu .links .sidebar-header .rs .rs-link:hover {
     -webkit-transition: none;
     transition: none;
     color: #C13030;
   }
 }
 
+/* Import du CSS pour 'recherche.php' */
+/* CSS de la page 'Recherche' */
+.recherche {
+  font-family: 'Open Sans', sans-serif;
+  padding: 2% 10%;
+  /* Section des résultats de la recherche */
+}
+
+@media (max-width: 575.98px) {
+  .recherche {
+    padding: 2% 5%;
+  }
+}
+
+.recherche .resultats-recherche h1 {
+  /* Titre annonçant les résultats pour la recherche */
+  text-align: center;
+  font-size: 3em;
+}
+
+@media (max-width: 767.98px) {
+  .recherche .resultats-recherche h1 {
+    font-size: 1.5em;
+  }
+}
+
+.recherche .resultats-recherche .resultat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2% 0;
+  gap: 10px;
+}
+
+.recherche .resultats-recherche .resultat p {
+  margin: 0;
+  color: black;
+  font-size: 1.5em;
+}
+
+@media (max-width: 767.98px) {
+  .recherche .resultats-recherche .resultat p {
+    font-size: 1em;
+  }
+}
+
+.recherche .resultats-recherche .resultat a {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 700;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+@media (max-width: 767.98px) {
+  .recherche .resultats-recherche .resultat a {
+    font-size: 1em;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.recherche .resultats-recherche .resultat a:hover {
+  color: #1F4290;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+@media (max-width: 1365.98px) {
+  .recherche .resultats-recherche .resultat a:hover {
+    color: black;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.recherche .resultats-recherche .resultatequalzero {
+  text-align: center;
+  color: black;
+  font-size: 2em;
+}
+
 /* Import du CSS pour 'single-activites.php' */
-/* CSS de single-activites */
+/* CSS de la page 'Single-activites' */
 .single-activite {
   padding: 2% 10%;
   font-family: 'Open Sans', sans-serif;

@@ -2,7 +2,10 @@
     /* Template Name: Agriculture */
 ?>
 
-<?php get_header(); ?>
+<?php
+    /* Appel du header */
+    get_header();
+?>
 
 <!-- Contenu de la page Agriculture -->
 
@@ -75,4 +78,7 @@
     </div>
 </main>
 
-<?php get_footer(); ?>
+<?php
+    /* Appel du footer */
+    get_footer();
+?>
