@@ -168,6 +168,7 @@ body{
                                 .sous-menu{
                                     width: 100%;
                                     margin: 0;
+                                    list-style: none;
                                     position: relative;
                                     z-index: 999;
                                     a{
@@ -223,7 +224,7 @@ body{
 
                 /* Liens du site AGER */
 
-                #links{
+                .links{
                     width: 25%;
                     display: flex;
                     align-items: center;
@@ -254,51 +255,51 @@ body{
                         @media (min-width: 1366px){
                             display: none;
                         }
-                        .search-mobile{
-                            #search-btn-mobile{
-                                background: transparent;
-                                border: 0;
-                                color: #525251;
-                                font-size: 1.25em;
-                            }
-                            .search{
-                                display: none;
-                            }
-                            .search-form{
-                                position: absolute;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                width: 100%;
-                                .toggle-search{
-                                    position: relative;
-                                    display: block;
-                                    z-index: 999;
-                                    outline: none;
-                                    padding-left: 10px;
-                                    border: 1px solid #525251;
-                                    border-radius: 20px;
+                    }
+                    .search-mobile{
+                        #search-btn-mobile{
+                            background: transparent;
+                            border: 0;
+                            color: #525251;
+                            font-size: 1.25em;
+                        }
+                        .search{
+                            display: none;
+                        }
+                        .search-form{
+                            position: absolute;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 100%;
+                            .toggle-search{
+                                position: relative;
+                                display: block;
+                                z-index: 999;
+                                outline: none;
+                                padding-left: 10px;
+                                border: 1px solid #525251;
+                                border-radius: 20px;
 
-                                    /* CSS pour mobile */
+                                /* CSS pour mobile */
 
-                                    @media (max-width: 374.98px){
-                                        top: 5px;
-                                    }
-                                    @media (min-width: 375px) AND (max-width: 767.98px){
-                                        top: 10px;
-                                    }
+                                @media (max-width: 374.98px){
+                                    top: 5px;
+                                }
+                                @media (min-width: 375px) AND (max-width: 767.98px){
+                                    top: 10px;
+                                }
 
-                                    /* CSS pour petite tablette */
+                                /* CSS pour petite tablette */
 
-                                    @media (min-width: 768px) AND (max-width: 991.98px){
-                                        top: 12.5px;
-                                    }
+                                @media (min-width: 768px) AND (max-width: 991.98px){
+                                    top: 12.5px;
+                                }
 
-                                    /* CSS pour notebook */
+                                /* CSS pour notebook */
 
-                                    @media (min-width: 992px) AND (max-width: 1365.98px){
-                                        top: 17.5px;
-                                    }
+                                @media (min-width: 992px) AND (max-width: 1365.98px){
+                                    top: 17.5px;
                                 }
                             }
                         }
@@ -313,43 +314,43 @@ body{
                         @media (max-width: 1365.98px){
                             display: none;
                         }
-                        .search-desktop{
-                            #search-btn-desktop{
-                                background: transparent;
-                                border: 0;
-                                color: #525251;
-                                font-size: 1.25em;
-                                &:hover{
-                                    color: #C13030;
-                                    @media (max-width: 1365.98px){
-                                        color: #525251;
-                                    }
+                    }
+                    .search-desktop{
+                        #search-btn-desktop{
+                            background: transparent;
+                            border: 0;
+                            color: #525251;
+                            font-size: 1.25em;
+                            &:hover{
+                                color: #C13030;
+                                @media (max-width: 1365.98px){
+                                    color: #525251;
                                 }
                             }
-                            .search{
-                                display: none;
-                            }
-                            .search-form{
-                                position: absolute;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                width: 100%;
-                                .toggle-search{
-                                    position: relative;
-                                    display: block;
-                                    top: 45px;
-                                    z-index: 999;
-                                    outline: none;
-                                    padding-left: 10px;
-                                    border: 1px solid #525251;
-                                    border-radius: 20px;
-                                    @media (min-width: 1366px) AND (max-width: 1499.98px){
-                                        top: 25px;
-                                    }
-                                    @media (min-width: 1500px) AND (max-width: 1635.98px){
-                                        top: 30px;
-                                    }
+                        }
+                        .search{
+                            display: none;
+                        }
+                        .search-form{
+                            position: absolute;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 100%;
+                            .toggle-search{
+                                position: relative;
+                                display: block;
+                                top: 45px;
+                                z-index: 999;
+                                outline: none;
+                                padding-left: 10px;
+                                border: 1px solid #525251;
+                                border-radius: 20px;
+                                @media (min-width: 1366px) AND (max-width: 1499.98px){
+                                    top: 25px;
+                                }
+                                @media (min-width: 1500px) AND (max-width: 1635.98px){
+                                    top: 30px;
                                 }
                             }
                         }
@@ -357,73 +358,89 @@ body{
 
                     /* Ajustement au niveau du N° de Téléphone */
 
-                    .phone{
+                    .sidebar-header{
+                        width: 100%;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        margin: 0;
-                        width: 72%;
                         gap: 10px;
                         @media (max-width: 767.98px){
-                            width: 100%;
-                            margin: 1em 0;
+                            flex-direction: column;
                         }
-                        @media (min-width: 768px) AND (max-width: 1365.98px){
-                            width: 50%;
-                        }
-                        .fa-phone{
-                            color: #C13030;
-                        }
-                        .phone-number{
-                            text-align: center;
-                            text-decoration: none;
-                            color: #525251;
-                            font-weight: 600;
-                            font-size: 1em;
-                            transition: 0.8s ease;
-                            @media (max-width: 1365.98px){
-                                transition: none;
+                        .phone{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 72%;
+                            margin: 0;
+                            @media (max-width: 767.98px){
+                                width: 100%;
+                                margin: 1em 0;
                             }
-                            &:hover{
+                            @media (min-width: 768px) AND (max-width: 1365.98px){
+                                width: 75%;
+                            }
+                            p{
+                                margin: 0;
+                            }
+                            .phone-number{
+                                text-align: center;
+                                text-decoration: none;
+                                color: #525251;
+                                font-weight: 600;
+                                font-size: 1em;
                                 transition: 0.8s ease;
-                                color: #0C5A94;
                                 @media (max-width: 1365.98px){
                                     transition: none;
-                                    color: #525251;
+                                }
+                                &:hover{
+                                    transition: 0.8s ease;
+                                    color: #0C5A94;
+                                    @media (max-width: 1365.98px){
+                                        transition: none;
+                                        color: #525251;
+                                    }
+                                }
+                                .fa-phone{
+                                    color: #C13030;
                                 }
                             }
                         }
-                    }
 
-                    /* Ajustement au niveau des liens de réseaux sociaux */
-
-                    .rs{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 12%;
-                        text-align: center;
-                        @media (max-width: 767.98px){
-                            width: 100%;
-                            margin: 1em 0;
-                        }
-                        @media (min-width: 768px) AND (max-width: 1365.98px){
-                            width: 25%;
-                        }
-                        .rs-link{
-                            text-decoration: none;
-                            color: #C13030;
-                            font-size: 1.5em;
-                            transition: 0.8s ease;
-                            @media (max-width: 1365.98px){
-                                transition: none;
+                        /* Ajustement au niveau des liens de réseaux sociaux */
+                    
+                        .rs{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 12%;
+                            margin: 0;
+                            @media (max-width: 767.98px){
+                                width: 100%;
+                                margin: 1em 0;
                             }
-                            &:hover{
+                            @media (min-width: 768px) AND (max-width: 1365.98px){
+                                width: 25%;
+                            }
+                            p{
+                                margin: 0;
+                            }
+                            .rs-link{
+                                text-decoration: none;
+                                color: #C13030;
+                                font-size: 1.5em;
                                 transition: 0.8s ease;
-                                color: #0C5A94;
+                                text-align: center;
                                 @media (max-width: 1365.98px){
                                     transition: none;
-                                    color: #C13030;
+                                }
+                                &:hover{
+                                    transition: 0.8s ease;
+                                    color: #0C5A94;
+                                    @media (max-width: 1365.98px){
+                                        transition: none;
+                                        color: #C13030;
+                                    }
                                 }
                             }
                         }
