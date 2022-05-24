@@ -1,8 +1,12 @@
-<?php get_header(); ?>
+<?php
+    /* Appel du header */
+    get_header();
+?>
 
 <!-- Contenu de la page d'accueil -->
 
 <main class="accueil">
+
     <!-- Image en dessous du header -->
 
     <div class="accueil-img">
@@ -28,6 +32,7 @@
             <div class="activites-line"></div>
         </div>
         <div class="activites-content">
+
             <?php 
                 $boucle = new WP_Query();
                 $boucle->query( array(
@@ -36,8 +41,9 @@
                     'order' => 'ASC',
                     )
                 );
+                
+                while ( $boucle->have_posts() ) : $boucle->the_post();
             ?>
-            <?php while ( $boucle->have_posts() ) : $boucle->the_post(); ?>
                 
                 <div class="activites">
                     <?php the_post_thumbnail(); ?>
@@ -45,6 +51,7 @@
                 </div>
 
             <?php endwhile; ?>
+
         </div>
     </div>
 
@@ -119,7 +126,9 @@
     <div id="btn">
         <button onclick="topFunction()" id="topBtn" title="Remonter en haut"><i class="fas fa-chevron-up"></i></button>
     </div>
-
 </main>
 
-<?php get_footer(); ?>
+<?php
+    /* Appel du footer */
+    get_footer();
+?>

@@ -1,61 +1,94 @@
+<?php
+
+    /* Système de cookie du site AGER Systèmes */
+
+    include_once "cookie.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
-    <!-- Template du header -->
+    <!-- Appel de la balise <head>, du content et du responsive -->
 
     <head>
         <meta charset="<?php bloginfo('charset'); ?>">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <title> <?php the_title(); ?> - AGER Systèmes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        
+        <title><?php the_title(); ?> - AGER Systèmes</title>
+
         <?php wp_head(); ?>
+
+        <script type="text/javascript" src="<?php echo get_template_directory_uri() . "/js/cookie.js" ?>"></script>
     </head>
 
     <body <?php body_class(); ?>>
         <?php wp_body_open(); ?>
 
-        <!-- Mise en place du menu de navigation -->
+        <!-- Structure du <header> -->
 
         <header>
             <div class="nav-container">
+
+                <!-- Logo de l'entreprise -->
+
                 <h1><?php the_custom_logo(); ?></h1>
+
+                <!-- Menu de navigation du site -->
+
                 <nav class="menu">
                     <div id="navbar">
                         <label for="toggle"><i class="fas"></i></label>
                         <input type="checkbox" id="toggle" role="button" />
                         <?php 
-                            wp_nav_menu( 
+                            wp_nav_menu(
                                 array(
                                     'container' => 'ul',
+                                    'theme_location' => 'Primary',
                                     'menu_class' => 'primary-nav',
-                                    'ajout_class_li' => 'item',
                                 )
                             );
                         ?>
+
                     </div>
-                    <div id="links">
-                        <div class="nav-search-desktop">
-                            <div class="search-desktop">
-                                <button id="search-btn-desktop" class="fas"></button>
+
+                    <!-- Liens annexes au menu de navigation -->
+
+                    <div class="links">
+
+                        <?php
+                            if (!is_page('recherche') ) :
+                        ?>
+
+                            <!-- Barre de recherche bureau -->
+
+                            <div class="nav-search-desktop search-desktop">
+                                <button type="submit" id="search-btn-desktop" title="Rechercher" class="fas"></button>
                                 <form action="/recherche" method="post" class="search-form">
-                                    <input type="text" id="search-bar-desktop" class="search" name="Recherche" placeholder="Recherche...">
+                                    <input type="text" id="search-bar-desktop" class="search" name="Recherche" placeholder="Recherche..." required="true">
                                 </form>
                             </div>
+
+                        <?php endif; ?>
+                        
+                        <div class="sidebar-header">
+                            <?php dynamic_sidebar('header-sidebar'); ?>
                         </div>
-                        <div class="phone">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+0251070792" class="phone-number">02-51-07-07-92</a>
-                        </div>
-                        <div class="rs">
-                            <a href="https://fr-fr.facebook.com/" target="_blank" class="fab rs-link"></a>
-                        </div>
-                        <div class="nav-search-mobile">
-                            <div class="search-mobile">
-                                <button id="search-btn-mobile" class="fas"></button>
+
+                        <?php
+                            if (!is_page('recherche') ) :
+                        ?>
+
+                            <!-- Barre de recherche mobile -->
+                        
+                            <div class="nav-search-mobile search-mobile">
+                                <button type="submit" id="search-btn-mobile" title="Rechercher" class="fas"></button>
                                 <form action="/recherche" method="post" class="search-form">
-                                    <input type="text" id="search-bar-mobile" class="search" name="Recherche" placeholder="Recherche...">
+                                    <input type="text" id="search-bar-mobile" class="search" name="Recherche" placeholder="Recherche..." required="true">
                                 </form>
                             </div>
-                        </div>
+
+                        <?php endif; ?>
                     </div>
                 </nav>
             </div>

@@ -2,6 +2,12 @@
     /* Template Name: L'Entreprise */
 ?>
 
-<?php get_header(); ?>
+<?php
+    /* Appel du header */
+    get_header();
+?>
 
-<?php get_footer(); ?>
+<?php
+    /* Appel du footer */
+    get_footer();
+?>

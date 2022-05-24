@@ -2,7 +2,10 @@
     /* Template Name: Contact */
 ?>
 
-<?php get_header(); ?>
+<?php
+    /* Appel du header */
+    get_header();
+?>
 
 <!-- Contenu de la page Contact -->
 
@@ -48,4 +51,7 @@
     </div>
 </main>
 
-<?php get_footer(); ?>
+<?php
+    /* Appel du footer */
+    get_footer();
+?>
