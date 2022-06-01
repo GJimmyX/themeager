@@ -468,7 +468,7 @@ body header .nav-container .menu .links .search-mobile .search-form {
   width: 100%;
 }
 
-body header .nav-container .menu .links .search-mobile .search-form .toggle-search {
+body header .nav-container .menu .links .search-mobile .search-form .toggle-search-mobile {
   position: relative;
   display: block;
   z-index: 999;
@@ -482,25 +482,25 @@ body header .nav-container .menu .links .search-mobile .search-form .toggle-sear
 }
 
 @media (max-width: 374.98px) {
-  body header .nav-container .menu .links .search-mobile .search-form .toggle-search {
+  body header .nav-container .menu .links .search-mobile .search-form .toggle-search-mobile {
     top: 5px;
   }
 }
 
 @media (min-width: 375px) and (max-width: 767.98px) {
-  body header .nav-container .menu .links .search-mobile .search-form .toggle-search {
+  body header .nav-container .menu .links .search-mobile .search-form .toggle-search-mobile {
     top: 10px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  body header .nav-container .menu .links .search-mobile .search-form .toggle-search {
+  body header .nav-container .menu .links .search-mobile .search-form .toggle-search-mobile {
     top: 12.5px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1365.98px) {
-  body header .nav-container .menu .links .search-mobile .search-form .toggle-search {
+  body header .nav-container .menu .links .search-mobile .search-form .toggle-search-mobile {
     top: 17.5px;
   }
 }
@@ -553,7 +553,7 @@ body header .nav-container .menu .links .search-desktop .search-form {
   width: 100%;
 }
 
-body header .nav-container .menu .links .search-desktop .search-form .toggle-search {
+body header .nav-container .menu .links .search-desktop .search-form .toggle-search-desktop {
   position: relative;
   display: block;
   top: 45px;
@@ -565,13 +565,13 @@ body header .nav-container .menu .links .search-desktop .search-form .toggle-sea
 }
 
 @media (min-width: 1366px) and (max-width: 1499.98px) {
-  body header .nav-container .menu .links .search-desktop .search-form .toggle-search {
+  body header .nav-container .menu .links .search-desktop .search-form .toggle-search-desktop {
     top: 25px;
   }
 }
 
 @media (min-width: 1500px) and (max-width: 1635.98px) {
-  body header .nav-container .menu .links .search-desktop .search-form .toggle-search {
+  body header .nav-container .menu .links .search-desktop .search-form .toggle-search-desktop {
     top: 30px;
   }
 }
