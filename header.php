@@ -65,6 +65,7 @@
                             <div class="nav-search-desktop search-desktop">
                                 <button type="submit" id="search-btn-desktop" title="Rechercher" class="fas"></button>
                                 <form action="/recherche" method="post" class="search-form">
+                                    <label for="search-bar-desktop"></label>
                                     <input type="text" id="search-bar-desktop" class="search" name="Recherche" placeholder="Recherche..." required="true">
                                 </form>
                             </div>
@@ -84,6 +85,7 @@
                             <div class="nav-search-mobile search-mobile">
                                 <button type="submit" id="search-btn-mobile" title="Rechercher" class="fas"></button>
                                 <form action="/recherche" method="post" class="search-form">
+                                    <label for="search-bar-mobile"></label>
                                     <input type="text" id="search-bar-mobile" class="search" name="Recherche" placeholder="Recherche..." required="true">
                                 </form>
                             </div>
