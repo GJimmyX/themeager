@@ -6,8 +6,8 @@
 
     button_desktop.onclick = function()
     {
-        button_desktop.toggleAttribute( 'toggle-search' );
-        search_desktop.classList.toggle( 'toggle-search' );
+        button_desktop.toggleAttribute( 'toggle-search-desktop' );
+        search_desktop.classList.toggle( 'toggle-search-desktop' );
     }
 
     var button_mobile = document.getElementById( 'search-btn-mobile' );
@@ -15,8 +15,8 @@
 
     button_mobile.onclick = function()
     {
-        button_mobile.toggleAttribute( 'toggle-search' );
-        search_mobile.classList.toggle( 'toggle-search' );
+        button_mobile.toggleAttribute( 'toggle-search-mobile' );
+        search_mobile.classList.toggle( 'toggle-search-mobile' );
     }
 
 } )(jQuery);
