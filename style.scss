@@ -18,8 +18,14 @@
 
 @import 'scss/single-activites';
 
+/* Import du CSS pour 'single.php' */
+
+@import 'scss/single';
+
 /* Import des différentes pages du site */
 
+@import 'scss/actualites';
+@import 'scss/entreprise';
 @import 'scss/agriculture';
 @import 'scss/collectivites';
 @import 'scss/entreprises';
@@ -391,9 +397,9 @@
             @media (max-width: 767.98px){
                 width: 100%;
             }
-            p{
+            .lien-article{
                 text-align: center;
-                cursor: context-menu;
+                text-decoration: none;
                 margin: 2% 0;
                 font-size: 2em;
                 color: #C13030;

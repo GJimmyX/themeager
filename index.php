@@ -1,5 +1,5 @@
 <?php
-    /* Appel du header */
+/* Appel du header */
     get_header();
 ?>
 
@@ -33,7 +33,7 @@
         </div>
         <div class="activites-content">
 
-            <?php 
+            <?php
                 $boucle = new WP_Query();
                 $boucle->query( array(
                     'post_type' => 'activites',
@@ -95,13 +95,13 @@
             <div class="infos-slider">
                 <div id="slider">
                     <div class="slider-elements">
-                        <img src="<?php echo get_template_directory_uri() . '/img/img_slider01.jpg' ?>" alt="Image section Infos">
+                        <img src="<?php echo get_template_directory_uri() . '/img/img_slider01.jpg'; ?>" alt="Image section Infos">
                     </div>
                     <div class="slider-elements">
-                        <img src="<?php echo get_template_directory_uri() . '/img/img_slider02.jpg' ?>" alt="Image section Infos">
+                        <img src="<?php echo get_template_directory_uri() . '/img/img_slider02.jpg'; ?>" alt="Image section Infos">
                     </div>
                     <div class="slider-elements">
-                        <img src="<?php echo get_template_directory_uri() . '/img/img_slider03.jpg' ?>" alt="Image section Infos">
+                        <img src="<?php echo get_template_directory_uri() . '/img/img_slider03.jpg'; ?>" alt="Image section Infos">
                     </div>
                 </div>
             </div>
@@ -111,10 +111,23 @@
     <!-- Section contact de la page d'accueil -->
 
     <div class="section-articles-contact">
-        <div class="articles-ager">
-            <p><?php the_title(); ?></p>
-            <a href="#" class="articles">Plus d'articles...</a>
-        </div>
+        <?php
+            $latestPost = new WP_Query();
+            $latestPost->query(array(
+                    'posts_per_page' => 1,
+                )
+            );
+
+            while ($latestPost->have_posts() ) : $latestPost->the_post();
+        ?>
+
+            <div class="articles-ager">
+                <a href="<?php the_permalink(); ?>" class="lien-article"><?php the_title(); ?></a>
+                <a href="/actualites" class="articles">Plus d'articles...</a>
+            </div>
+
+        <?php endwhile; ?>
+
         <div class="contact-ager">
             <p>Pour toute demande, passez par notre formulaire et nous vous apporterons une réponse dans les plus brefs délais !</p>
             <a href="/contact" class="contact">Contactez-nous</a>
@@ -129,6 +142,6 @@
 </main>
 
 <?php
-    /* Appel du footer */
+/* Appel du footer */
     get_footer();
 ?>

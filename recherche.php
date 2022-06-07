@@ -3,6 +3,14 @@
 ?>
 
 <?php
+
+    $search = $_POST['Recherche'];
+
+    if (!$search) :
+        header('Location: accueil');
+        exit();
+    endif;
+    
     /* Appel du header */
     get_header();
 ?>
@@ -31,15 +39,8 @@
             die('Erreur : '.$e->getMessage());
     }
 
-    $search = $_POST['Recherche'];
-
-    if (!$search) :
-        header('Location: accueil');
-        exit();
-    endif;
-
     /* echo $search; */
-
+    
     $sqlQuery = "SELECT guid, post_title, post_name, post_type FROM wp_posts WHERE post_name LIKE ('%$search%') AND post_type != 'wpcf7_contact_form' AND post_type != 'attachment' AND post_type != 'acf-field' AND post_type != 'acf-field-group' AND post_type != 'customize_changeset' AND post_type != 'ml-slide' AND post_type != 'ml-slider' AND post_type != 'nav_menu_item' AND post_type != 'revision' AND post_type != 'wp_global_styles' AND post_type != 'wp_navigation'";
 
     $data = $mysqlQuery->prepare($sqlQuery);
