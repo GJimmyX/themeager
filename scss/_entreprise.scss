@@ -1,0 +1,46 @@
+/* CSS de la page 'L'Entreprise' */
+
+.entreprise{
+    margin: 1% 0;
+    padding: 0 10%;
+    font-family: 'Open Sans', sans-serif;
+    cursor: context-menu;
+    @media (max-width: 767.98px){
+        padding: 5% 10%;
+    }
+
+    /* Titre de la page */
+
+    .entreprise-title{
+        margin-bottom: 1rem;
+        font-weight: 700;
+        font-size: 2.25em;
+    }
+    .entreprise-presentation, .entreprise-localisation, .entreprise-savoir{
+        margin: 0.25rem 0;
+        .tete{
+            font-size: 1.75em;
+            @media (max-width: 767.98px){
+                font-size: 1.5em;
+            }
+        }
+        .corps{
+            margin: 1rem 0;
+            font-size: 1.5em;
+            text-align: justify;
+            @media (max-width: 767.98px){
+                font-size: 1.25em;
+            }
+        }
+    }
+    .entreprise-confiance{
+        margin-top: 1rem;
+        margin-bottom: 0;
+        font-weight: 700;
+        font-size: 1.75em;
+        text-align: center;
+        @media (max-width: 767.98px){
+            font-size: 1.75em;
+        }
+    }
+}

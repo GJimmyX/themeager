@@ -1,0 +1,60 @@
+/* CSS de la page 'Single-actualite' */
+
+.single-actualite{
+    padding: 2% 10%;
+    font-family: 'Open Sans', sans-serif;
+
+    /* Retour sur la page d'accueil */
+
+    .single-link{
+        margin: 2% 0;
+
+        /* Lien de retour */
+
+        a{
+            font-size: 1.5em;
+            font-weight: 500;
+            color: #525251;
+            text-decoration: none;
+            @media (min-width: 1366px){
+                transition: .8s ease;
+            }
+            &:hover{
+                @media (min-width: 1366px){
+                    transition: .8s ease;
+                    color: #C13030;
+                }
+            }
+        }
+    }
+
+    /* Intro de l'actualité */
+    
+    .single-intro{
+        margin: 2% 0;
+        padding: 5% 0 0;
+        cursor: context-menu;
+        h3{
+            font-size: 2em;
+            font-weight: 500;
+            color: black;
+        }
+    }
+
+    /* Contenu de l'actualité */
+
+    .single-content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 2% 0;
+        padding: 5% 0 0;
+        cursor: context-menu;
+        .single-date, .single-paragraph{
+            font-weight: 500;
+            font-size: 1.25em;
+            margin: 2% 0;
+            text-align: justify;
+        }
+    }
+}
