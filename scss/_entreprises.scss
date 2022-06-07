@@ -67,6 +67,9 @@
                 text-align: justify;
                 color: #525251;
                 cursor: context-menu;
+                @media (max-width: 767.98px){
+                    width: 90%;
+                }
             }
 
             /* Format du container de l'image */
@@ -154,6 +157,32 @@
                         color: white;
                         margin: 1% 0;
                     }
+                }
+            }
+        }
+        .part01{
+            @media (max-width: 767.98px){
+                flex-direction: column;
+                gap: 25px;
+            } 
+            .modal-grande{
+                @media (max-width: 767.98px){
+                    width: 90%;
+                }
+            }
+        }
+        .part02{
+            @media (max-width: 1365.98px){
+                flex-direction: column;
+                gap: 25px;
+            }
+            .modal-petite{
+                cursor: zoom-in;
+                @media (max-width: 767.98px){
+                    width: 90%
+                }
+                @media (min-width: 768px) AND (max-width: 1365.98px){
+                    width: 45%;
                 }
             }
         }
