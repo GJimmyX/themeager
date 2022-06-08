@@ -1290,7 +1290,7 @@ body .cookielaw1 #cookie_accept_button {
 }
 
 .actualites .actualites-disposition .actualites-card {
-  margin: 5.5% 0;
+  margin: 6% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2588,56 +2588,8 @@ body .cookielaw1 #cookie_accept_button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* Champ société */
   /* Champ message */
   /* Champ envoi pièce jointe facultative */
-}
-
-.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-societe {
-  padding: 2% 0;
-}
-
-.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-societe label {
-  color: black;
-  font-weight: 700;
-  font-size: 1em;
-  text-align: center;
-  width: 100%;
-  margin-bottom: 1%;
-}
-
-.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-societe span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-societe span input {
-  background-color: rgba(233, 232, 233, 0.6);
-  border: 1px solid #020722;
-  font-size: 1.5em;
-  border-radius: 15px;
-  padding-left: 5%;
-  width: 90%;
-  cursor: context-menu;
-}
-
-.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-societe span input:focus {
-  outline: none;
-}
-
-.contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-societe span .wpcf7-not-valid-tip {
-  font-size: 1em;
-  font-weight: 700;
-  color: #C13030;
-  margin-top: 1%;
 }
 
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message label {

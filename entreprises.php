@@ -37,7 +37,7 @@
 
         <div class="part01">
             <p class="texte_description">
-                Nous vous proposons de découvrir en sous-rubriques quelques photos d'installations de panneaux photovoltaïques que nous avons réalisés pour des particuliers sur :<br />
+                Nous vous proposons de découvrir en sous-rubriques quelques photos d'installations de panneaux photovoltaïques que nous avons réalisés pour des entreprises sur :<br />
                 <br/>- Bâtiments neufs
                 <br/>- Rénovation
                 <br/>- Garages
