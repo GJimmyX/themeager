@@ -32,21 +32,6 @@
                     font-size: 2em;
                     font-weight: 400;
                 }
-                p{
-                    margin: 0;
-                    width: 40%;
-                    font-size: 1.5em;
-                    font-weight: 300;
-                    text-align: justify;
-                    @media (max-width: 767.98px){
-                        width: 80%;
-                        font-size: 1em;
-                        font-weight: 400;
-                    }
-                    @media (min-width: 768px) AND (max-width: 1365.98px){
-                        width: 60%;
-                    }
-                }
             }
         }
     }
@@ -76,6 +61,7 @@
 
             .modal-grande{
                 width: 45%;
+                height: auto;
                 cursor: zoom-in;
                 @media (min-width: 1366px){
                     transition: 0.8s ease;
@@ -150,6 +136,7 @@
                     border-radius: 0;
                     img{
                         width: 60%;
+                        height: auto;
                     }
                     h3{
                         font-size: 2em;
@@ -168,21 +155,6 @@
             .modal-grande{
                 @media (max-width: 767.98px){
                     width: 90%;
-                }
-            }
-        }
-        .part02{
-            @media (max-width: 1365.98px){
-                flex-direction: column;
-                gap: 25px;
-            }
-            .modal-petite{
-                cursor: zoom-in;
-                @media (max-width: 767.98px){
-                    width: 90%
-                }
-                @media (min-width: 768px) AND (max-width: 1365.98px){
-                    width: 45%;
                 }
             }
         }

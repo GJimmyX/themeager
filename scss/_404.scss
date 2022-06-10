@@ -28,14 +28,7 @@
                 img{
                     display: flex;
                     margin: auto;
-                    animation: img ease .5s infinite alternate;
-                }
-                @keyframes img{
-                    from{
-                        transform: translateX(0px);
-                    } to{
-                        transform: translateX(15px);
-                    }
+                    padding: 10% 0;
                 }
             }
         }
