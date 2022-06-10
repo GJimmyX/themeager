@@ -123,7 +123,9 @@
 
             <div class="articles-ager">
                 <a href="<?php the_permalink(); ?>" class="lien-article"><?php the_title(); ?></a>
-                <a href="/actualites" class="articles">Plus d'articles...</a>
+                <?php if (wp_count_posts()->publish >= 2) : ?>
+                    <a href="/actualites" class="articles">Plus d'articles...</a>
+                <?php endif; ?>
             </div>
 
         <?php endwhile; ?>

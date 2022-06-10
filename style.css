@@ -928,7 +928,7 @@ body .cookielaw1 #cookie_accept_button {
   cursor: context-menu;
 }
 
-.single-activite .single-intro h3 {
+.single-activite .single-intro h1 {
   font-size: 2em;
   font-weight: 500;
   color: black;
@@ -1001,28 +1001,6 @@ body .cookielaw1 #cookie_accept_button {
   font-weight: 400;
 }
 
-.single-activite .single-content .section_titre .img-hover-agriculture .texte-hover p, .single-activite .single-content .section_titre .img-hover-collectivites .texte-hover p, .single-activite .single-content .section_titre .img-hover-entreprises .texte-hover p {
-  margin: 0;
-  width: 40%;
-  font-size: 1.5em;
-  font-weight: 300;
-  text-align: justify;
-}
-
-@media (max-width: 767.98px) {
-  .single-activite .single-content .section_titre .img-hover-agriculture .texte-hover p, .single-activite .single-content .section_titre .img-hover-collectivites .texte-hover p, .single-activite .single-content .section_titre .img-hover-entreprises .texte-hover p {
-    width: 80%;
-    font-size: 1em;
-    font-weight: 400;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1365.98px) {
-  .single-activite .single-content .section_titre .img-hover-agriculture .texte-hover p, .single-activite .single-content .section_titre .img-hover-collectivites .texte-hover p, .single-activite .single-content .section_titre .img-hover-entreprises .texte-hover p {
-    width: 60%;
-  }
-}
-
 .single-activite .single-content .section_description .part01, .single-activite .single-content .section_description .part02 {
   margin-top: 2%;
   display: -webkit-box;
@@ -1049,12 +1027,14 @@ body .cookielaw1 #cookie_accept_button {
 
 .single-activite .single-content .section_description .part01 .modal-grande, .single-activite .single-content .section_description .part02 .modal-grande {
   width: 45%;
+  height: auto;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
 
 .single-activite .single-content .section_description .part01 .modal-petite, .single-activite .single-content .section_description .part02 .modal-petite {
   width: 22.5%;
+  height: auto;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
@@ -1173,6 +1153,7 @@ body .cookielaw1 #cookie_accept_button {
 
 .single-activite .single-content .section_description .part01 .modal .modal-content img, .single-activite .single-content .section_description .part02 .modal .modal-content img {
   width: 60%;
+  height: auto;
 }
 
 .single-activite .single-content .section_description .part01 .modal .modal-content h3, .single-activite .single-content .section_description .part02 .modal .modal-content h3 {
@@ -1180,6 +1161,49 @@ body .cookielaw1 #cookie_accept_button {
   font-weight: 300;
   color: white;
   margin: 1% 0;
+}
+
+@media (max-width: 767.98px) {
+  .single-activite .single-content .part01 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .single-activite .single-content .part01 .modal-grande {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1365.98px) {
+  .single-activite .single-content .part02 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 25px;
+  }
+}
+
+.single-activite .single-content .part02 .modal-petite {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+@media (max-width: 767.98px) {
+  .single-activite .single-content .part02 .modal-petite {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1365.98px) {
+  .single-activite .single-content .part02 .modal-petite {
+    width: 45%;
+  }
 }
 
 /* Import du CSS pour 'single.php' */
@@ -1225,7 +1249,7 @@ body .cookielaw1 #cookie_accept_button {
   cursor: context-menu;
 }
 
-.single-actualite .single-intro h3 {
+.single-actualite .single-intro h1 {
   font-size: 2em;
   font-weight: 500;
   color: black;
@@ -1501,28 +1525,6 @@ body .cookielaw1 #cookie_accept_button {
   font-weight: 400;
 }
 
-.agriculture .section_titre .img-hover-agriculture .texte-hover p {
-  margin: 0;
-  width: 40%;
-  font-size: 1.5em;
-  font-weight: 300;
-  text-align: justify;
-}
-
-@media (max-width: 767.98px) {
-  .agriculture .section_titre .img-hover-agriculture .texte-hover p {
-    width: 80%;
-    font-size: 1em;
-    font-weight: 400;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1365.98px) {
-  .agriculture .section_titre .img-hover-agriculture .texte-hover p {
-    width: 60%;
-  }
-}
-
 .agriculture .section_description {
   margin-bottom: 2%;
 }
@@ -1559,12 +1561,14 @@ body .cookielaw1 #cookie_accept_button {
 
 .agriculture .section_description .part01 .modal-grande, .agriculture .section_description .part02 .modal-grande {
   width: 45%;
+  height: auto;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
 
 .agriculture .section_description .part01 .modal-petite, .agriculture .section_description .part02 .modal-petite {
   width: 22.5%;
+  height: auto;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
@@ -1674,6 +1678,7 @@ body .cookielaw1 #cookie_accept_button {
 
 .agriculture .section_description .part01 .modal .modal-content img, .agriculture .section_description .part02 .modal .modal-content img {
   width: 60%;
+  height: auto;
 }
 
 .agriculture .section_description .part01 .modal .modal-content h3, .agriculture .section_description .part02 .modal .modal-content h3 {
@@ -1839,12 +1844,14 @@ body .cookielaw1 #cookie_accept_button {
 
 .collectivites .section_description .part01 .modal-grande, .collectivites .section_description .part02 .modal-grande {
   width: 45%;
+  height: auto;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
 
 .collectivites .section_description .part01 .modal-petite, .collectivites .section_description .part02 .modal-petite {
   width: 22.5%;
+  height: auto;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
@@ -1954,6 +1961,7 @@ body .cookielaw1 #cookie_accept_button {
 
 .collectivites .section_description .part01 .modal .modal-content img, .collectivites .section_description .part02 .modal .modal-content img {
   width: 60%;
+  height: auto;
 }
 
 .collectivites .section_description .part01 .modal .modal-content h3, .collectivites .section_description .part02 .modal .modal-content h3 {
@@ -2061,28 +2069,6 @@ body .cookielaw1 #cookie_accept_button {
   font-weight: 400;
 }
 
-.entreprises .section_titre .img-hover-entreprises .texte-hover p {
-  margin: 0;
-  width: 40%;
-  font-size: 1.5em;
-  font-weight: 300;
-  text-align: justify;
-}
-
-@media (max-width: 767.98px) {
-  .entreprises .section_titre .img-hover-entreprises .texte-hover p {
-    width: 80%;
-    font-size: 1em;
-    font-weight: 400;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1365.98px) {
-  .entreprises .section_titre .img-hover-entreprises .texte-hover p {
-    width: 60%;
-  }
-}
-
 .entreprises .section_description {
   margin-bottom: 2%;
 }
@@ -2119,6 +2105,7 @@ body .cookielaw1 #cookie_accept_button {
 
 .entreprises .section_description .part01 .modal-grande {
   width: 45%;
+  height: auto;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
@@ -2228,6 +2215,7 @@ body .cookielaw1 #cookie_accept_button {
 
 .entreprises .section_description .part01 .modal .modal-content img {
   width: 60%;
+  height: auto;
 }
 
 .entreprises .section_description .part01 .modal .modal-content h3 {
@@ -2250,33 +2238,6 @@ body .cookielaw1 #cookie_accept_button {
 @media (max-width: 767.98px) {
   .entreprises .section_description .part01 .modal-grande {
     width: 90%;
-  }
-}
-
-@media (max-width: 1365.98px) {
-  .entreprises .section_description .part02 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 25px;
-  }
-}
-
-.entreprises .section_description .part02 .modal-petite {
-  cursor: -webkit-zoom-in;
-  cursor: zoom-in;
-}
-
-@media (max-width: 767.98px) {
-  .entreprises .section_description .part02 .modal-petite {
-    width: 90%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1365.98px) {
-  .entreprises .section_description .part02 .modal-petite {
-    width: 45%;
   }
 }
 
@@ -3039,30 +3000,7 @@ body .cookielaw1 #cookie_accept_button {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  -webkit-animation: img ease .5s infinite alternate;
-          animation: img ease .5s infinite alternate;
-}
-
-@-webkit-keyframes img {
-  from {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  to {
-    -webkit-transform: translateX(15px);
-            transform: translateX(15px);
-  }
-}
-
-@keyframes img {
-  from {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  to {
-    -webkit-transform: translateX(15px);
-            transform: translateX(15px);
-  }
+  padding: 10% 0;
 }
 
 /* Import du CSS pour 'footer.php' */
@@ -3653,9 +3591,9 @@ footer .align-pdp p a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* Affichage du dernier article publié */
   /* Bouton de renvoi vers la page Contact */
 }

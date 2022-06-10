@@ -17,14 +17,6 @@
         <div class="img-hover-agriculture">
             <div class="texte-hover">
                 <h2>Agriculture</h2>
-                <p>
-                    Lorem Lorem Lorem Lorem Lorem
-                    Lorem Lorem Lorem Lorem Lorem
-                    Lorem Lorem Lorem Lorem Lorem
-                    Lorem Lorem Lorem Lorem Lorem
-                    Lorem Lorem Lorem Lorem Lorem
-                    Lorem Lorem Lorem Lorem Lorem
-                </p>
             </div>
         </div>
     </div>

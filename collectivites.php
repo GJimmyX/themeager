@@ -17,14 +17,6 @@
         <div class="img-hover-collectivites">
             <div class="texte-hover">
                 <h2>Collectivités Locales</h2>
-                <p>
-                    Lorem Lorem Lorem Lorem Lorem
-                    Lorem Lorem Lorem Lorem Lorem
-                    Lorem Lorem Lorem Lorem Lorem
-                    Lorem Lorem Lorem Lorem Lorem
-                    Lorem Lorem Lorem Lorem Lorem
-                    Lorem Lorem Lorem Lorem Lorem
-                </p>
             </div>
         </div>
     </div>
