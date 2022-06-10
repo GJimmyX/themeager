@@ -18,7 +18,7 @@
         <!-- Import du titre -->
 
         <div class="single-intro">
-            <h3><?php the_title(); ?></h3>
+            <h1><?php the_title(); ?></h1>
         </div>
 
         <!-- Import de la description -->

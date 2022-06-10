@@ -17,14 +17,6 @@
         <div class="img-hover-entreprises">
             <div class="texte-hover">
                 <h2>Entreprises</h2>
-                <p>
-                    Lorem Lorem Lorem Lorem Lorem
-                    Lorem Lorem Lorem Lorem Lorem
-                    Lorem Lorem Lorem Lorem Lorem
-                    Lorem Lorem Lorem Lorem Lorem
-                    Lorem Lorem Lorem Lorem Lorem
-                    Lorem Lorem Lorem Lorem Lorem
-                </p>
             </div>
         </div>
     </div>

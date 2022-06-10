@@ -16,16 +16,6 @@ add_theme_support( 'custom-background' );
 
 add_theme_support( 'post-thumbnails' );
 
-/* Ajouter différentes tailles d'image */
-
-function taille_media() {
-  add_image_size( 'taille_01', 250, 200, false );
-  add_image_size( 'taille_02', 500, 400, false );
-  add_image_size( 'taille_03', 750, 600, false );
-};
-
-add_action('after_setup_theme', 'taille_media');
-
 /* Supprimer différentes tailles d'image */
 
 function remove_default_img_sizes( $sizes ) {
@@ -76,16 +66,16 @@ function enqueue_style_themeager() {
     wp_register_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', false, '', true);
     wp_enqueue_script('jquery');
     wp_enqueue_script('navjs', get_template_directory_uri() . '/js/navigation.js', false, '', true);
-    wp_enqueue_script( get_template_directory_uri() . '/js/navigation.js', $src, $deps, $ver, $in_footer);
+    wp_enqueue_script( get_template_directory_uri() . '/js/navigation.js');
     if (!is_page('recherche') ) :
-      wp_enqueue_script( 'searchbarjs', get_template_directory_uri() . '/js/search-bar.js', false, '', true);
-      wp_enqueue_script( get_template_directory_uri() . '/js/search-bar.js', $src, $deps, $ver, $in_footer);
+      wp_enqueue_script('searchbarjs', get_template_directory_uri() . '/js/search-bar.js', false, '', true);
+      wp_enqueue_script( get_template_directory_uri() . '/js/search-bar.js');
     endif;
     if (is_page('accueil')) :
-      wp_enqueue_script( 'sliderjs', get_template_directory_uri() . '/js/slider.js', false, '', true);
-      wp_enqueue_script( 'topbtnjs', get_template_directory_uri() . '/js/topBtn.js', false, '', true);
-      wp_enqueue_script( get_template_directory_uri() . '/js/slider.js', $src, $deps, $ver, $in_footer);
-      wp_enqueue_script( get_template_directory_uri() . '/js/topBtn.js', $src, $deps, $ver, $in_footer);
+      wp_enqueue_script('sliderjs', get_template_directory_uri() . '/js/slider.js', false, '', true);
+      wp_enqueue_script('topbtnjs', get_template_directory_uri() . '/js/topBtn.js', false, '', true);
+      wp_enqueue_script( get_template_directory_uri() . '/js/slider.js');
+      wp_enqueue_script( get_template_directory_uri() . '/js/topBtn.js');
     endif;
 };
 

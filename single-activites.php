@@ -18,7 +18,7 @@
         <!-- Import du titre -->
 
         <div class="single-intro">
-            <h3>Domaine d'activité : <?php the_field('titre'); ?></h3>
+            <h1>Domaine d'activité : <?php the_field('titre'); ?></h1>
         </div>
 
         <!-- Import de la description -->
