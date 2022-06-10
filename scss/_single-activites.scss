@@ -32,7 +32,7 @@
     
     .single-intro{
         cursor: context-menu;
-        h3{
+        h1{
             font-size: 2em;
             font-weight: 500;
             color: black;
@@ -87,21 +87,6 @@
                         font-size: 2em;
                         font-weight: 400;
                     }
-                    p{
-                        margin: 0;
-                        width: 40%;
-                        font-size: 1.5em;
-                        font-weight: 300;
-                        text-align: justify;
-                        @media (max-width: 767.98px){
-                            width: 80%;
-                            font-size: 1em;
-                            font-weight: 400;
-                        }
-                        @media (min-width: 768px) AND (max-width: 1365.98px){
-                            width: 60%;
-                        }
-                    }
                 }
             }
         }
@@ -127,10 +112,12 @@
 
                 .modal-grande{
                     width: 45%;
+                    height: auto;
                     cursor: zoom-in;
                 }
                 .modal-petite{
                     width: 22.5%;
+                    height: auto;
                     cursor: zoom-in;
                 }
                 .modal-grande, .modal-petite{
@@ -207,6 +194,7 @@
                         border-radius: 0;
                         img{
                             width: 60%;
+                            height: auto;
                         }
                         h3{
                             font-size: 2em;
@@ -215,6 +203,32 @@
                             margin: 1% 0;
                         }
                     }
+                }
+            }
+        }
+        .part01{
+            @media (max-width: 767.98px){
+                flex-direction: column;
+                gap: 25px;
+            } 
+            .modal-grande{
+                @media (max-width: 767.98px){
+                    width: 90%;
+                }
+            }
+        }
+        .part02{
+            @media (max-width: 1365.98px){
+                flex-direction: column;
+                gap: 25px;
+            }
+            .modal-petite{
+                cursor: zoom-in;
+                @media (max-width: 767.98px){
+                    width: 90%
+                }
+                @media (min-width: 768px) AND (max-width: 1365.98px){
+                    width: 45%;
                 }
             }
         }

@@ -32,21 +32,6 @@
                     font-size: 2em;
                     font-weight: 400;
                 }
-                p{
-                    margin: 0;
-                    width: 40%;
-                    font-size: 1.5em;
-                    font-weight: 300;
-                    text-align: justify;
-                    @media (max-width: 767.98px){
-                        width: 80%;
-                        font-size: 1em;
-                        font-weight: 400;
-                    }
-                    @media (min-width: 768px) AND (max-width: 1365.98px){
-                        width: 60%;
-                    }
-                }
             }
         }
     }
@@ -76,10 +61,12 @@
 
             .modal-grande{
                 width: 45%;
+                height: auto;
                 cursor: zoom-in;
             }
             .modal-petite{
                 width: 22.5%;
+                height: auto;
                 cursor: zoom-in;
             }
             .modal-grande, .modal-petite{
@@ -156,6 +143,7 @@
                     border-radius: 0;
                     img{
                         width: 60%;
+                        height: auto;
                     }
                     h3{
                         font-size: 2em;
