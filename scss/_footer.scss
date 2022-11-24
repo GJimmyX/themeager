@@ -34,4 +34,20 @@ footer{
             }
         }
     }
+
+    /* CSS pour le bandeau plan du site */
+
+    .siteMap{
+        margin: 0;
+        text-align: center;
+        line-height: 1;
+        font-weight: bold;
+        font-size: 1.33em;
+        .siteMapLink{
+            color: #525251;
+            text-decoration: none;
+            font-size: 0.6em;
+            font-weight: 400;
+        }
+    }
 }

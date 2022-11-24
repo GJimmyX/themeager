@@ -12,6 +12,12 @@
                 </div>
             </div>
 
+            <!-- Plan du site -->
+
+            <h4 class="siteMap">
+                <a href="/wp-content/themes/themejuliot/plan-du-site.xml" class="siteMapLink">Plan du site</a>
+            </h4>
+
             <!-- Appel du pied de la page -->
 
             <?php wp_footer(); ?>

@@ -3010,6 +3010,7 @@ footer {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
   /* Copyrights et mentions légales */
+  /* CSS pour le bandeau plan du site */
 }
 
 footer .align-pdp {
@@ -3055,6 +3056,21 @@ footer .align-pdp p {
 footer .align-pdp p a {
   color: #525251;
   text-decoration: none;
+}
+
+footer .siteMap {
+  margin: 0;
+  text-align: center;
+  line-height: 1;
+  font-weight: bold;
+  font-size: 1.33em;
+}
+
+footer .siteMap .siteMapLink {
+  color: #525251;
+  text-decoration: none;
+  font-size: 0.6em;
+  font-weight: 400;
 }
 
 /* CSS de 'index.php' */
