@@ -24,6 +24,13 @@
             endif;
         ?>
 
+        <!-- Si page introuvable -->
+
+        <?php
+            if (is_404() ): ?>
+            <title>Page Introuvable - AGER Systèmes</title>
+        <?php endif; ?>
+
         <!-- Titre de chaque page -->
 
         <?php

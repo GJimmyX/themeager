@@ -15,7 +15,7 @@
             <!-- Plan du site -->
 
             <p class="siteMap">
-                <a href="/wp-content/themes/themejuliot/plan-du-site.xml" class="siteMapLink">Plan du site</a>
+                <a href="/wp-content/themes/themeager/plan-du-site.xml" class="siteMapLink">Plan du site</a>
             </p>
 
             <!-- Appel du pied de la page -->
