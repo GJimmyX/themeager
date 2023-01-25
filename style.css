@@ -13,128 +13,83 @@ body {
   margin: 0;
   /* CSS additionnel sur le bandeau cookie */
 }
-
 body #wpadminbar {
   z-index: 2;
 }
-
 body #wpadminbar .ab-top-menu #wp-admin-bar-customize, body #wpadminbar .ab-top-menu #wp-admin-bar-updates, body #wpadminbar .ab-top-menu #wp-admin-bar-comments, body #wpadminbar .ab-top-menu #wp-admin-bar-new-content, body #wpadminbar .ab-top-menu #wp-admin-bar-edit, body #wpadminbar .ab-top-menu #wp-admin-bar-litespeed-menu, body #wpadminbar .ab-top-menu #wp-admin-bar-wpseo-menu {
   display: none;
 }
-
 body header {
   background-color: #F5F4EF;
   padding: 1% 0%;
-  font-family: 'Open Sans', sans-serif;
-  -webkit-box-shadow: 0px 3px 5px #000;
-          box-shadow: 0px 3px 5px #000;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0px 3px 5px #000;
   /* Disposition du header */
 }
-
 body header .nav-container {
   width: 80%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   /* Ajustement de la barre de navigation */
 }
-
 @media (max-width: 767.98px) {
   body header .nav-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1365.98px) {
   body header .nav-container {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    align-items: start;
   }
 }
-
 body header .nav-container h1 {
   margin: 0;
   width: 15%;
 }
-
 @media (max-width: 767.98px) {
   body header .nav-container h1 {
     width: 50%;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1365.98px) {
   body header .nav-container h1 {
     width: 35%;
   }
 }
-
 body header .nav-container h1 a img {
   width: 100%;
   height: 100%;
 }
-
 body header .nav-container .navbar {
   width: 75%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   /* Bouton du menu responsive */
   /* Menu principal du site */
   /* Apparition du menu responsive */
   /* Liens du site AGER */
 }
-
 @media (max-width: 767.98px) {
   body header .nav-container .navbar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 80%;
   }
 }
-
 @media (min-width: 768px) and (max-width: 991.98px) {
   body header .nav-container .navbar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1365.98px) {
   body header .nav-container .navbar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1365.98px) {
   body header .nav-container .navbar {
     width: 65%;
@@ -142,72 +97,51 @@ body header .nav-container .navbar {
     padding-bottom: 0;
   }
 }
-
 body header .nav-container .navbar .menu-toggle {
   width: 12%;
   padding: 0;
   font-size: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background: transparent;
   color: #0C5A94;
   border: 0;
   cursor: pointer;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .menu-toggle {
     margin: 0.5em 0;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
+    justify-content: center !important;
   }
 }
-
 @media (min-width: 1366px) {
   body header .nav-container .navbar .menu-toggle {
     display: none;
   }
 }
-
 body header .nav-container .navbar .nav-menu {
   width: 75%;
   margin: auto;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 @media (max-width: 991.98px) {
   body header .nav-container .navbar .nav-menu {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu {
     padding-top: 25%;
   }
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu {
     display: none;
     margin: 2% 0;
   }
 }
-
 body header .nav-container .navbar .nav-menu .item {
   list-style: none;
   width: 20%;
@@ -215,29 +149,20 @@ body header .nav-container .navbar .nav-menu .item {
   text-align: center;
   /* Onglets du menu principal */
 }
-
 @media (min-width: 992px) and (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu .item {
     padding: 0 8%;
   }
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu .item {
     width: 100%;
   }
 }
-
 body header .nav-container .navbar .nav-menu .item a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 75px;
   margin: auto;
@@ -246,43 +171,32 @@ body header .nav-container .navbar .nav-menu .item a {
   font-weight: 600;
   font-size: 1em;
   color: #525251;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu .item a {
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 body header .nav-container .navbar .nav-menu .item a:hover {
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  transition: 0.3s ease;
   background-color: #0C5A94;
   color: white;
   border-radius: 30px;
-  -webkit-box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu .item a:hover {
-    -webkit-transition: none;
     transition: none;
     background-color: transparent;
     color: #525251;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
 }
-
 body header .nav-container .navbar .nav-menu .item .sub-menu {
   display: block;
   padding: 0;
 }
-
 @media (min-width: 1366px) {
   body header .nav-container .navbar .nav-menu .item .sub-menu {
     display: none;
@@ -291,7 +205,6 @@ body header .nav-container .navbar .nav-menu .item .sub-menu {
     z-index: 1;
   }
 }
-
 body header .nav-container .navbar .nav-menu .item .sub-menu .sous-menu {
   width: 100%;
   margin: 0;
@@ -299,187 +212,136 @@ body header .nav-container .navbar .nav-menu .item .sub-menu .sous-menu {
   position: relative;
   z-index: 1;
 }
-
 body header .nav-container .navbar .nav-menu .item .sub-menu .sous-menu a {
   background-color: #F5F4EF;
   color: #525251;
   border-radius: 0;
 }
-
 body header .nav-container .navbar .nav-menu .item .sub-menu .sous-menu a:hover {
   background-color: #015F8F;
   color: white;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu .item .sub-menu .sous-menu a:hover {
     background-color: #F5F4EF;
     color: #525251;
   }
 }
-
 @media (min-width: 1366px) {
   body header .nav-container .navbar .nav-menu .item:hover .sub-menu {
     display: block;
-    -webkit-animation: transition .5s ease;
-            animation: transition .5s ease;
+    -webkit-animation: transition 0.5s ease;
+            animation: transition 0.5s ease;
   }
 }
-
 @-webkit-keyframes transition {
   from {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    transform: translateY(20px);
     opacity: 0.4;
     z-index: 1;
   }
   to {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
     opacity: 1;
     z-index: 1;
   }
 }
-
 @keyframes transition {
   from {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    transform: translateY(20px);
     opacity: 0.4;
     z-index: 1;
   }
   to {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
     opacity: 1;
     z-index: 1;
   }
 }
-
 @media (min-width: 1366px) {
   body header .nav-container .navbar .nav-menu .current_page_item a {
     background-color: #C13030;
     color: white;
     border-radius: 30px;
-    -webkit-box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
-            box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
   }
   body header .nav-container .navbar .nav-menu .current_page_item a:hover {
     background-color: #0C5A94;
   }
 }
-
 @media (max-width: 991.98px) {
   body header .nav-container .navbar .toggled-on {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1365.98px) {
   body header .nav-container .navbar .toggled-on {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    justify-content: end;
   }
 }
-
 body header .nav-container .navbar .links {
   width: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   /* Ajustmement au niveau du bouton de recherche */
   /* Recherche mobile */
   /* Recherche bureau */
   /* Ajustement au niveau du N° de Téléphone */
 }
-
 @media (max-width: 767.98px) {
   body header .nav-container .navbar .links {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1365.98px) {
   body header .nav-container .navbar .links {
     margin: 1rem 0;
   }
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .links {
     width: 75%;
   }
 }
-
 body header .nav-container .navbar .links .nav-search-mobile {
   text-align: center;
   position: relative;
 }
-
 @media (max-width: 767.98px) {
   body header .nav-container .navbar .links .nav-search-mobile {
     width: 100%;
     margin: 1em 0;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1365.98px) {
   body header .nav-container .navbar .links .nav-search-mobile {
     width: 16%;
   }
 }
-
 @media (min-width: 1366px) {
   body header .nav-container .navbar .links .nav-search-mobile {
     display: none;
   }
 }
-
 body header .nav-container .navbar .links .search-mobile #search-btn-mobile {
   background: transparent;
   border: 0;
   color: #525251;
   font-size: 1.25em;
 }
-
 body header .nav-container .navbar .links .search-mobile .search-mobile {
   display: none;
 }
-
 body header .nav-container .navbar .links .search-mobile .search-form-mobile {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
-
 body header .nav-container .navbar .links .search-mobile .search-form-mobile .toggle-search-mobile {
   position: relative;
   display: block;
@@ -492,79 +354,60 @@ body header .nav-container .navbar .links .search-mobile .search-form-mobile .to
   /* CSS pour petite tablette */
   /* CSS pour notebook */
 }
-
 @media (max-width: 374.98px) {
   body header .nav-container .navbar .links .search-mobile .search-form-mobile .toggle-search-mobile {
     top: 5px;
   }
 }
-
 @media (min-width: 375px) and (max-width: 767.98px) {
   body header .nav-container .navbar .links .search-mobile .search-form-mobile .toggle-search-mobile {
     top: 10px;
   }
 }
-
 @media (min-width: 768px) and (max-width: 991.98px) {
   body header .nav-container .navbar .links .search-mobile .search-form-mobile .toggle-search-mobile {
     top: 12.5px;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1365.98px) {
   body header .nav-container .navbar .links .search-mobile .search-form-mobile .toggle-search-mobile {
     top: 17.5px;
   }
 }
-
 body header .nav-container .navbar .links .nav-search-desktop {
   text-align: center;
   position: relative;
   width: 16%;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .links .nav-search-desktop {
     display: none;
   }
 }
-
 body header .nav-container .navbar .links .search-desktop #search-btn-desktop {
   background: transparent;
   border: 0;
   color: #525251;
   font-size: 1.25em;
 }
-
 body header .nav-container .navbar .links .search-desktop #search-btn-desktop:hover {
   color: #C13030;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .links .search-desktop #search-btn-desktop:hover {
     color: #525251;
   }
 }
-
 body header .nav-container .navbar .links .search-desktop .search-desktop {
   display: none;
 }
-
 body header .nav-container .navbar .links .search-desktop .search-form-desktop {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
-
 body header .nav-container .navbar .links .search-desktop .search-form-desktop .toggle-search-desktop {
   position: relative;
   display: block;
@@ -575,199 +418,137 @@ body header .nav-container .navbar .links .search-desktop .search-form-desktop .
   border: 1px solid #525251;
   border-radius: 20px;
 }
-
 @media (min-width: 1366px) and (max-width: 1499.98px) {
   body header .nav-container .navbar .links .search-desktop .search-form-desktop .toggle-search-desktop {
     top: 25px;
   }
 }
-
 @media (min-width: 1500px) and (max-width: 1635.98px) {
   body header .nav-container .navbar .links .search-desktop .search-form-desktop .toggle-search-desktop {
     top: 30px;
   }
 }
-
 body header .nav-container .navbar .links .phone-rs {
   width: 84%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   /* Ajustement au niveau des liens de réseaux sociaux */
 }
-
 @media (max-width: 767.98px) {
   body header .nav-container .navbar .links .phone-rs {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 @media (min-width: 1366px) {
   body header .nav-container .navbar .links .phone-rs {
     gap: 10px;
   }
 }
-
 body header .nav-container .navbar .links .phone-rs .phone {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 88%;
   margin: 0;
 }
-
 @media (max-width: 767.98px) {
   body header .nav-container .navbar .links .phone-rs .phone {
     width: 100%;
     margin: 1em 0;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1365.98px) {
   body header .nav-container .navbar .links .phone-rs .phone {
     width: 75%;
   }
 }
-
 body header .nav-container .navbar .links .phone-rs .phone p {
   margin: 0;
 }
-
 body header .nav-container .navbar .links .phone-rs .phone .phone-number {
   text-align: center;
   text-decoration: none;
   color: #525251;
   font-weight: 600;
   font-size: 1em;
-  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .links .phone-rs .phone .phone-number {
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 body header .nav-container .navbar .links .phone-rs .phone .phone-number:hover {
-  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
   color: #0C5A94;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .links .phone-rs .phone .phone-number:hover {
-    -webkit-transition: none;
     transition: none;
     color: #525251;
   }
 }
-
 body header .nav-container .navbar .links .phone-rs .phone .phone-number .fa-phone {
   color: #C13030;
 }
-
 body header .nav-container .navbar .links .phone-rs .rs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 12%;
   margin: 0;
 }
-
 @media (max-width: 767.98px) {
   body header .nav-container .navbar .links .phone-rs .rs {
     width: 100%;
     margin: 1em 0;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1365.98px) {
   body header .nav-container .navbar .links .phone-rs .rs {
     width: 25%;
   }
 }
-
 body header .nav-container .navbar .links .phone-rs .rs p {
   margin: 0;
 }
-
 body header .nav-container .navbar .links .phone-rs .rs .rs-link {
   text-decoration: none;
   color: #C13030;
   font-size: 1.5em;
-  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
   text-align: center;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .links .phone-rs .rs .rs-link {
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 body header .nav-container .navbar .links .phone-rs .rs .rs-link:hover {
-  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
   color: #0C5A94;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .links .phone-rs .rs .rs-link:hover {
-    -webkit-transition: none;
     transition: none;
     color: #C13030;
   }
 }
-
 body #cookie_law_notification.cookielaw1 {
   font-size: 1em;
   background-color: rgba(233, 232, 233, 0.6);
 }
-
 @media (max-width: 575.98px) {
   body #cookie_law_notification.cookielaw1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 body .cookielaw1 #cookie_message {
   font-size: 1.25em;
 }
-
 @media (max-width: 575.98px) {
   body .cookielaw1 #cookie_message {
     width: 100%;
@@ -775,25 +556,21 @@ body .cookielaw1 #cookie_message {
     margin-bottom: 2%;
   }
 }
-
 body .cookielaw1 #cookie_message p {
   color: black;
   margin: 0;
 }
-
 body .cookielaw1 #cookie_message a {
   color: black;
   font-weight: 700;
   text-decoration: none;
 }
-
 body .cookielaw1 #cookie_accept_button {
   background-color: #C13030;
   border-color: #C13030;
   font-size: 1.25em;
   color: white;
 }
-
 @media (max-width: 575.98px) {
   body .cookielaw1 #cookie_accept_button {
     position: relative;
@@ -805,82 +582,63 @@ body .cookielaw1 #cookie_accept_button {
 /* Import du CSS pour 'recherche.php' */
 /* CSS de la page 'Recherche' */
 .recherche {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 2% 10%;
   /* Section des résultats de la recherche */
 }
-
 @media (max-width: 575.98px) {
   .recherche {
     padding: 2% 5%;
   }
 }
-
 .recherche .resultats-recherche h1 {
   /* Titre annonçant les résultats pour la recherche */
   text-align: center;
   font-size: 3em;
 }
-
 @media (max-width: 767.98px) {
   .recherche .resultats-recherche h1 {
     font-size: 1.5em;
   }
 }
-
 .recherche .resultats-recherche .resultat {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 2% 0;
   gap: 10px;
 }
-
 .recherche .resultats-recherche .resultat p {
   margin: 0;
   color: black;
   font-size: 1.5em;
 }
-
 @media (max-width: 767.98px) {
   .recherche .resultats-recherche .resultat p {
     font-size: 1em;
   }
 }
-
 .recherche .resultats-recherche .resultat a {
   color: black;
   font-size: 1.5em;
   font-weight: 700;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-
 @media (max-width: 767.98px) {
   .recherche .resultats-recherche .resultat a {
     font-size: 1em;
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .recherche .resultats-recherche .resultat a:hover {
   color: #C13030;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-
 @media (max-width: 1365.98px) {
   .recherche .resultats-recherche .resultat a:hover {
     color: black;
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .recherche .resultats-recherche .resultatequalzero {
   text-align: center;
   color: black;
@@ -891,55 +649,45 @@ body .cookielaw1 #cookie_accept_button {
 /* CSS de la page 'Single-activites' */
 .single-activite {
   padding: 2% 10%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   /* Retour sur la page d'accueil */
   /* Intro du domaine d'activité */
   /* Contenu du domaine d'activité */
 }
-
 .single-activite .single-link {
   margin: 2% 0;
   /* Lien de retour */
 }
-
 .single-activite .single-link a {
   font-size: 1.5em;
   font-weight: 500;
   color: #525251;
   text-decoration: none;
 }
-
 @media (min-width: 1366px) {
   .single-activite .single-link a {
-    -webkit-transition: .8s ease;
-    transition: .8s ease;
+    transition: 0.8s ease;
   }
 }
-
 @media (min-width: 1366px) {
   .single-activite .single-link a:hover {
-    -webkit-transition: .8s ease;
-    transition: .8s ease;
+    transition: 0.8s ease;
     color: #C13030;
   }
 }
-
 .single-activite .single-intro {
   cursor: context-menu;
 }
-
 .single-activite .single-intro h1 {
   font-size: 2em;
   font-weight: 500;
   color: black;
 }
-
 .single-activite .single-content {
   margin: 2% 0;
   /* Titre du domaine d'activité */
   /* Description du domaine d'activité */
 }
-
 .single-activite .single-content .section_titre .img-hover-agriculture {
   width: 100%;
   height: 300px;
@@ -948,7 +696,6 @@ body .cookielaw1 #cookie_accept_button {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .single-activite .single-content .section_titre .img-hover-collectivites {
   width: 100%;
   height: 300px;
@@ -957,7 +704,6 @@ body .cookielaw1 #cookie_accept_button {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .single-activite .single-content .section_titre .img-hover-entreprises {
   width: 100%;
   height: 300px;
@@ -966,56 +712,35 @@ body .cookielaw1 #cookie_accept_button {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .single-activite .single-content .section_titre .img-hover-agriculture .texte-hover, .single-activite .single-content .section_titre .img-hover-collectivites .texte-hover, .single-activite .single-content .section_titre .img-hover-entreprises .texte-hover {
   width: 90%;
   margin: auto;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   color: white;
   cursor: context-menu;
 }
-
 @media (max-width: 767.98px) {
   .single-activite .single-content .section_titre .img-hover-agriculture .texte-hover, .single-activite .single-content .section_titre .img-hover-collectivites .texte-hover, .single-activite .single-content .section_titre .img-hover-entreprises .texte-hover {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
-
 .single-activite .single-content .section_titre .img-hover-agriculture .texte-hover h2, .single-activite .single-content .section_titre .img-hover-collectivites .texte-hover h2, .single-activite .single-content .section_titre .img-hover-entreprises .texte-hover h2 {
   margin: 0;
   font-size: 2em;
   font-weight: 400;
 }
-
 .single-activite .single-content .section_description .part01, .single-activite .single-content .section_description .part02 {
   margin-top: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   /* Format du container de l'image */
   /* Agrandissement du container */
 }
-
 .single-activite .single-content .section_description .part01 .texte_description, .single-activite .single-content .section_description .part02 .texte_description {
   width: 45%;
   margin: 0;
@@ -1024,46 +749,35 @@ body .cookielaw1 #cookie_accept_button {
   color: #525251;
   cursor: context-menu;
 }
-
 .single-activite .single-content .section_description .part01 .modal-grande, .single-activite .single-content .section_description .part02 .modal-grande {
   width: 45%;
   height: auto;
-  cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
-
 .single-activite .single-content .section_description .part01 .modal-petite, .single-activite .single-content .section_description .part02 .modal-petite {
   width: 22.5%;
   height: auto;
-  cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
-
 @media (min-width: 1366px) {
   .single-activite .single-content .section_description .part01 .modal-grande, .single-activite .single-content .section_description .part01 .modal-petite, .single-activite .single-content .section_description .part02 .modal-grande, .single-activite .single-content .section_description .part02 .modal-petite {
-    -webkit-transition: 0.8s ease;
     transition: 0.8s ease;
   }
   .single-activite .single-content .section_description .part01 .modal-grande:hover, .single-activite .single-content .section_description .part01 .modal-petite:hover, .single-activite .single-content .section_description .part02 .modal-grande:hover, .single-activite .single-content .section_description .part02 .modal-petite:hover {
-    -webkit-transition: 0.8s ease;
     transition: 0.8s ease;
-    -webkit-filter: brightness(0.5);
-            filter: brightness(0.5);
+    filter: brightness(0.5);
   }
 }
-
 .single-activite .single-content .section_description .part01 .modal, .single-activite .single-content .section_description .part02 .modal {
   z-index: 3;
   display: none;
   padding: 1%;
   position: fixed;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  cursor: -webkit-zoom-out;
   cursor: zoom-out;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
@@ -1072,7 +786,6 @@ body .cookielaw1 #cookie_accept_button {
   /* Fermeture de l'agrandissement */
   /* Contenu de l'agrandissement (Image affichée en plus grand) */
 }
-
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
@@ -1081,7 +794,6 @@ body .cookielaw1 #cookie_accept_button {
     opacity: 1;
   }
 }
-
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -1090,17 +802,10 @@ body .cookielaw1 #cookie_accept_button {
     opacity: 1;
   }
 }
-
 .single-activite .single-content .section_description .part01 .modal .modal-button, .single-activite .single-content .section_description .part02 .modal .modal-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 2em;
   background-color: white;
   width: 50px;
@@ -1108,98 +813,68 @@ body .cookielaw1 #cookie_accept_button {
   border-radius: 10px;
   cursor: context-menu;
 }
-
 @media (max-width: 1365.98px) {
   .single-activite .single-content .section_description .part01 .modal .modal-button, .single-activite .single-content .section_description .part02 .modal .modal-button {
     background-color: red;
     color: white;
   }
 }
-
 @media (min-width: 1366px) {
   .single-activite .single-content .section_description .part01 .modal .modal-button, .single-activite .single-content .section_description .part02 .modal .modal-button {
-    -webkit-transition: 0.8s ease;
     transition: 0.8s ease;
   }
 }
-
 @media (min-width: 1366px) {
   .single-activite .single-content .section_description .part01 .modal .modal-button:hover, .single-activite .single-content .section_description .part02 .modal .modal-button:hover {
-    -webkit-transition: 0.8s ease;
     transition: 0.8s ease;
     background-color: red;
     color: white;
   }
 }
-
 .single-activite .single-content .section_description .part01 .modal .modal-content, .single-activite .single-content .section_description .part02 .modal .modal-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   border: none;
   border-radius: 0;
 }
-
 .single-activite .single-content .section_description .part01 .modal .modal-content img, .single-activite .single-content .section_description .part02 .modal .modal-content img {
   width: 60%;
   height: auto;
 }
-
 .single-activite .single-content .section_description .part01 .modal .modal-content h3, .single-activite .single-content .section_description .part02 .modal .modal-content h3 {
   font-size: 2em;
   font-weight: 300;
   color: white;
   margin: 1% 0;
 }
-
 @media (max-width: 767.98px) {
   .single-activite .single-content .part01 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 25px;
   }
 }
-
 @media (max-width: 767.98px) {
   .single-activite .single-content .part01 .modal-grande {
     width: 90%;
   }
 }
-
 @media (max-width: 1365.98px) {
   .single-activite .single-content .part02 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 25px;
   }
 }
-
 .single-activite .single-content .part02 .modal-petite {
-  cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
-
 @media (max-width: 767.98px) {
   .single-activite .single-content .part02 .modal-petite {
     width: 90%;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1365.98px) {
   .single-activite .single-content .part02 .modal-petite {
     width: 45%;
@@ -1210,67 +885,50 @@ body .cookielaw1 #cookie_accept_button {
 /* CSS de la page 'Single-actualite' */
 .single-actualite {
   padding: 2% 10%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   /* Retour sur la page d'accueil */
   /* Intro de l'actualité */
   /* Contenu de l'actualité */
 }
-
 .single-actualite .single-link {
   margin: 2% 0;
   /* Lien de retour */
 }
-
 .single-actualite .single-link a {
   font-size: 1.5em;
   font-weight: 500;
   color: #525251;
   text-decoration: none;
 }
-
 @media (min-width: 1366px) {
   .single-actualite .single-link a {
-    -webkit-transition: .8s ease;
-    transition: .8s ease;
+    transition: 0.8s ease;
   }
 }
-
 @media (min-width: 1366px) {
   .single-actualite .single-link a:hover {
-    -webkit-transition: .8s ease;
-    transition: .8s ease;
+    transition: 0.8s ease;
     color: #C13030;
   }
 }
-
 .single-actualite .single-intro {
   margin: 2% 0;
   padding: 5% 0 0;
   cursor: context-menu;
 }
-
 .single-actualite .single-intro h1 {
   font-size: 2em;
   font-weight: 500;
   color: black;
 }
-
 .single-actualite .single-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  flex-direction: column;
+  align-items: start;
   margin: 2% 0;
   padding: 5% 0 0;
   cursor: context-menu;
 }
-
 .single-actualite .single-content .single-date, .single-actualite .single-content .single-paragraph {
   font-weight: 500;
   font-size: 1.25em;
@@ -1282,94 +940,65 @@ body .cookielaw1 #cookie_accept_button {
 /* CSS de la page 'Actualites' */
 .actualites {
   padding: 2% 5%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   /* CSS sur les articles présents sur la page */
   /* Pagination de la page 'Actualités' */
 }
-
 @media (max-width: 767.98px) {
   .actualites {
     padding: 2% 0;
   }
 }
-
 .actualites .actualites-disposition {
   padding: 2% 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   width: 80%;
   margin: 5% auto;
   /* CSS de chaque article */
 }
-
 @media (max-width: 767.98px) {
   .actualites .actualites-disposition {
     width: 100%;
   }
 }
-
 .actualites .actualites-disposition .actualites-card {
   margin: 6% 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex: 0 1 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-
 @media (max-width: 991.98px) {
   .actualites .actualites-disposition .actualites-card {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+    flex: 1 1 100%;
   }
 }
-
 .actualites .actualites-disposition .actualites-card a {
   text-decoration: none;
 }
-
 @media (max-width: 575.98px) {
   .actualites .actualites-disposition .actualites-card a {
     text-align: center;
   }
 }
-
 .actualites .actualites-disposition .actualites-card a .actualites-title {
   font-size: 2em;
   color: black;
   margin: 0;
 }
-
 .actualites .actualites-pagination {
   padding: 2% 0;
 }
-
 .actualites .actualites-pagination .pagination {
   display: block;
 }
-
 .actualites .actualites-pagination .pagination .nav-links {
   text-align: center;
   /* CSS pour l'état du curseur */
 }
-
 .actualites .actualites-pagination .pagination .nav-links .page-numbers {
   color: #525251;
   background-color: #F5F4EF;
@@ -1378,33 +1007,25 @@ body .cookielaw1 #cookie_accept_button {
   margin: 0 1%;
   padding: 0.25% 0.5%;
   border-radius: 5px;
-  -webkit-transition: 1s ease;
   transition: 1s ease;
 }
-
 @media (max-width: 1365.98px) {
   .actualites .actualites-pagination .pagination .nav-links .page-numbers {
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .actualites .actualites-pagination .pagination .nav-links .page-numbers:hover {
   color: black;
   background-color: transparent;
-  -webkit-transition: 1s ease;
   transition: 1s ease;
 }
-
 @media (max-width: 1365.98px) {
   .actualites .actualites-pagination .pagination .nav-links .page-numbers:hover {
     color: #525251;
     background-color: #F5F4EF;
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .actualites .actualites-pagination .pagination .nav-links .current {
   cursor: context-menu;
 }
@@ -1413,49 +1034,41 @@ body .cookielaw1 #cookie_accept_button {
 .entreprise {
   margin: 1% 0;
   padding: 0 10%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   cursor: context-menu;
   /* Titre de la page */
 }
-
 @media (max-width: 767.98px) {
   .entreprise {
     padding: 5% 10%;
   }
 }
-
 .entreprise .entreprise-title {
   margin-bottom: 1rem;
   font-weight: 700;
   font-size: 2.25em;
 }
-
 .entreprise .entreprise-presentation, .entreprise .entreprise-localisation, .entreprise .entreprise-savoir {
   margin: 0.25rem 0;
 }
-
 .entreprise .entreprise-presentation .tete, .entreprise .entreprise-localisation .tete, .entreprise .entreprise-savoir .tete {
   font-size: 1.75em;
 }
-
 @media (max-width: 767.98px) {
   .entreprise .entreprise-presentation .tete, .entreprise .entreprise-localisation .tete, .entreprise .entreprise-savoir .tete {
     font-size: 1.5em;
   }
 }
-
 .entreprise .entreprise-presentation .corps, .entreprise .entreprise-localisation .corps, .entreprise .entreprise-savoir .corps {
   margin: 1rem 0;
   font-size: 1.5em;
   text-align: justify;
 }
-
 @media (max-width: 767.98px) {
   .entreprise .entreprise-presentation .corps, .entreprise .entreprise-localisation .corps, .entreprise .entreprise-savoir .corps {
     font-size: 1.25em;
   }
 }
-
 .entreprise .entreprise-confiance {
   margin-top: 1rem;
   margin-bottom: 0;
@@ -1463,7 +1076,6 @@ body .cookielaw1 #cookie_accept_button {
   font-size: 1.75em;
   text-align: center;
 }
-
 @media (max-width: 767.98px) {
   .entreprise .entreprise-confiance {
     font-size: 1.75em;
@@ -1473,15 +1085,13 @@ body .cookielaw1 #cookie_accept_button {
 /* CSS de la page 'Agriculture' */
 .agriculture {
   padding: 0 10%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   /* Bannière de la page Agriculture */
   /* Présentation de une ou plusieurs réalisation(s) */
 }
-
 .agriculture .section_titre {
   margin-top: 1%;
 }
-
 .agriculture .section_titre .img-hover-agriculture {
   width: 100%;
   height: 300px;
@@ -1490,60 +1100,38 @@ body .cookielaw1 #cookie_accept_button {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .agriculture .section_titre .img-hover-agriculture .texte-hover {
   width: 90%;
   margin: auto;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   color: white;
   cursor: context-menu;
 }
-
 @media (max-width: 767.98px) {
   .agriculture .section_titre .img-hover-agriculture .texte-hover {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
-
 .agriculture .section_titre .img-hover-agriculture .texte-hover h2 {
   margin: 0;
   font-size: 2em;
   font-weight: 400;
 }
-
 .agriculture .section_description {
   margin-bottom: 2%;
 }
-
 .agriculture .section_description .part01, .agriculture .section_description .part02 {
   margin-top: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   /* Format du container de l'image */
   /* Agrandissement du container */
 }
-
 .agriculture .section_description .part01 .texte_description, .agriculture .section_description .part02 .texte_description {
   width: 45%;
   margin: 0;
@@ -1552,52 +1140,40 @@ body .cookielaw1 #cookie_accept_button {
   color: #525251;
   cursor: context-menu;
 }
-
 @media (max-width: 767.98px) {
   .agriculture .section_description .part01 .texte_description, .agriculture .section_description .part02 .texte_description {
     width: 90%;
   }
 }
-
 .agriculture .section_description .part01 .modal-grande, .agriculture .section_description .part02 .modal-grande {
   width: 45%;
   height: auto;
-  cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
-
 .agriculture .section_description .part01 .modal-petite, .agriculture .section_description .part02 .modal-petite {
   width: 22.5%;
   height: auto;
-  cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
-
 @media (min-width: 1366px) {
   .agriculture .section_description .part01 .modal-grande, .agriculture .section_description .part01 .modal-petite, .agriculture .section_description .part02 .modal-grande, .agriculture .section_description .part02 .modal-petite {
-    -webkit-transition: 0.8s ease;
     transition: 0.8s ease;
   }
   .agriculture .section_description .part01 .modal-grande:hover, .agriculture .section_description .part01 .modal-petite:hover, .agriculture .section_description .part02 .modal-grande:hover, .agriculture .section_description .part02 .modal-petite:hover {
-    -webkit-transition: 0.8s ease;
     transition: 0.8s ease;
-    -webkit-filter: brightness(0.5);
-            filter: brightness(0.5);
+    filter: brightness(0.5);
   }
 }
-
 .agriculture .section_description .part01 .modal, .agriculture .section_description .part02 .modal {
   z-index: 3;
   display: none;
   padding: 1%;
   position: fixed;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  cursor: -webkit-zoom-out;
   cursor: zoom-out;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
@@ -1606,7 +1182,6 @@ body .cookielaw1 #cookie_accept_button {
   /* Fermeture de l'agrandissement */
   /* Contenu de l'agrandissement (Image affichée en plus grand) */
 }
-
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -1615,17 +1190,10 @@ body .cookielaw1 #cookie_accept_button {
     opacity: 1;
   }
 }
-
 .agriculture .section_description .part01 .modal .modal-button, .agriculture .section_description .part02 .modal .modal-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 2em;
   background-color: white;
   width: 50px;
@@ -1633,98 +1201,68 @@ body .cookielaw1 #cookie_accept_button {
   border-radius: 10px;
   cursor: context-menu;
 }
-
 @media (max-width: 1365.98px) {
   .agriculture .section_description .part01 .modal .modal-button, .agriculture .section_description .part02 .modal .modal-button {
     background-color: red;
     color: white;
   }
 }
-
 @media (min-width: 1366px) {
   .agriculture .section_description .part01 .modal .modal-button, .agriculture .section_description .part02 .modal .modal-button {
-    -webkit-transition: 0.8s ease;
     transition: 0.8s ease;
   }
 }
-
 @media (min-width: 1366px) {
   .agriculture .section_description .part01 .modal .modal-button:hover, .agriculture .section_description .part02 .modal .modal-button:hover {
-    -webkit-transition: 0.8s ease;
     transition: 0.8s ease;
     background-color: red;
     color: white;
   }
 }
-
 .agriculture .section_description .part01 .modal .modal-content, .agriculture .section_description .part02 .modal .modal-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   border: none;
   border-radius: 0;
 }
-
 .agriculture .section_description .part01 .modal .modal-content img, .agriculture .section_description .part02 .modal .modal-content img {
   width: 60%;
   height: auto;
 }
-
 .agriculture .section_description .part01 .modal .modal-content h3, .agriculture .section_description .part02 .modal .modal-content h3 {
   font-size: 2em;
   font-weight: 300;
   color: white;
   margin: 1% 0;
 }
-
 @media (max-width: 767.98px) {
   .agriculture .section_description .part01 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 25px;
   }
 }
-
 @media (max-width: 767.98px) {
   .agriculture .section_description .part01 .modal-grande {
     width: 90%;
   }
 }
-
 @media (max-width: 1365.98px) {
   .agriculture .section_description .part02 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 25px;
   }
 }
-
 .agriculture .section_description .part02 .modal-petite {
-  cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
-
 @media (max-width: 767.98px) {
   .agriculture .section_description .part02 .modal-petite {
     width: 90%;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1365.98px) {
   .agriculture .section_description .part02 .modal-petite {
     width: 45%;
@@ -1734,15 +1272,13 @@ body .cookielaw1 #cookie_accept_button {
 /* CSS de la page 'Collectivités Locales' */
 .collectivites {
   padding: 0 10%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   /* Bannière de la page Collectivités */
   /* Présentation de une ou plusieurs réalisation(s) */
 }
-
 .collectivites .section_titre {
   margin-top: 1%;
 }
-
 .collectivites .section_titre .img-hover-collectivites {
   width: 100%;
   height: 300px;
@@ -1751,41 +1287,27 @@ body .cookielaw1 #cookie_accept_button {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .collectivites .section_titre .img-hover-collectivites .texte-hover {
   width: 90%;
   margin: auto;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   color: white;
   cursor: context-menu;
 }
-
 @media (max-width: 767.98px) {
   .collectivites .section_titre .img-hover-collectivites .texte-hover {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
-
 .collectivites .section_titre .img-hover-collectivites .texte-hover h2 {
   margin: 0;
   font-size: 2em;
   font-weight: 400;
 }
-
 .collectivites .section_titre .img-hover-collectivites .texte-hover p {
   margin: 0;
   width: 40%;
@@ -1793,7 +1315,6 @@ body .cookielaw1 #cookie_accept_button {
   font-weight: 300;
   text-align: justify;
 }
-
 @media (max-width: 767.98px) {
   .collectivites .section_titre .img-hover-collectivites .texte-hover p {
     width: 80%;
@@ -1801,32 +1322,22 @@ body .cookielaw1 #cookie_accept_button {
     font-weight: 400;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1365.98px) {
   .collectivites .section_titre .img-hover-collectivites .texte-hover p {
     width: 60%;
   }
 }
-
 .collectivites .section_description {
   margin-bottom: 2%;
 }
-
 .collectivites .section_description .part01, .collectivites .section_description .part02 {
   margin-top: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   /* Format du container de l'image */
   /* Agrandissment du container */
 }
-
 .collectivites .section_description .part01 .texte_description, .collectivites .section_description .part02 .texte_description {
   width: 45%;
   margin: 0;
@@ -1835,52 +1346,40 @@ body .cookielaw1 #cookie_accept_button {
   color: #525251;
   cursor: context-menu;
 }
-
 @media (max-width: 767.98px) {
   .collectivites .section_description .part01 .texte_description, .collectivites .section_description .part02 .texte_description {
     width: 90%;
   }
 }
-
 .collectivites .section_description .part01 .modal-grande, .collectivites .section_description .part02 .modal-grande {
   width: 45%;
   height: auto;
-  cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
-
 .collectivites .section_description .part01 .modal-petite, .collectivites .section_description .part02 .modal-petite {
   width: 22.5%;
   height: auto;
-  cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
-
 @media (min-width: 1366px) {
   .collectivites .section_description .part01 .modal-grande, .collectivites .section_description .part01 .modal-petite, .collectivites .section_description .part02 .modal-grande, .collectivites .section_description .part02 .modal-petite {
-    -webkit-transition: 0.8s ease;
     transition: 0.8s ease;
   }
   .collectivites .section_description .part01 .modal-grande:hover, .collectivites .section_description .part01 .modal-petite:hover, .collectivites .section_description .part02 .modal-grande:hover, .collectivites .section_description .part02 .modal-petite:hover {
-    -webkit-transition: 0.8s ease;
     transition: 0.8s ease;
-    -webkit-filter: brightness(0.5);
-            filter: brightness(0.5);
+    filter: brightness(0.5);
   }
 }
-
 .collectivites .section_description .part01 .modal, .collectivites .section_description .part02 .modal {
   z-index: 3;
   display: none;
   padding: 1%;
   position: fixed;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  cursor: -webkit-zoom-out;
   cursor: zoom-out;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
@@ -1889,7 +1388,6 @@ body .cookielaw1 #cookie_accept_button {
   /* Fermeture de l'agrandissement */
   /* Contenu de l'agrandissement (Image affichée en plus grand) */
 }
-
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -1898,17 +1396,10 @@ body .cookielaw1 #cookie_accept_button {
     opacity: 1;
   }
 }
-
 .collectivites .section_description .part01 .modal .modal-button, .collectivites .section_description .part02 .modal .modal-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 2em;
   background-color: white;
   width: 50px;
@@ -1916,98 +1407,68 @@ body .cookielaw1 #cookie_accept_button {
   border-radius: 10px;
   cursor: context-menu;
 }
-
 @media (max-width: 1365.98px) {
   .collectivites .section_description .part01 .modal .modal-button, .collectivites .section_description .part02 .modal .modal-button {
     background-color: red;
     color: white;
   }
 }
-
 @media (min-width: 1366px) {
   .collectivites .section_description .part01 .modal .modal-button, .collectivites .section_description .part02 .modal .modal-button {
-    -webkit-transition: 0.8s ease;
     transition: 0.8s ease;
   }
 }
-
 @media (min-width: 1366px) {
   .collectivites .section_description .part01 .modal .modal-button:hover, .collectivites .section_description .part02 .modal .modal-button:hover {
-    -webkit-transition: 0.8s ease;
     transition: 0.8s ease;
     background-color: red;
     color: white;
   }
 }
-
 .collectivites .section_description .part01 .modal .modal-content, .collectivites .section_description .part02 .modal .modal-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   border: none;
   border-radius: 0;
 }
-
 .collectivites .section_description .part01 .modal .modal-content img, .collectivites .section_description .part02 .modal .modal-content img {
   width: 60%;
   height: auto;
 }
-
 .collectivites .section_description .part01 .modal .modal-content h3, .collectivites .section_description .part02 .modal .modal-content h3 {
   font-size: 2em;
   font-weight: 300;
   color: white;
   margin: 1% 0;
 }
-
 @media (max-width: 767.98px) {
   .collectivites .section_description .part01 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 25px;
   }
 }
-
 @media (max-width: 767.98px) {
   .collectivites .section_description .part01 .modal-grande {
     width: 90%;
   }
 }
-
 @media (max-width: 1365.98px) {
   .collectivites .section_description .part02 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 25px;
   }
 }
-
 .collectivites .section_description .part02 .modal-petite {
-  cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
-
 @media (max-width: 767.98px) {
   .collectivites .section_description .part02 .modal-petite {
     width: 90%;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1365.98px) {
   .collectivites .section_description .part02 .modal-petite {
     width: 45%;
@@ -2017,15 +1478,13 @@ body .cookielaw1 #cookie_accept_button {
 /* CSS de la page 'Entreprises' */
 .entreprises {
   padding: 0 10%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   /* Bannière de la page Entreprises */
   /* Présentation de une ou plusieurs réalisation(s) */
 }
-
 .entreprises .section_titre {
   margin-top: 1%;
 }
-
 .entreprises .section_titre .img-hover-entreprises {
   width: 100%;
   height: 300px;
@@ -2034,60 +1493,38 @@ body .cookielaw1 #cookie_accept_button {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .entreprises .section_titre .img-hover-entreprises .texte-hover {
   width: 90%;
   margin: auto;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   color: white;
   cursor: context-menu;
 }
-
 @media (max-width: 767.98px) {
   .entreprises .section_titre .img-hover-entreprises .texte-hover {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
-
 .entreprises .section_titre .img-hover-entreprises .texte-hover h2 {
   margin: 0;
   font-size: 2em;
   font-weight: 400;
 }
-
 .entreprises .section_description {
   margin-bottom: 2%;
 }
-
 .entreprises .section_description .part01 {
   margin-top: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   /* Format du container de l'image */
   /* Agrandissment du container */
 }
-
 .entreprises .section_description .part01 .texte_description {
   width: 45%;
   margin: 0;
@@ -2096,45 +1533,35 @@ body .cookielaw1 #cookie_accept_button {
   color: #525251;
   cursor: context-menu;
 }
-
 @media (max-width: 767.98px) {
   .entreprises .section_description .part01 .texte_description {
     width: 90%;
   }
 }
-
 .entreprises .section_description .part01 .modal-grande {
   width: 45%;
   height: auto;
-  cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
-
 @media (min-width: 1366px) {
   .entreprises .section_description .part01 .modal-grande {
-    -webkit-transition: 0.8s ease;
     transition: 0.8s ease;
   }
   .entreprises .section_description .part01 .modal-grande:hover {
-    -webkit-transition: 0.8s ease;
     transition: 0.8s ease;
-    -webkit-filter: brightness(0.5);
-            filter: brightness(0.5);
+    filter: brightness(0.5);
   }
 }
-
 .entreprises .section_description .part01 .modal {
   z-index: 3;
   display: none;
   padding: 1%;
   position: fixed;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  cursor: -webkit-zoom-out;
   cursor: zoom-out;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
@@ -2143,7 +1570,6 @@ body .cookielaw1 #cookie_accept_button {
   /* Fermeture de l'agrandissement */
   /* Contenu de l'agrandissement (Image affichée en plus grand) */
 }
-
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -2152,17 +1578,10 @@ body .cookielaw1 #cookie_accept_button {
     opacity: 1;
   }
 }
-
 .entreprises .section_description .part01 .modal .modal-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 2em;
   background-color: white;
   width: 50px;
@@ -2170,71 +1589,49 @@ body .cookielaw1 #cookie_accept_button {
   border-radius: 10px;
   cursor: context-menu;
 }
-
 @media (max-width: 1365.98px) {
   .entreprises .section_description .part01 .modal .modal-button {
     background-color: red;
     color: white;
   }
 }
-
 @media (min-width: 1366px) {
   .entreprises .section_description .part01 .modal .modal-button {
-    -webkit-transition: 0.8s ease;
     transition: 0.8s ease;
   }
 }
-
 @media (min-width: 1366px) {
   .entreprises .section_description .part01 .modal .modal-button:hover {
-    -webkit-transition: 0.8s ease;
     transition: 0.8s ease;
     background-color: red;
     color: white;
   }
 }
-
 .entreprises .section_description .part01 .modal .modal-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   border: none;
   border-radius: 0;
 }
-
 .entreprises .section_description .part01 .modal .modal-content img {
   width: 60%;
   height: auto;
 }
-
 .entreprises .section_description .part01 .modal .modal-content h3 {
   font-size: 2em;
   font-weight: 300;
   color: white;
   margin: 1% 0;
 }
-
 @media (max-width: 767.98px) {
   .entreprises .section_description .part01 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 25px;
   }
 }
-
 @media (max-width: 767.98px) {
   .entreprises .section_description .part01 .modal-grande {
     width: 90%;
@@ -2245,17 +1642,15 @@ body .cookielaw1 #cookie_accept_button {
 .contact {
   margin: 1% 0;
   padding: 0 10%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   /* Bannière de la page Contact */
   /* Section Adresse et Formulaire */
 }
-
 @media (max-width: 575.98px) {
   .contact {
     padding: 0;
   }
 }
-
 .contact .section_titre .img-hover-contact {
   width: 100%;
   height: 300px;
@@ -2264,41 +1659,27 @@ body .cookielaw1 #cookie_accept_button {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .contact .section_titre .img-hover-contact .texte-hover {
   width: 90%;
   margin: auto;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   color: white;
   cursor: context-menu;
 }
-
 @media (max-width: 767.98px) {
   .contact .section_titre .img-hover-contact .texte-hover {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
-
 .contact .section_titre .img-hover-contact .texte-hover h2 {
   margin: 0;
   font-size: 2em;
   font-weight: 400;
 }
-
 .contact .section_titre .img-hover-contact .texte-hover p {
   margin: 0;
   width: 40%;
@@ -2306,7 +1687,6 @@ body .cookielaw1 #cookie_accept_button {
   font-weight: 300;
   text-align: justify;
 }
-
 @media (max-width: 767.98px) {
   .contact .section_titre .img-hover-contact .texte-hover p {
     width: 80%;
@@ -2314,169 +1694,106 @@ body .cookielaw1 #cookie_accept_button {
     font-weight: 400;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1365.98px) {
   .contact .section_titre .img-hover-contact .texte-hover p {
     width: 60%;
   }
 }
-
 .contact .adresse-formulaire {
   margin: 1% auto 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   /* Adresse AGER Systèmes */
   /* Formulaire de Contact pour le site AGER Systèmes */
 }
-
 @media (max-width: 1365.98px) {
   .contact .adresse-formulaire {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 25px;
   }
 }
-
 .contact .adresse-formulaire .adresse-agence {
   width: 35%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 25px;
 }
-
 @media (max-width: 1365.98px) {
   .contact .adresse-formulaire .adresse-agence {
     width: 100%;
   }
 }
-
 .contact .adresse-formulaire .adresse-agence h2 {
   margin: 0;
   text-align: center;
   cursor: context-menu;
 }
-
 .contact .adresse-formulaire .adresse-agence .adresse {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 25px;
   text-decoration: none;
 }
-
 .contact .adresse-formulaire .adresse-agence .adresse p {
   margin: 0;
   color: black;
   text-align: center;
 }
-
 .contact .adresse-formulaire .adresse-agence .adresse img {
   width: 100%;
   height: 100%;
 }
-
 .contact .adresse-formulaire .adresse-agence .adresse-contact {
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 10px;
   text-align: center;
   cursor: context-menu;
 }
-
 .contact .adresse-formulaire .adresse-agence .adresse-contact span {
   font-weight: 400;
   font-size: 1em;
 }
-
 .contact .adresse-formulaire .adresse-agence .adresse-contact span a {
   color: black;
 }
-
 .contact .adresse-formulaire .formulaire {
   width: 50%;
 }
-
 @media (max-width: 1365.98px) {
   .contact .adresse-formulaire .formulaire {
     width: 100%;
   }
 }
-
 .contact .adresse-formulaire .formulaire form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   /* Bouton d'envoi du formulaire */
   /* RGPD et indicatif des champs qui sont obligatoire */
   /* Réponse obtenue lors de l'envoi d'un formulaire */
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   /* Champs de renseignements de coordonnées */
   /* Des balises sont intégrés sur le formulaire */
 }
-
 @media (max-width: 1365.98px) {
   .contact .adresse-formulaire .formulaire form .infos-contact {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-nom, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-prenom, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-email, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-tel, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-objet {
   padding: 2% 0;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-nom label, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-prenom label, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-email label, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-tel label, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-objet label {
   color: black;
   font-weight: 700;
@@ -2485,27 +1802,17 @@ body .cookielaw1 #cookie_accept_button {
   width: 100%;
   margin-bottom: 1%;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-nom label i, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-prenom label i, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-email label i, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-tel label i, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-objet label i {
   font-style: normal;
   margin: 0 1%;
   color: #C13030;
   font-size: 1em;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-nom span, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-prenom span, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-email span, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-tel span, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-objet span {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-nom span input, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-prenom span input, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-email span input, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-tel span input, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-objet span input {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
@@ -2514,11 +1821,9 @@ body .cookielaw1 #cookie_accept_button {
   width: 90%;
   cursor: default;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-nom span input:focus, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-prenom span input:focus, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-email span input:focus, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-tel span input:focus, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-objet span input:focus {
   outline: none;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-nom span select, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-prenom span select, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-email span select, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-tel span select, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-objet span select {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
@@ -2526,33 +1831,22 @@ body .cookielaw1 #cookie_accept_button {
   border-radius: 15px;
   width: 90%;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-nom span select:focus, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-prenom span select:focus, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-email span select:focus, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-tel span select:focus, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-objet span select:focus {
   outline: none;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-nom span .wpcf7-not-valid-tip, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-prenom span .wpcf7-not-valid-tip, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-email span .wpcf7-not-valid-tip, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-tel span .wpcf7-not-valid-tip, .contact .adresse-formulaire .formulaire form .infos-contact .coordonnees .champ-objet span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
   color: #C13030;
   margin-top: 1%;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   /* Champ message */
   /* Champ envoi pièce jointe facultative */
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message label {
   color: black;
   font-weight: 700;
@@ -2561,14 +1855,12 @@ body .cookielaw1 #cookie_accept_button {
   width: 100%;
   margin-bottom: 1%;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message label i {
   font-style: normal;
   margin: 0 1%;
   color: #C13030;
   font-size: 1em;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message textarea {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
@@ -2578,7 +1870,6 @@ body .cookielaw1 #cookie_accept_button {
   cursor: default;
   resize: none;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar {
   background-color: #212021;
   border-top-right-radius: 20px;
@@ -2586,18 +1877,15 @@ body .cookielaw1 #cookie_accept_button {
   border-top: 1px solid #020722;
   border-bottom: 1px solid #020722;
 }
-
 @media (max-width: 1365.98px) {
   .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar {
     display: none;
   }
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-thumb {
   background-color: white;
   border: 1px solid #020722;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-button:single-button:vertical:increment {
   width: 7.5px;
   height: 20px;
@@ -2605,7 +1893,6 @@ body .cookielaw1 #cookie_accept_button {
   border: 1px solid #020722;
   background-color: white;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-button:single-button:vertical:decrement {
   width: 7.5px;
   height: 20px;
@@ -2613,39 +1900,26 @@ body .cookielaw1 #cookie_accept_button {
   border: 1px solid #020722;
   background-color: white;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message textarea::-webkit-resizer {
   display: none;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message textarea:focus {
   outline: none;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message span {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-message span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
   color: #C13030;
   margin-top: 1%;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-document {
   margin-top: 5%;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-document label {
   color: black;
   font-weight: 700;
@@ -2654,33 +1928,27 @@ body .cookielaw1 #cookie_accept_button {
   width: 100%;
   margin-bottom: 1%;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-document label i {
   font-style: normal;
   margin: 0 1%;
   color: #C13030;
   font-size: 1em;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-document span input {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
   font-size: 1.25em;
   width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: auto;
   cursor: default;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-document span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
   color: #C13030;
   margin-top: 1%;
 }
-
 .contact .adresse-formulaire .formulaire form .infos-contact .message-document .champ-document .document-accepte {
   margin: 0;
   padding-top: 1%;
@@ -2690,15 +1958,11 @@ body .cookielaw1 #cookie_accept_button {
   color: black;
   cursor: context-menu;
 }
-
 .contact .adresse-formulaire .formulaire form .bouton {
   width: 100%;
   padding: 5% 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .contact .adresse-formulaire .formulaire form .bouton input {
   padding: 2% 5%;
   margin: auto;
@@ -2706,63 +1970,39 @@ body .cookielaw1 #cookie_accept_button {
   font-size: 1em;
   border: 1px solid #020722;
   border-radius: 20px;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-
 .contact .adresse-formulaire .formulaire form .bouton input:hover {
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  -webkit-box-shadow: 0px 2px 3px 2px #525251;
-          box-shadow: 0px 2px 3px 2px #525251;
+  transition: 0.5s ease;
+  box-shadow: 0px 2px 3px 2px #525251;
 }
-
 .contact .adresse-formulaire .formulaire form .bouton input:focus {
   outline: none;
 }
-
 .contact .adresse-formulaire .formulaire form .bouton .wpcf7-spinner {
   display: none;
 }
-
 .contact .adresse-formulaire .formulaire form .obligatoire label {
   width: 90%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 5px;
 }
-
 @media (max-width: 767.98px) {
   .contact .adresse-formulaire .formulaire form .obligatoire label {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  align-items: start;
 }
-
 @media (max-width: 767.98px) {
   .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
 }
-
 @media (min-width: 1366px) {
   .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span {
     margin: 0;
@@ -2783,17 +2023,15 @@ body .cookielaw1 #cookie_accept_button {
     position: relative;
   }
 }
-
 @media (min-width: 1366px) and (max-width: 1365.98px) {
   .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span input:hover {
     display: none;
   }
 }
-
 @media (min-width: 1366px) {
   .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span input:hover:before {
-    font-family: 'FontAwesome';
-    content: '\f0a6';
+    font-family: "FontAwesome";
+    content: "\f0a6";
     display: block;
     color: #000000;
     font-size: 15px;
@@ -2801,13 +2039,15 @@ body .cookielaw1 #cookie_accept_button {
     left: -0.5px;
     bottom: -6px;
   }
+}
+@media (min-width: 1366px) {
   .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span input:checked {
     background: rgba(233, 232, 233, 0.6);
     position: relative;
   }
   .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span input:checked:before {
-    font-family: 'FontAwesome';
-    content: '\f00c';
+    font-family: "FontAwesome";
+    content: "\f00c";
     display: block;
     color: #000000;
     font-size: 15px;
@@ -2815,22 +2055,22 @@ body .cookielaw1 #cookie_accept_button {
     left: 0.5px;
     bottom: -7px;
   }
+}
+@media (min-width: 1366px) {
   .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span input:checked:hover {
     background: rgba(233, 232, 233, 0.6);
     position: relative;
   }
 }
-
 @media (min-width: 1366px) and (max-width: 1365.98px) {
   .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span input:checked:hover {
     display: none;
   }
 }
-
 @media (min-width: 1366px) {
   .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-checkbox span input:checked:hover:before {
-    font-family: 'FontAwesome';
-    content: '\f00d';
+    font-family: "FontAwesome";
+    content: "\f00d";
     display: block;
     color: #000000;
     font-size: 20px;
@@ -2839,21 +2079,18 @@ body .cookielaw1 #cookie_accept_button {
     bottom: -9px;
   }
 }
-
 .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox .rgpd .wpcf7-not-valid-tip {
   font-weight: 700;
   font-size: 1em;
   color: #C13030;
   text-align: center;
 }
-
 .contact .adresse-formulaire .formulaire form .obligatoire label #rgpd-checkbox i {
   font-style: normal;
   margin: 0 1%;
   color: #C13030;
   font-size: 1em;
 }
-
 .contact .adresse-formulaire .formulaire form .obligatoire label .rgpd-accepte {
   font-weight: 400;
   font-size: 1em;
@@ -2861,27 +2098,23 @@ body .cookielaw1 #cookie_accept_button {
   color: black;
   cursor: context-menu;
 }
-
 .contact .adresse-formulaire .formulaire form .obligatoire label .rgpd-accepte a {
   font-size: 1em;
   font-weight: 700;
   color: #C13030;
   margin-top: 1%;
 }
-
 .contact .adresse-formulaire .formulaire form .obligatoire .champ-obligatoire {
   margin: 0;
   text-align: center;
   cursor: context-menu;
 }
-
 .contact .adresse-formulaire .formulaire form .obligatoire .champ-obligatoire i {
   font-style: normal;
   margin: 0 1%;
   color: #C13030;
   font-size: 1em;
 }
-
 .contact .adresse-formulaire .formulaire form .wpcf7-response-output {
   border-color: transparent;
   font-size: 1em;
@@ -2892,46 +2125,38 @@ body .cookielaw1 #cookie_accept_button {
 .mentions-legales {
   margin: 2% 0;
   padding: 0 5%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   cursor: context-menu;
 }
-
 .mentions-legales .infos-generales #mentions-legales-title {
   font-size: 1.5em;
 }
-
 .mentions-legales .infos-generales #mentions-legales-title h2 {
   margin: 0;
   font-size: 1.5em;
   font-weight: 500;
   color: #525251;
 }
-
 .mentions-legales .infos-generales .mentions-legales-content {
   margin-left: 2.5%;
 }
-
 .mentions-legales .infos-generales .mentions-legales-content .section-site h3, .mentions-legales .infos-generales .mentions-legales-content .section-editeur h3, .mentions-legales .infos-generales .mentions-legales-content .section-hebergeur h3, .mentions-legales .infos-generales .mentions-legales-content .section-concepteur h3, .mentions-legales .infos-generales .mentions-legales-content .section-credits-photos h3 {
   margin: 1% 0;
   color: #0C5A94;
 }
-
 .mentions-legales .infos-generales .mentions-legales-content .section-site p, .mentions-legales .infos-generales .mentions-legales-content .section-editeur p, .mentions-legales .infos-generales .mentions-legales-content .section-hebergeur p, .mentions-legales .infos-generales .mentions-legales-content .section-concepteur p, .mentions-legales .infos-generales .mentions-legales-content .section-credits-photos p {
   margin: 0;
   font-weight: 500;
   color: black;
   text-align: justify;
 }
-
 .mentions-legales .infos-generales .mentions-legales-content .section-site p a, .mentions-legales .infos-generales .mentions-legales-content .section-editeur p a, .mentions-legales .infos-generales .mentions-legales-content .section-hebergeur p a, .mentions-legales .infos-generales .mentions-legales-content .section-concepteur p a, .mentions-legales .infos-generales .mentions-legales-content .section-credits-photos p a {
   font-weight: 700;
   color: black;
 }
-
 .mentions-legales .acces-site .article-title, .mentions-legales .contenu-site .article-title, .mentions-legales .gestion-site .article-title, .mentions-legales .responsabilites .article-title, .mentions-legales .liens-hypertextes .article-title, .mentions-legales .collect-protect-donnees .article-title, .mentions-legales .droits-d-acces .article-title, .mentions-legales .utilisation-donnees .article-title, .mentions-legales .politique-donnees .article-title, .mentions-legales .partage-donnees .article-title, .mentions-legales .offres-commerciales .article-title, .mentions-legales .cookies .article-title, .mentions-legales .photographies .article-title, .mentions-legales .loi .article-title, .mentions-legales .contact-us .article-title {
   font-size: 1.5em;
 }
-
 .mentions-legales .acces-site .article-title h2, .mentions-legales .contenu-site .article-title h2, .mentions-legales .gestion-site .article-title h2, .mentions-legales .responsabilites .article-title h2, .mentions-legales .liens-hypertextes .article-title h2, .mentions-legales .collect-protect-donnees .article-title h2, .mentions-legales .droits-d-acces .article-title h2, .mentions-legales .utilisation-donnees .article-title h2, .mentions-legales .politique-donnees .article-title h2, .mentions-legales .partage-donnees .article-title h2, .mentions-legales .offres-commerciales .article-title h2, .mentions-legales .cookies .article-title h2, .mentions-legales .photographies .article-title h2, .mentions-legales .loi .article-title h2, .mentions-legales .contact-us .article-title h2 {
   margin: 0;
   padding: 1% 0;
@@ -2939,32 +2164,26 @@ body .cookielaw1 #cookie_accept_button {
   font-weight: 500;
   color: #525251;
 }
-
 .mentions-legales .acces-site .article-content, .mentions-legales .contenu-site .article-content, .mentions-legales .gestion-site .article-content, .mentions-legales .responsabilites .article-content, .mentions-legales .liens-hypertextes .article-content, .mentions-legales .collect-protect-donnees .article-content, .mentions-legales .droits-d-acces .article-content, .mentions-legales .utilisation-donnees .article-content, .mentions-legales .politique-donnees .article-content, .mentions-legales .partage-donnees .article-content, .mentions-legales .offres-commerciales .article-content, .mentions-legales .cookies .article-content, .mentions-legales .photographies .article-content, .mentions-legales .loi .article-content, .mentions-legales .contact-us .article-content {
   margin-left: 2.5%;
 }
-
 .mentions-legales .acces-site .article-content p, .mentions-legales .contenu-site .article-content p, .mentions-legales .gestion-site .article-content p, .mentions-legales .responsabilites .article-content p, .mentions-legales .liens-hypertextes .article-content p, .mentions-legales .collect-protect-donnees .article-content p, .mentions-legales .droits-d-acces .article-content p, .mentions-legales .utilisation-donnees .article-content p, .mentions-legales .politique-donnees .article-content p, .mentions-legales .partage-donnees .article-content p, .mentions-legales .offres-commerciales .article-content p, .mentions-legales .cookies .article-content p, .mentions-legales .photographies .article-content p, .mentions-legales .loi .article-content p, .mentions-legales .contact-us .article-content p {
   margin: 0;
   font-weight: 500;
   color: black;
   text-align: justify;
 }
-
 .mentions-legales .acces-site .article-content p a, .mentions-legales .contenu-site .article-content p a, .mentions-legales .gestion-site .article-content p a, .mentions-legales .responsabilites .article-content p a, .mentions-legales .liens-hypertextes .article-content p a, .mentions-legales .collect-protect-donnees .article-content p a, .mentions-legales .droits-d-acces .article-content p a, .mentions-legales .utilisation-donnees .article-content p a, .mentions-legales .politique-donnees .article-content p a, .mentions-legales .partage-donnees .article-content p a, .mentions-legales .offres-commerciales .article-content p a, .mentions-legales .cookies .article-content p a, .mentions-legales .photographies .article-content p a, .mentions-legales .loi .article-content p a, .mentions-legales .contact-us .article-content p a {
   font-weight: 700;
   color: black;
 }
-
 .mentions-legales .acces-site .article-content a, .mentions-legales .contenu-site .article-content a, .mentions-legales .gestion-site .article-content a, .mentions-legales .responsabilites .article-content a, .mentions-legales .liens-hypertextes .article-content a, .mentions-legales .collect-protect-donnees .article-content a, .mentions-legales .droits-d-acces .article-content a, .mentions-legales .utilisation-donnees .article-content a, .mentions-legales .politique-donnees .article-content a, .mentions-legales .partage-donnees .article-content a, .mentions-legales .offres-commerciales .article-content a, .mentions-legales .cookies .article-content a, .mentions-legales .photographies .article-content a, .mentions-legales .loi .article-content a, .mentions-legales .contact-us .article-content a {
   font-weight: 700;
   color: black;
 }
-
 .mentions-legales .acces-site .article-content ul, .mentions-legales .contenu-site .article-content ul, .mentions-legales .gestion-site .article-content ul, .mentions-legales .responsabilites .article-content ul, .mentions-legales .liens-hypertextes .article-content ul, .mentions-legales .collect-protect-donnees .article-content ul, .mentions-legales .droits-d-acces .article-content ul, .mentions-legales .utilisation-donnees .article-content ul, .mentions-legales .politique-donnees .article-content ul, .mentions-legales .partage-donnees .article-content ul, .mentions-legales .offres-commerciales .article-content ul, .mentions-legales .cookies .article-content ul, .mentions-legales .photographies .article-content ul, .mentions-legales .loi .article-content ul, .mentions-legales .contact-us .article-content ul {
   padding: 0;
 }
-
 .mentions-legales .acces-site .article-content ul li, .mentions-legales .contenu-site .article-content ul li, .mentions-legales .gestion-site .article-content ul li, .mentions-legales .responsabilites .article-content ul li, .mentions-legales .liens-hypertextes .article-content ul li, .mentions-legales .collect-protect-donnees .article-content ul li, .mentions-legales .droits-d-acces .article-content ul li, .mentions-legales .utilisation-donnees .article-content ul li, .mentions-legales .politique-donnees .article-content ul li, .mentions-legales .partage-donnees .article-content ul li, .mentions-legales .offres-commerciales .article-content ul li, .mentions-legales .cookies .article-content ul li, .mentions-legales .photographies .article-content ul li, .mentions-legales .loi .article-content ul li, .mentions-legales .contact-us .article-content ul li {
   list-style: none;
   font-weight: 500;
@@ -2978,64 +2197,46 @@ body .cookielaw1 #cookie_accept_button {
   margin-bottom: 2%;
   /* CSS pour le contenu texte et image*/
 }
-
 #primary #content .page-header h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 5em;
   text-align: center;
   margin-bottom: 0;
 }
-
 #primary #content .page-wrapper .page-content p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 2em;
   text-align: center;
   margin: 0;
 }
-
 #primary #content .page-wrapper .page-content img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  margin: auto;
-  padding: 10% 0;
+  margin: 10% auto;
 }
 
 /* Import du CSS pour 'footer.php' */
 /* CSS du footer */
 footer {
   background-color: #F5F4EF;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 100%;
   /* Copyrights et mentions légales */
   /* CSS pour le bandeau plan du site */
 }
-
 footer .align-pdp {
   width: 90%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 @media (max-width: 1365.98px) {
   footer .align-pdp {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 footer .align-pdp p {
   width: 33.3%;
   margin: 0;
@@ -3046,18 +2247,15 @@ footer .align-pdp p {
   color: #525251;
   cursor: context-menu;
 }
-
 @media (max-width: 1365.98px) {
   footer .align-pdp p {
     width: 100%;
   }
 }
-
 footer .align-pdp p a {
   color: #525251;
   text-decoration: none;
 }
-
 footer .siteMap {
   margin: 0;
   text-align: center;
@@ -3065,7 +2263,6 @@ footer .siteMap {
   font-weight: bold;
   font-size: 1.33em;
 }
-
 footer .siteMap .siteMapLink {
   color: #525251;
   text-decoration: none;
@@ -3076,42 +2273,32 @@ footer .siteMap .siteMapLink {
 /* CSS de 'index.php' */
 .accueil {
   margin-bottom: 2%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   /* Disposition de l'image principale de la page d'accueil */
   /* Disposition des activités de AGER */
   /* Disposition de la section 'Plus d'infos' */
   /* Disposition de la section 'Contact' */
   /* CSS pour le bouton de remontée de la page d'accueil */
 }
-
 .accueil .accueil-img {
   position: relative;
   height: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .accueil-img {
     height: 400px;
   }
 }
-
 .accueil .accueil-img img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .accueil .accueil-img .hover {
   position: absolute;
   top: 0;
@@ -3119,96 +2306,72 @@ footer .siteMap .siteMapLink {
   height: 100%;
   background-color: rgba(1, 95, 143, 0.6);
 }
-
 @media (max-width: 767.98px) {
   .accueil .accueil-img .hover {
     width: 100%;
   }
 }
-
 .accueil .accueil-img .hover .hover-content {
   padding: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
-
 .accueil .accueil-img .hover .hover-content .hover-title, .accueil .accueil-img .hover .hover-content .hover-text {
   margin: 1rem 0;
   width: 100%;
   color: white;
   cursor: context-menu;
 }
-
 .accueil .accueil-img .hover .hover-content .hover-title {
   font-weight: 400;
   font-size: 3em;
 }
-
 @media (max-width: 991.98px) {
   .accueil .accueil-img .hover .hover-content .hover-title {
     font-size: 1.75em;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1365.98px) {
   .accueil .accueil-img .hover .hover-content .hover-title {
     font-size: 2.25em;
   }
 }
-
 .accueil .accueil-img .hover .hover-content .hover-line {
   margin: 1rem 0;
   border-top: 4px solid #ffffff;
   width: 15%;
 }
-
 @media (max-width: 767.98px) {
   .accueil .accueil-img .hover .hover-content .hover-line {
     width: 100%;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1365.98px) {
   .accueil .accueil-img .hover .hover-content .hover-line {
     width: 57.5%;
   }
 }
-
 .accueil .accueil-img .hover .hover-content .hover-text {
   font-weight: 300;
   font-size: 2em;
 }
-
 @media (max-width: 991.98px) {
   .accueil .accueil-img .hover .hover-content .hover-text {
     font-size: 1em;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1365.98px) {
   .accueil .accueil-img .hover .hover-content .hover-text {
     font-size: 1.5em;
   }
 }
-
 .accueil .accueil-img .hover .hover-content .hover-button {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 4rem auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 2%;
   border: 1px solid #525251;
   border-radius: 30px;
@@ -3219,43 +2382,33 @@ footer .siteMap .siteMapLink {
   background-color: whitesmoke;
   color: #525251;
   cursor: pointer;
-  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .accueil-img .hover .hover-content .hover-button {
     margin: 2rem auto;
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .accueil .accueil-img .hover .hover-content .hover-button:hover {
-  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   background-color: #C13030;
   color: white;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .accueil-img .hover .hover-content .hover-button:hover {
-    -webkit-transition: none;
     transition: none;
     background-color: whitesmoke;
     color: #525251;
   }
 }
-
 .accueil .activites-ager {
   padding: 0 10%;
   /* Domaines d'activités où AGER peut intervenir */
 }
-
 .accueil .activites-ager .activites-title {
   text-align: center;
 }
-
 .accueil .activites-ager .activites-title h3 {
   margin: 0;
   padding: 2% 0;
@@ -3264,97 +2417,61 @@ footer .siteMap .siteMapLink {
   font-size: 2em;
   cursor: context-menu;
 }
-
 .accueil .activites-ager .activites-title .activites-line {
   border-top: 4px solid #C13030;
   width: 15%;
   margin: auto;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .activites-ager .activites-title .activites-line {
     width: 70%;
   }
 }
-
 .accueil .activites-ager .activites-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   padding: 5% 0;
 }
-
 @media (max-width: 991.98px) {
   .accueil .activites-ager .activites-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 .accueil .activites-ager .activites-content .activites {
   background-color: #0C5A94;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
   width: 250px;
   height: 250px;
   padding: 2%;
   border-radius: 50px;
-  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
-
 @media (max-width: 991.98px) {
   .accueil .activites-ager .activites-content .activites {
     margin: 1% 0;
   }
 }
-
 @media (max-width: 1365.98px) {
   .accueil .activites-ager .activites-content .activites {
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .accueil .activites-ager .activites-content .activites:hover {
-  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  -webkit-box-shadow: 0px 0px 10px 10px #ccc;
-          box-shadow: 0px 0px 10px 10px #ccc;
+  box-shadow: 0px 0px 10px 10px #ccc;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .activites-ager .activites-content .activites:hover {
-    -webkit-transition: none;
     transition: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
 }
-
 .accueil .activites-ager .activites-content .activites .activites-lien {
   text-decoration: none;
   color: white;
@@ -3363,40 +2480,30 @@ footer .siteMap .siteMapLink {
   text-align: center;
   text-transform: uppercase;
   width: 100%;
-  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .activites-ager .activites-content .activites .activites-lien {
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .accueil .activites-ager .activites-content .activites .activites-lien:hover {
-  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   text-shadow: 1px 0px 10px #ccc;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .activites-ager .activites-content .activites .activites-lien:hover {
-    -webkit-transition: none;
     transition: none;
     text-shadow: none;
   }
 }
-
 .accueil .plus-d-infos-ager {
   padding: 0 10%;
   /* Section Avantages du Photovoltaïque */
 }
-
 .accueil .plus-d-infos-ager .plus-d-infos-title {
   text-align: center;
 }
-
 .accueil .plus-d-infos-ager .plus-d-infos-title h3 {
   margin: 0%;
   padding: 2% 0;
@@ -3405,61 +2512,38 @@ footer .siteMap .siteMapLink {
   font-size: 2em;
   cursor: context-menu;
 }
-
 .accueil .plus-d-infos-ager .plus-d-infos-title .plus-d-infos-line {
   border-top: 4px solid #C13030;
   width: 15%;
   margin: auto;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .plus-d-infos-ager .plus-d-infos-title .plus-d-infos-line {
     width: 70%;
   }
 }
-
 .accueil .plus-d-infos-ager .plus-d-infos-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   padding: 5% 0;
   /* Slider montrant divers installations photovoltaïques */
 }
-
 @media (max-width: 1365.98px) {
   .accueil .plus-d-infos-ager .plus-d-infos-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages {
   width: 45%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   background-color: #F5F4EF;
   cursor: context-menu;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages {
     width: 100%;
@@ -3467,12 +2551,10 @@ footer .siteMap .siteMapLink {
     margin-bottom: 2%;
   }
 }
-
 .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .infos-title {
   width: 100%;
   padding: 0 10%;
 }
-
 .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .infos-title .title-infos-avantages h2 {
   font-weight: 700;
   font-size: 2em;
@@ -3480,92 +2562,59 @@ footer .siteMap .siteMapLink {
   color: black;
   text-align: center;
 }
-
 @media (max-width: 767.98px) {
   .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .infos-title .title-infos-avantages h2 {
     font-size: 1.5em;
   }
 }
-
 .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .infos-title .infos-avantages-line {
   border-top: 4px solid #C13030;
   width: 70%;
   margin: auto;
 }
-
 .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .infos-title p {
   font-weight: 500;
   font-size: 2em;
   color: #525251;
   text-align: center;
 }
-
 .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
-
 @media (max-width: 991.98px) {
   .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage01, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage02, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage03 {
   width: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 @media (max-width: 991.98px) {
   .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage01, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage02, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage03 {
     width: 50%;
   }
 }
-
 .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage01 .avantages-form, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage02 .avantages-form, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage03 .avantages-form {
   background-color: #0C5A94;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin: 5px 0;
 }
-
 .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage01 .avantages-form i, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage02 .avantages-form i, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage03 .avantages-form i {
   font-size: 1.5em;
   color: white;
 }
-
 .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage01 p, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage02 p, .accueil .plus-d-infos-ager .plus-d-infos-content .infos-avantages .avantages #avantage03 p {
   width: 100%;
   font-size: 0.9em;
@@ -3573,79 +2622,47 @@ footer .siteMap .siteMapLink {
   text-align: center;
   margin: 5px 0;
 }
-
 .accueil .plus-d-infos-ager .plus-d-infos-content .infos-slider {
   width: 45%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .plus-d-infos-ager .plus-d-infos-content .infos-slider {
     width: 100%;
     margin-top: 2%;
   }
 }
-
 .accueil .plus-d-infos-ager .plus-d-infos-content .infos-slider img {
   width: 100%;
   height: auto;
 }
-
 .accueil .section-articles-contact {
   padding: 0 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   /* Affichage du dernier article publié */
   /* Bouton de renvoi vers la page Contact */
 }
-
 @media (max-width: 767.98px) {
   .accueil .section-articles-contact {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 .accueil .section-articles-contact .articles-ager {
   width: 45%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 @media (max-width: 767.98px) {
   .accueil .section-articles-contact .articles-ager {
     width: 100%;
   }
 }
-
 .accueil .section-articles-contact .articles-ager .lien-article {
   text-align: center;
   text-decoration: none;
@@ -3653,25 +2670,21 @@ footer .siteMap .siteMapLink {
   font-size: 2em;
   color: #C13030;
 }
-
 @media (max-width: 767.98px) {
   .accueil .section-articles-contact .articles-ager .lien-article {
     font-size: 1.25em;
   }
 }
-
 @media (min-width: 768px) and (max-width: 991.98px) {
   .accueil .section-articles-contact .articles-ager .lien-article {
     font-size: 1.09em;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1365.98px) {
   .accueil .section-articles-contact .articles-ager .lien-article {
     font-size: 1.18em;
   }
 }
-
 .accueil .section-articles-contact .articles-ager .articles {
   background-color: #F5F4EF;
   margin: 5% 0;
@@ -3681,54 +2694,37 @@ footer .siteMap .siteMapLink {
   border-radius: 20px;
   font-size: 1.5em;
   color: #525251;
-  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .section-articles-contact .articles-ager .articles {
-    -webkit-transition: none;
     transition: none;
     text-align: center;
   }
 }
-
 .accueil .section-articles-contact .articles-ager .articles:hover {
-  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
   background-color: #0C5A94;
   color: white;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .section-articles-contact .articles-ager .articles:hover {
-    -webkit-transition: none;
     transition: none;
     background-color: #F5F4EF;
     color: #525251;
   }
 }
-
 .accueil .section-articles-contact .contact-ager {
   width: 45%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 @media (max-width: 767.98px) {
   .accueil .section-articles-contact .contact-ager {
     width: 100%;
   }
 }
-
 .accueil .section-articles-contact .contact-ager p {
   text-align: center;
   cursor: context-menu;
@@ -3736,25 +2732,21 @@ footer .siteMap .siteMapLink {
   font-size: 2em;
   color: #C13030;
 }
-
 @media (max-width: 767.98px) {
   .accueil .section-articles-contact .contact-ager p {
     font-size: 1.25em;
   }
 }
-
 @media (min-width: 768px) and (max-width: 991.98px) {
   .accueil .section-articles-contact .contact-ager p {
     font-size: 1.09em;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1365.98px) {
   .accueil .section-articles-contact .contact-ager p {
     font-size: 1.18em;
   }
 }
-
 .accueil .section-articles-contact .contact-ager .contact {
   background-color: #F5F4EF;
   margin: 5% 0;
@@ -3764,44 +2756,31 @@ footer .siteMap .siteMapLink {
   border-radius: 20px;
   font-size: 1.5em;
   color: #525251;
-  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .section-articles-contact .contact-ager .contact {
-    -webkit-transition: none;
     transition: none;
     text-align: center;
   }
 }
-
 .accueil .section-articles-contact .contact-ager .contact:hover {
-  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
   background-color: #0C5A94;
   color: white;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .section-articles-contact .contact-ager .contact:hover {
-    -webkit-transition: none;
     transition: none;
     background-color: #F5F4EF;
     color: #525251;
   }
 }
-
 .accueil #btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
   padding: 0 3%;
 }
-
 .accueil #btn #topBtn {
   width: 70px;
   height: 70px;
@@ -3810,43 +2789,25 @@ footer .siteMap .siteMapLink {
   color: #525251;
   background-color: #F5F4EF;
   border: 3px solid #525251;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0px);
+  transition: 0.5s ease;
 }
-
 @media (max-width: 1365.98px) {
   .accueil #btn #topBtn {
-    -webkit-transition: none;
     transition: none;
-    -webkit-transform: none;
-            transform: none;
+    transform: none;
   }
 }
-
 .accueil #btn #topBtn:hover {
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transform: translateY(20px);
+  transition: 0.5s ease;
 }
-
 @media (max-width: 1365.98px) {
   .accueil #btn #topBtn:hover {
-    -webkit-transition: none;
     transition: none;
-    -webkit-transform: none;
-            transform: none;
+    transform: none;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
